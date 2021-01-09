@@ -1,1 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+Coming Soon Page for the Homw Queer Home Webcomic
