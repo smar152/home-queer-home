@@ -41,10 +41,14 @@ export default function Test() {
                   pageIndex > 0 ? pages[pageIndex - 1] : null;
                 const nextPageKey =
                   pageIndex < pages.length - 1 ? pages[pageIndex + 1] : null;
+                const dateObj = new Date(`${date} 12:00:00`); // to avoid showing different days
                 return (
                   <div key={pageKey}>
                     <h4>
-                      {title} - {date}
+                      {title} -{" "}
+                      {dateObj.toLocaleDateString("en-UK", {
+                        dateStyle: "long",
+                      })}
                     </h4>
                     <div>
                       <div>
@@ -57,9 +61,10 @@ export default function Test() {
                       </div>
                     </div>
                     <div title={hoverTitle}>
-                      {images.map((url) => (
-                        <img src={url} key={url} />
-                      ))}
+                      {images.map((image) => {
+                        const { url, alt } = image;
+                        return <img src={url} key={url} alt={alt} />;
+                      })}
                     </div>
                     <div>{blogPost}</div>
                   </div>

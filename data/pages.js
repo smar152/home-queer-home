@@ -1,8 +1,9 @@
 const pages = {
   pageKey: {
     title: "My Page Title",
+    alt: "alt",
     date: "2017-05-03",
-    images: ["https://placekitten.com/500/500"],
+    images: [{ url: "https://placekitten.com/500/600", alt: "bla" }],
     hoverTitle: "Bla bla",
     blogPost: (
       <div>
@@ -15,8 +16,9 @@ const pages = {
   },
   pageKey2: {
     title: "My Page Title",
+    alt: "alt",
     date: "2017-05-03",
-    images: ["https://placekitten.com/500/500"],
+    images: [{ url: "https://placekitten.com/500/500", alt: "bla" }],
     hoverTitle: "Bla bla",
     blogPost: (
       <div>
@@ -29,8 +31,9 @@ const pages = {
   },
   pageKey3: {
     title: "My Page Title",
+    alt: "alt",
     date: "2017-05-03",
-    images: ["https://placekitten.com/500/500"],
+    images: [{ url: "https://placekitten.com/500/550", alt: "bla" }],
     hoverTitle: "Bla bla",
     blogPost: (
       <div>
@@ -43,8 +46,9 @@ const pages = {
   },
   pageKey4: {
     title: "My Page Title",
+    alt: "alt",
     date: "2017-05-03",
-    images: ["https://placekitten.com/500/500"],
+    images: [{ url: "https://placekitten.com/500/590", alt: "bla" }],
     hoverTitle: "Bla bla",
     blogPost: (
       <div>
