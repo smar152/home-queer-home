@@ -1,7 +1,7 @@
 const chapters = {
   chapterKey: {
     title: "My Chapter Title",
-    pages: ["pageKey", "pageKey2"],
+    pages: ["page001", "pageKey2"],
   },
   "another chapterKey": {
     title: "Another Chapter Title",

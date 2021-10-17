@@ -1,10 +1,13 @@
+import Header from "../../Components/Header";
 import chaptersMap from "../../data/chapters";
 import pagesMap from "../../data/pages";
+import "bootstrap/dist/css/bootstrap.css";
 
 export default function Test() {
   const chapterKeys = Object.keys(chaptersMap);
   return (
     <div>
+      <Header />
       {chapterKeys.map((chapterKey, chapterIndex) => {
         const chapter = chaptersMap[chapterKey];
         const { title, pages } = chapter;
