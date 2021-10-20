@@ -18,7 +18,7 @@ export default function Header() {
             </div>
           </Link>
         </div>
-        <nav className="row main-nav">
+        <nav className="row main-nav text-center mb-4">
           <div className="col">comic</div>
           <div className="col">archive</div>
           <div className="col">new readers</div>
@@ -38,8 +38,11 @@ export default function Header() {
 
           .main-nav {
             background: orange;
-            height: 24px;
-            padding: 12px;
+            padding: 12px 0;
+
+            font-family: "FuturaStdBold", Helvetica, Arial;
+            font-weight: 700;
+            text-transform: uppercase;
           }
         `}
       </style>
