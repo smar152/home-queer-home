@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.css";
 export default function Test() {
   const chapterKeys = Object.keys(chaptersMap);
   return (
-    <div>
+    <div className="container">
       <Header />
       {chapterKeys.map((chapterKey, chapterIndex) => {
         const chapter = chaptersMap[chapterKey];

@@ -18,7 +18,7 @@ export default function Header() {
             </div>
           </Link>
         </div>
-        <nav className="row">
+        <nav className="row main-nav">
           <div className="col">comic</div>
           <div className="col">archive</div>
           <div className="col">new readers</div>
@@ -34,6 +34,12 @@ export default function Header() {
           }
           .link {
             cursor: pointer;
+          }
+
+          .main-nav {
+            background: orange;
+            height: 24px;
+            padding: 12px;
           }
         `}
       </style>
