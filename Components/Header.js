@@ -4,21 +4,18 @@ import Image from "next/image";
 export default function Header() {
   return (
     <div className="header">
-      <div>
-        <div className="title link row">
-          <div className="col-4 col-md-1"></div>
-          <Link as="/" href="/">
-            <div className="col-8 col-md-11">
-              <Image
-                src="/img/logo/HQHlogo.svg"
-                alt="Home Queer Home - logo"
-                width={128}
-                height={128}
-              />
-            </div>
-          </Link>
-        </div>
-        <nav className="row main-nav text-center mb-4">
+      <div className="title link">
+        <Link as="/" href="/">
+          <div>
+            <Image
+              src="/img/logo/HQHlogo.svg"
+              alt="Home Queer Home - logo"
+              width={128}
+              height={128}
+            />
+          </div>
+        </Link>
+        <nav className=" main-nav">
           <div className="col">comic</div>
           <div className="col">archive</div>
           <div className="col">new readers</div>

@@ -1,7 +1,48 @@
 import Header from "../../Components/Header";
 import chaptersMap from "../../data/chapters";
 import pagesMap from "../../data/pages";
-import "bootstrap/dist/css/bootstrap.css";
+import Image from "next/dist/client/image";
+import styled from "styled-components";
+
+const ChapterContainer = styled("div")`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: min-content;
+  margin: 0px auto;
+`;
+
+const ChapterTitle = styled("h3")``;
+
+const ChapterPagination = styled("div")`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+`;
+
+const PagesContainer = styled("div")`
+  display: flex;
+  flex-direction: column;
+`;
+
+const PageContainer = styled("div")``;
+
+const PageTitle = styled("div")``;
+
+const PagePagination = styled("div")`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const PageImages = styled("div")`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 840px;
+`;
+
+const PagePost = styled("div")``;
 
 export default function Test() {
   const chapterKeys = Object.keys(chaptersMap);
@@ -18,9 +59,9 @@ export default function Test() {
             ? chapterKeys[chapterIndex + 1]
             : null;
         return (
-          <div key={chapterKey}>
-            <h3>{title}</h3>
-            <div>
+          <ChapterContainer key={chapterKey}>
+            <ChapterTitle>{title}</ChapterTitle>
+            <ChapterPagination>
               <div>
                 <strong>Previous Chapter:</strong>{" "}
                 {previousChapterKey ? previousChapterKey : "No Previous"}
@@ -29,8 +70,8 @@ export default function Test() {
                 <strong>Next Chapter:</strong>{" "}
                 {nextChapterKey ? nextChapterKey : "No next"}
               </div>
-            </div>
-            <div>
+            </ChapterPagination>
+            <PagesContainer>
               {pages.map((pageKey, pageIndex) => {
                 const page = pagesMap[pageKey];
                 const { title, date, images, hoverTitle, blogPost } =
@@ -46,14 +87,14 @@ export default function Test() {
                   pageIndex < pages.length - 1 ? pages[pageIndex + 1] : null;
                 const dateObj = new Date(`${date} 12:00:00`); // to avoid showing different days
                 return (
-                  <div key={pageKey}>
-                    <h4>
+                  <PageContainer key={pageKey}>
+                    <PageTitle>
                       {title} -{" "}
                       {dateObj.toLocaleDateString("en-UK", {
                         dateStyle: "long",
                       })}
-                    </h4>
-                    <div>
+                    </PageTitle>
+                    <PagePagination>
                       <div>
                         <strong>Previous Page:</strong>{" "}
                         {previousPageKey ? previousPageKey : "No Previous"}
@@ -62,19 +103,28 @@ export default function Test() {
                         <strong>Next Page:</strong>{" "}
                         {nextPageKey ? nextPageKey : "No next"}
                       </div>
-                    </div>
-                    <div title={hoverTitle}>
+                    </PagePagination>
+                    <PageImages title={hoverTitle}>
                       {images.map((image) => {
                         const { url, alt } = image;
-                        return <img src={url} key={url} alt={alt} />;
+                        return (
+                          <Image
+                            src={url}
+                            key={url}
+                            alt={alt}
+                            width="840px"
+                            height="1188px"
+                          />
+                        );
+                        //return <img src={url} key={url} alt={alt} />;
                       })}
-                    </div>
-                    <div>{blogPost}</div>
-                  </div>
+                    </PageImages>
+                    <PagePost>{blogPost}</PagePost>
+                  </PageContainer>
                 );
               })}
-            </div>
-          </div>
+            </PagesContainer>
+          </ChapterContainer>
         );
       })}
     </div>
