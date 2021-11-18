@@ -6,6 +6,17 @@ import Head from "next/dist/shared/lib/head";
 const FullBanner = styled("div")`
   width: 100%;
   background-color: orange;
+  position: sticky;
+  z-index: 2;
+  top: 0px;
+  // top: -30px;
+  /* padding-top: 30px; */
+`;
+
+const Logo = styled("div")`
+  height: 30px;
+  width: 300px;
+  background: hotpink;
 `;
 
 const SiteHeader = styled("div")`
@@ -41,6 +52,7 @@ export default function Header() {
         />
       </Head>
       <FullBanner>
+        {/* <Logo /> */}
         <SiteHeader>
           <Link as="/" href="/">
             <Image

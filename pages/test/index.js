@@ -6,7 +6,7 @@ import styled from "styled-components";
 import BiggerNavigation from "../../Components/BiggerNavigation";
 
 const PageContainer = styled("div")`
-  display: flex;
+  /* display: flex; */
 `;
 
 const ChapterContainer = styled("div")`
@@ -30,6 +30,13 @@ const PageTitle = styled("div")``;
 const PagePagination = styled("div")`
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  top: 50px;
+  padding: 10px;
+  z-index: 1;
+  background-color: white;
+  color: darkorange;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
 `;
 
 const PageImages = styled("div")`
@@ -61,8 +68,6 @@ export default function Test() {
             : null;
         return (
           <PageContainer>
-            <p>Prev</p>
-
             <ChapterContainer key={chapterKey}>
               <ComicPageContainer>
                 {pages.map((pageKey, pageIndex) => {
@@ -122,7 +127,6 @@ export default function Test() {
                 })}
               </ComicPageContainer>
             </ChapterContainer>
-            <p>Next</p>
           </PageContainer>
         );
       })}
