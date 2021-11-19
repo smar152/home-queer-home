@@ -1,5 +1,5 @@
 import Header from "../../Components/Header";
-import chaptersMap from "../../data/chapters";
+import comicsMap from "../../data/comics";
 import pagesMap from "../../data/pages";
 import Image from "next/dist/client/image";
 import styled from "styled-components";
@@ -53,12 +53,12 @@ const ImageContainer = styled("div")`
 const PagePost = styled("div")``;
 
 export default function Test() {
-  const chapterKeys = Object.keys(chaptersMap);
+  const chapterKeys = Object.keys(comicsMap);
   return (
     <div className="container">
       <Header />
       {chapterKeys.map((chapterKey, chapterIndex) => {
-        const chapter = chaptersMap[chapterKey];
+        const chapter = comicsMap[chapterKey];
         const { title, pages } = chapter;
         const previousChapterKey =
           chapterIndex > 0 ? chapterKeys[chapterIndex - 1] : null;

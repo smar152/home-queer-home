@@ -79,8 +79,8 @@ export default function Header() {
             />
           </Link>
           <MainNavigation>
-            <MenuItem>Comic</MenuItem>
-            <MenuItem>Archive</MenuItem>
+            <MenuItem>comic</MenuItem>
+            <MenuItem>archive</MenuItem>
             <MenuItem>new readers</MenuItem>
             <MenuItem>about</MenuItem>
             <MenuItem>store</MenuItem>
