@@ -11,8 +11,7 @@ const comics = [
             date: "2017-09-20",
             images: [{ url: "/img/pages/page001.jpg", alt: "bla" }],
             hoverTitle: "Bla bla",
-            blogPost: (
-              <>
+            blogPost: `
                 <div>
                   <p>Hey all!</p>
                   <p>
@@ -81,8 +80,7 @@ const comics = [
                     &nbsp;|&nbsp;<a href="https://gumroad.com/smar">Gumroad</a>
                   </p>
                 </div>
-              </>
-            ),
+                `,
           },
           {
             title: "Where are you going",
@@ -353,8 +351,7 @@ const comics = [
               },
             ],
             hoverTitle: "raise your hand if you'd watch this reality show",
-            blogPost: (
-              <>
+            blogPost: `
                 <div>
                   <p>
                     New episode starting today! It’s going to be a shorter one.
@@ -371,8 +368,7 @@ const comics = [
                     you again soon! 🙂
                   </p>
                 </div>
-              </>
-            ),
+                `,
           },
           {
             title: "The Usual",
@@ -385,8 +381,7 @@ const comics = [
               },
             ],
             hoverTitle: "...nevermind",
-            blogPost: (
-              <>
+            blogPost: `
                 <div>
                   <p>
                     10th page today! A little late, but still here on a
@@ -405,8 +400,7 @@ const comics = [
                     the idea enough to support it!
                   </p>
                 </div>
-              </>
-            ),
+                `,
           },
           {
             title: "Pizza toppings",
@@ -511,8 +505,7 @@ const comics = [
             ],
             hoverTitle:
               "I'm taking gardening lesson so that's the best fictional game I could come up with at the moment.",
-            blogPost: (
-              <>
+            blogPost: `
                 <div>
                   <p>Finally a holiday special that’s on time!</p>
                   <p>
@@ -536,9 +529,8 @@ const comics = [
                     I’ll definitely be back with a new comic on January 10th!
                   </p>
                   <p>Take care, everyone &lt;3</p>
-                </div>
-              </>
-            ),
+                </div>  
+            `,
           },
         ],
       },
@@ -556,8 +548,7 @@ const comics = [
               },
             ],
             hoverTitle: "Happy New Year",
-            blogPost: (
-              <>
+            blogPost: `
                 <div>
                   <p>Hey!</p>
                   <p>
@@ -586,8 +577,7 @@ const comics = [
                     </a>
                   </p>
                 </div>
-              </>
-            ),
+                `,
           },
           {
             title: "Getting ready",
@@ -600,8 +590,7 @@ const comics = [
               },
             ],
             hoverTitle: "this page is sponsored by fluffy bunny slippers",
-            blogPost: (
-              <>
+            blogPost: `
                 <div>
                   <p>
                     This took so long! I’ve been thinking I’m putting too much
@@ -623,8 +612,7 @@ const comics = [
                     .
                   </p>
                 </div>
-              </>
-            ),
+                `,
           },
           {
             title: "What outside world?",
@@ -637,13 +625,11 @@ const comics = [
               },
             ],
             hoverTitle: "how is that even possible",
-            blogPost: (
-              <>
+            blogPost: `
                 <div>
                   <p>Page 17! My comic is almost an adult.</p>
                 </div>
-              </>
-            ),
+                `,
           },
           {
             title: "Uh oh...",
@@ -656,13 +642,11 @@ const comics = [
               },
             ],
             hoverTitle: "not everyone is into humans all the time",
-            blogPost: (
-              <>
+            blogPost: `
                 <div>
                   <p>Happy Wednesday!</p>
                 </div>
-              </>
-            ),
+                `,
           },
           {
             title: "Staying home",
@@ -676,8 +660,7 @@ const comics = [
             ],
             hoverTitle:
               "my favorite character on this page is the couch blanket",
-            blogPost: (
-              <>
+            blogPost: `
                 <div>
                   <p>
                     Feels good to be back! When I sat down to draw Sophia this
@@ -685,8 +668,7 @@ const comics = [
                     good folks! Who knew! 🙂
                   </p>
                 </div>
-              </>
-            ),
+                `,
           },
           {
             title: "Just (don’t) do it",
@@ -699,8 +681,7 @@ const comics = [
               },
             ],
             hoverTitle: "translation: &quot;dude! dude!&quot;",
-            blogPost: (
-              <>
+            blogPost: `
                 <div>
                   <p>Sorry teenage boys but…</p>
                   <p>
@@ -709,8 +690,7 @@ const comics = [
                   </p>
                   <p>Next week we might have an announcement. Let’s see!</p>
                 </div>
-              </>
-            ),
+                `,
           },
           {
             title: "Spring Comic Conventions",
@@ -724,8 +704,7 @@ const comics = [
             ],
             hoverTitle:
               "I don&#39;t know what my beef is with teenagers, second page in a row where they&#39;re the villains",
-            blogPost: (
-              <>
+            blogPost: `
                 <div>
                   <p>
                     Last week I said we might have an announcement today… Well,
@@ -769,8 +748,7 @@ const comics = [
                     all get this book 🙂
                   </p>
                 </div>
-              </>
-            ),
+                `,
           },
           {
             title: "Small talk",
@@ -783,8 +761,7 @@ const comics = [
               },
             ],
             hoverTitle: "the dangers of going out :o",
-            blogPost: (
-              <>
+            blogPost: `
                 <div>
                   <p>
                     I’m happy with how the outside world panel came out this
@@ -813,8 +790,7 @@ const comics = [
                     percentage – and you get free shipping! Thanks 🙂
                   </p>
                 </div>
-              </>
-            ),
+                `,
           },
           {
             title: "What",
@@ -827,8 +803,7 @@ const comics = [
               },
             ],
             hoverTitle: "I *almost* forgot to draw Rita&#39;s glasses.",
-            blogPost: (
-              <>
+            blogPost: `
                 <div>
                   <p>
                     The storyline is almost over! Come back next week for the
@@ -859,8 +834,7 @@ const comics = [
                     more and more on there.
                   </p>
                 </div>
-              </>
-            ),
+                `,
           },
           {
             title: "24",
@@ -874,8 +848,7 @@ const comics = [
             ],
             hoverTitle:
               "I only realized how much this seems like an advertisement while doing the lettering.",
-            blogPost: (
-              <>
+            blogPost: `
                 <div>
                   <p>
                     The (so far) longest episode of this webcomic has concluded!
@@ -906,8 +879,7 @@ const comics = [
                     !
                   </p>
                 </div>
-              </>
-            ),
+              `,
           },
         ],
       },
@@ -926,8 +898,7 @@ const comics = [
             ],
             hoverTitle:
               "I can&#39;t believe that the same plant that we call doggy in Greek is called snapdragon in English.",
-            blogPost: (
-              <>
+            blogPost: `
                 <div>
                   <p>
                     New episode starts with this page!{" "}
@@ -947,8 +918,7 @@ const comics = [
                   </p>
                   <p>See you soon!!</p>
                 </div>
-              </>
-            ),
+                `,
           },
           {
             title: "26",
@@ -961,8 +931,7 @@ const comics = [
               },
             ],
             hoverTitle: "if you insist",
-            blogPost: (
-              <>
+            blogPost: `
                 <div>
                   <p>
                     I’ve been meaning to work more environments in these comics!
@@ -984,8 +953,7 @@ const comics = [
                   </p>
                   <p>Τα λέμε σύντομα!</p>
                 </div>
-              </>
-            ),
+                `,
           },
           {
             title: "27",
@@ -999,8 +967,7 @@ const comics = [
             ],
             hoverTitle:
               "Danae&#39;s views on stalking do not necessarily reflect the views of the creator of this comic.",
-            blogPost: (
-              <>
+            blogPost: `
                 <div>
                   <p>
                     Sorry I missed last week’s update! I was finishing up a
@@ -1021,8 +988,7 @@ const comics = [
                   <p>I’ll be in festivals in Athens too, stay tuned 🙂</p>
                   <p>Will have HQH stickers too!</p>
                 </div>
-              </>
-            ),
+                `,
           },
           {
             title: "28",
@@ -1035,8 +1001,7 @@ const comics = [
               },
             ],
             hoverTitle: "definitely not trying too hard",
-            blogPost: (
-              <>
+            blogPost: `
                 <div>
                   <p>
                     I shaded this without pen pressure because I’m in a rush and
@@ -1071,8 +1036,7 @@ const comics = [
                     &lt;3 Come say hi!
                   </p>
                 </div>
-              </>
-            ),
+                `,
           },
           {
             title: "29",
@@ -1085,8 +1049,7 @@ const comics = [
               },
             ],
             hoverTitle: "no plants were harmed in the making of this comic",
-            blogPost: (
-              <>
+            blogPost: `
                 <div>
                   <p>
                     One could say that it’s not exactly Wednesday, but hey,
@@ -1101,8 +1064,7 @@ const comics = [
                   </p>
                   <p>από τις 5.30 το απόγευμα στο B-Fest.</p>
                 </div>
-              </>
-            ),
+                `,
           },
           {
             title: "30",
@@ -1115,8 +1077,7 @@ const comics = [
               },
             ],
             hoverTitle: "#anxietyy",
-            blogPost: (
-              <>
+            blogPost: `
                 <div>
                   <p>
                     Pen pressure stopped working when I had to do the shading
@@ -1129,8 +1090,7 @@ const comics = [
                     unexpected things happen. Working on it.
                   </p>
                 </div>
-              </>
-            ),
+                `,
           },
           {
             title: "31",
@@ -1143,8 +1103,7 @@ const comics = [
               },
             ],
             hoverTitle: "31",
-            blogPost: (
-              <>
+            blogPost: `
                 <div>
                   <p>
                     You might have noticed I’ve been slower and slower with
@@ -1177,8 +1136,7 @@ const comics = [
                   <p>See you soon</p>
                   <p>$lt;3</p>
                 </div>
-              </>
-            ),
+                `,
           },
         ],
       },
@@ -1203,11 +1161,9 @@ const comics = [
               },
             ],
             hoverTitle: "",
-            blogPost: (
-              <>
-                <div></div>
-              </>
-            ),
+            blogPost: `
+            <div></div>
+              `,
           },
         ],
       },
