@@ -1,24 +1,27 @@
+import ComicPage from "../../../../../../Components/ComicPage";
+import Layout from "../../../../../../Components/Layout";
 import pagesMap from "../../../../../../data/comics";
 
-const Page = ({ page, error }) => {
-  console.log(page, error);
+const PagePage = ({ page, error }) => {
   return (
-    <div>
-      <div>
-        Page
-        <div dangerouslySetInnerHTML={{ __html: page.blogPost }}></div>
-      </div>
-    </div>
+    <Layout>
+      <ComicPage page={page} error={error} />
+    </Layout>
   );
 };
 
-export default Page;
+export default PagePage;
 
 export const getServerSideProps = async ({ params, res }) => {
   const { pageNumber, episodeNumber, seasonNumber } = params;
-  const season = pagesMap?.[seasonNumber];
-  const episode = season?.episodes?.[episodeNumber];
-  const page = episode?.pages?.[pageNumber] || "";
+  const season = pagesMap?.[seasonNumber - 1];
+  const episode = season?.episodes?.[episodeNumber - 1];
+  const page = episode?.pages?.[pageNumber - 1];
+
+  const nextPageNumber = Number(pageNumber) + 1;
+
+  const previous = { pageNumber, episodeNumber, seasonNumber };
+  const next = { pageNumber: nextPageNumber, episodeNumber, seasonNumber };
   console.log(seasonNumber, episodeNumber, pageNumber, season, episode, page);
   let error = "";
   if (!page) {
@@ -28,5 +31,12 @@ export const getServerSideProps = async ({ params, res }) => {
       delete page.blogPost;
     }
   }
-  return { props: { page, error } };
+  return {
+    props: {
+      page: page
+        ? { ...page, pageNumber, episodeNumber, seasonNumber, previous, next }
+        : null,
+      error,
+    },
+  };
 };
