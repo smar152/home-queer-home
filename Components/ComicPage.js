@@ -76,12 +76,12 @@ const ComicPage = (props) => {
           const { url, alt } = image;
           return (
             <StImageContainer>
-              <Image
+              <img
                 src={url}
                 key={url}
                 alt={alt}
-                width="840px"
-                height="1188px"
+                // width="840px"
+                // height="1188px"
               />
             </StImageContainer>
           );
