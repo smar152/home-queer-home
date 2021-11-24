@@ -2,7 +2,6 @@ import * as React from "react";
 import pagesMap from "../data/pages";
 import { useRouter } from "next/router";
 
-
 export default function ComicPage({ pageKey }) {
   const page = pagesMap[pageKey];
   const { title, date, images, hoverTitle, blogPost } = page || {};
@@ -49,6 +48,6 @@ export default function ComicPage({ pageKey }) {
 
 export const getServerSideProps = async ({ params, res }) => {
   const { comicpage } = params;
-  
-  return { props: { page: , error } };
+
+  return { props: { page: null, error } };
 };
