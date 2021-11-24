@@ -43,6 +43,7 @@ const ComicPage = (props) => {
     pageNumber,
     episodeNumber,
     seasonNumber,
+    previous,
     next,
   } = page || {};
   const dateObj = new Date(`${date} 12:00:00`);
@@ -51,9 +52,7 @@ const ComicPage = (props) => {
       <StPagePagination>
         <div>
           <Link
-            href={`/season/${seasonNumber}/episode/${episodeNumber}/page/${
-              pageNumber - 1
-            }`}
+            href={`/season/${previous.seasonNumber}/episode/${previous.episodeNumber}/page/${previous.pageNumber}`}
           >
             <a>
               <strong>Previous Page:</strong>{" "}
@@ -63,7 +62,7 @@ const ComicPage = (props) => {
         </div>
         <div>
           <Link
-            href={`/season/${seasonNumber}/episode/${episodeNumber}/page/${next.pageNumber}`}
+            href={`/season/${next.seasonNumber}/episode/${next.episodeNumber}/page/${next.pageNumber}`}
           >
             <a>
               <strong>Next Page:</strong>

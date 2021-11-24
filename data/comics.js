@@ -1142,8 +1142,6 @@ const comics = [
       },
     ],
   },
-  ,
-  ,
   {
     name: "Season Two",
     episodes: [

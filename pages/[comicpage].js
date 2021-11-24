@@ -5,9 +5,6 @@ import { useRouter } from "next/router";
 
 export default function ComicPage({ pageKey }) {
   const page = pagesMap[pageKey];
-  console.log("pageKey: ", pageKey);
-  console.log("pagesMap: ", pagesMap);
-  console.log("pagesMap[pageKey]: ", pagesMap[pageKey]);
   const { title, date, images, hoverTitle, blogPost } = page || {};
   if (!page) {
     console.error("exeis kanei malakia -- na einai swsta ta page keys.");
