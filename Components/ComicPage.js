@@ -15,7 +15,12 @@ const StPagePagination = styled("div")`
   z-index: 1;
   background-color: white;
   color: darkorange;
-  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  a {
+    text-decoration: none;
+    color: orange;
+  }
 `;
 const StPageImages = styled("div")`
   display: flex;
@@ -28,7 +33,14 @@ const StImageContainer = styled("div")`
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 `;
 
-const StPageTitle = styled("div")``;
+const StPageDate = styled("div")`
+  margin-top: 80px;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: right;
+`;
+
+const StPageTite = styled("h2")``;
 
 const StPagePost = styled("div")``;
 
@@ -55,47 +67,56 @@ const ComicPage = (props) => {
             href={`/season/${previous.seasonNumber}/episode/${previous.episodeNumber}/page/${previous.pageNumber}`}
           >
             <a>
-              <strong>Previous Page:</strong>{" "}
+              <strong>{"<"} previous page</strong>
             </a>
           </Link>
           {/* {previousPageKey ? previousPageKey : "No Previous"} */}
+        </div>
+        <div>
+          Season {seasonNumber + 1} Episode {episodeNumber + 1}
         </div>
         <div>
           <Link
             href={`/season/${next.seasonNumber}/episode/${next.episodeNumber}/page/${next.pageNumber}`}
           >
             <a>
-              <strong>Next Page:</strong>
+              <strong>next page {">"}</strong>
             </a>
           </Link>
-          {/* {nextPageKey ? nextPageKey : "No next"} */}
         </div>
       </StPagePagination>
-      <StPageImages title={hoverTitle}>
-        {images.map((image) => {
-          const { url, alt } = image;
-          return (
-            <StImageContainer>
-              <Image
-                src={url}
-                key={url}
-                alt={alt}
-                width="840px"
-                height="1188px"
-              />
-            </StImageContainer>
-          );
-          //return <img src={url} key={url} alt={alt} />;
-        })}
-      </StPageImages>
+      <Link
+        href={`/season/${next.seasonNumber}/episode/${next.episodeNumber}/page/${next.pageNumber}`}
+      >
+        <a>
+          <StPageImages title={hoverTitle}>
+            {images.map((image) => {
+              const { url, alt } = image;
+              return (
+                <StImageContainer>
+                  <Image
+                    src={url}
+                    key={url}
+                    alt={alt}
+                    width="840px"
+                    height="1188px"
+                  />
+                </StImageContainer>
+              );
+              //return <img src={url} key={url} alt={alt} />;
+            })}
+          </StPageImages>
+        </a>
+      </Link>
       {/* <BiggerNavigation previousChapterKey nextChapterKey /> */}
       {/* <ChapterTitle>{title}</ChapterTitle> */}
-      <StPageTitle>
-        {title} -{" "}
+      <StPageDate>
         {dateObj.toLocaleDateString("en-UK", {
           dateStyle: "long",
         })}
-      </StPageTitle>
+        <hr />
+      </StPageDate>
+      <StPageTite>{title}</StPageTite>
       <StPagePost dangerouslySetInnerHTML={{ __html: blogPost }} />
     </StComicPage>
   );

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Footer from "./Footer";
 import Header from "./Header";
 
 const LayoutContainer = styled("div")`
@@ -9,6 +10,7 @@ const LayoutContainer = styled("div")`
 const ComicPageContainer = styled("div")`
   display: flex;
   flex-direction: column;
+  font-family: "DM Sans", "FuturaStdBold", Helvetica, Arial;
 `;
 
 const ChapterContainer = styled("div")`
@@ -28,6 +30,7 @@ const Layout = (props) => {
       <ChapterContainer>
         <ComicPageContainer>{children}</ComicPageContainer>
       </ChapterContainer>
+      <Footer />
     </LayoutContainer>
   );
 };

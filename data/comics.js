@@ -601,7 +601,7 @@ const comics = [
                     I got a new sketchbook this week and I’m really loving it
                     ^_^ I even made the sketches for this page on it (instead of
                     doing it digitally as I mostly do). I’ll be uploading more
-                    sketches on{" "}
+                    sketches on
                     <a
                       href="https://www.instagram.com/smarmakescomics"
                       rel="noopener"
@@ -778,14 +778,14 @@ const comics = [
                     </a>
                     on how you can support me / this comic, in direct or
                     indirect ways. I’d appreciate if you remembered to check it
-                    when you’re about to order a book from{" "}
+                    when you’re about to order a book from
                     <a
                       href="http://www.bookdepository.com/?a_aid=smarmakescomics"
                       rel="noopener"
                       target="_blank"
                     >
                       Book Depository
-                    </a>{" "}
+                    </a>
                     – it doesn’t add to what you pay, but I get a small
                     percentage – and you get free shipping! Thanks 🙂
                   </p>
@@ -819,7 +819,7 @@ const comics = [
                   </p>
                   <p>
                     I did the sketches for this one completely on paper too.
-                    Usually I’d do them digitally – I just posted{" "}
+                    Usually I’d do them digitally – I just posted
                     <a
                       href="https://www.patreon.com/posts/17239949"
                       rel="noopener"
@@ -858,17 +858,17 @@ const comics = [
                     somewhere that isn’t Rita’s apartment next time.
                   </p>
                   <p>
-                    I’ve been more active on{" "}
+                    I’ve been more active on
                     <a
                       href="https://www.instagram.com/smarmakescomics/"
                       rel="noopener"
                       target="_blank"
                     >
                       Instagram
-                    </a>{" "}
+                    </a>
                     lately. This week I’ve joined an art challenge to paint more
                     portraits. Have been doing them as warm ups and I’m really
-                    enjoying them. My latest one was{" "}
+                    enjoying them. My latest one was
                     <a
                       href="https://www.instagram.com/p/BggSxo3nHFz/?taken-by=smarmakescomics"
                       rel="noopener"
@@ -901,7 +901,7 @@ const comics = [
             blogPost: `
                 <div>
                   <p>
-                    New episode starts with this page!{" "}
+                    New episode starts with this page!
                     <del datetime="2018-04-05T15:12:51+00:00">
                       A day late but still T_T
                     </del>
@@ -971,7 +971,7 @@ const comics = [
                 <div>
                   <p>
                     Sorry I missed last week’s update! I was finishing up a
-                    comic that is getting printed at the moment!{" "}
+                    comic that is getting printed at the moment!
                     <a
                       href="https://www.instagram.com/p/BiB0f3RFAxU/?taken-by=smarmakescomics"
                       rel="noopener"
@@ -1017,22 +1017,22 @@ const comics = [
                     happening in Athens!
                   </p>
                   <p>
-                    I have{" "}
+                    I have
                     <a
                       href="https://www.instagram.com/p/BiB0f3RFAxU/?taken-by=smarmakescomics"
                       rel="noopener"
                       target="_blank"
                     >
                       a new comic
-                    </a>{" "}
-                    out that will be with me this weekend at{" "}
+                    </a>
+                    out that will be with me this weekend at
                     <a
                       href="https://www.facebook.com/events/249418122466283/"
                       rel="noopener"
                       target="_blank"
                     >
                       Athens Zine Fest
-                    </a>{" "}
+                    </a>
                     &lt;3 Come say hi!
                   </p>
                 </div>

@@ -4,8 +4,10 @@ import styled from "styled-components";
 import Head from "next/dist/shared/lib/head";
 
 const FullBanner = styled("div")`
+  margin-top: 100px;
   width: 100%;
   background-color: orange;
+  color: white;
   position: sticky;
   z-index: 2;
   top: 0px;
@@ -29,8 +31,6 @@ const SiteHeader = styled("div")`
 `;
 
 const MainNavigation = styled("nav")`
-  background: orange;
-  color: white;
   padding: 12px;
   font-family: "DM Sans", "FuturaStdBold", Helvetica, Arial;
   display: flex;
@@ -42,7 +42,7 @@ const MainNavigation = styled("nav")`
 
 const MenuItem = styled("div")``;
 
-export default function Header() {
+export default function Footer() {
   return (
     <>
       <Head>
@@ -54,36 +54,11 @@ export default function Header() {
       <FullBanner>
         {/* <Logo /> */}
         <SiteHeader>
-          <Link as="/" href="/">
-            <Image
-              src="/img/logo/HQHlogo.svg"
-              alt="Home Queer Home - logo"
-              width={128}
-              height={128}
-            />
-          </Link>
-          <Link as="/" href="/">
-            <Image
-              src="/img/logo/HQHlogo.svg"
-              alt="Home Queer Home - logo"
-              width={128}
-              height={128}
-            />
-          </Link>
-          <Link as="/" href="/">
-            <Image
-              src="/img/logo/HQHlogo.svg"
-              alt="Home Queer Home - logo"
-              width={128}
-              height={128}
-            />
-          </Link>
           <MainNavigation>
-            <MenuItem>comic</MenuItem>
-            <MenuItem>archive</MenuItem>
-            <MenuItem>new readers</MenuItem>
-            <MenuItem>about</MenuItem>
-            <MenuItem>store</MenuItem>
+            <MenuItem>smar makes comics</MenuItem>
+            <MenuItem>insta</MenuItem>
+            <MenuItem>twitter</MenuItem>
+            <MenuItem>constant anxiety is a band</MenuItem>
           </MainNavigation>
         </SiteHeader>
       </FullBanner>
