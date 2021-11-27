@@ -25,7 +25,6 @@ const SiteHeader = styled("div")`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 840px;
   margin: auto;
   height: 50px;
 `;

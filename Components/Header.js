@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styled from "styled-components";
 import Head from "next/dist/shared/lib/head";
+import { device, deviceSize } from "../data/device";
 
 const FullBanner = styled("div")`
   width: 100%;
@@ -23,9 +24,11 @@ const SiteHeader = styled("div")`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 840px;
   margin: auto;
   height: 50px;
+  @media ${device.tablet} {
+    width: ${deviceSize.tablet};
+  }
 `;
 
 const MainNavigation = styled("nav")`
@@ -37,6 +40,7 @@ const MainNavigation = styled("nav")`
   flex-grow: 1;
   justify-content: space-between;
   align-items: center;
+
   /* text-transform: uppercase; */
 `;
 

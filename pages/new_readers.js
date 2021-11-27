@@ -15,7 +15,6 @@ const StPagePost = styled("div")``;
 const NewReadersPage = () => {
   return (
     <Layout>
-      <div>hi</div>
       <StPageDate>
         new readers
         <hr />
