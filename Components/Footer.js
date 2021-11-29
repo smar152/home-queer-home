@@ -6,7 +6,7 @@ import Head from "next/dist/shared/lib/head";
 const FullBanner = styled("div")`
   margin-top: 100px;
   width: 100%;
-  background-color: orange;
+  background-color: #bf3f1e;
   color: white;
   position: sticky;
   z-index: 2;

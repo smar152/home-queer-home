@@ -93,16 +93,14 @@ const comics = [
               },
             ],
             hoverTitle: "When getting a discount > anything else",
-            blogPost: (
-              <>
-                <div>
-                  <p>
-                    So, I was planning to launch this comic this summer, when
-                    melting under the city heat was fresh and relateable. Oops.
-                  </p>
-                </div>
-              </>
-            ),
+            blogPost: `
+              <div>
+                <p>
+                  So, I was planning to launch this comic this summer, when
+                  melting under the city heat was fresh and relateable. Oops.
+                </p>
+              </div>
+            `,
           },
           {
             title: "Thought Bubble was good!",
@@ -115,26 +113,24 @@ const comics = [
               },
             ],
             hoverTitle: "frappé on the beach because greece",
-            blogPost: (
-              <>
-                <div>
-                  <p>
-                    I got to meet artists and creators I admire, saw some
-                    amazingly beautiful indie comics and I&nbsp;came back
-                    inspired to make more! I’ll be showing you some stuff I
-                    discovered on Fridays, when I post One Thing I Like on
-                    <a href="https://www.facebook.com/smarMakesComics/">
-                      facebook
-                    </a>
-                    and <a href="http://smarmakescomics.tumblr.com/">tumblr</a>
-                    .&nbsp;I still have a pile of business cards and comics to
-                    go through and I’ll be doing it slowly because everything is
-                    so inspiring and I want to take my time to give them all the
-                    attention.
-                  </p>
-                </div>
-              </>
-            ),
+            blogPost: `
+              <div>
+                <p>
+                  I got to meet artists and creators I admire, saw some
+                  amazingly beautiful indie comics and I&nbsp;came back inspired
+                  to make more! I’ll be showing you some stuff I discovered on
+                  Fridays, when I post One Thing I Like on
+                  <a href="https://www.facebook.com/smarMakesComics/">
+                    facebook
+                  </a>
+                  and <a href="http://smarmakescomics.tumblr.com/">tumblr</a>
+                  .&nbsp;I still have a pile of business cards and comics to go
+                  through and I’ll be doing it slowly because everything is so
+                  inspiring and I want to take my time to give them all the
+                  attention.
+                </p>
+              </div>
+            `,
           },
           {
             title: "Changed perspective",
@@ -147,8 +143,7 @@ const comics = [
               },
             ],
             hoverTitle: "Ah, the sea",
-            blogPost: (
-              <>
+            blogPost: `
                 <div>
                   <p>
                     I really do have a refreshed perspective when it comes to my
@@ -182,8 +177,7 @@ const comics = [
                     &nbsp;|&nbsp;<a href="https://gumroad.com/smar">Gumroad</a>
                   </p>
                 </div>
-              </>
-            ),
+                `,
           },
           {
             title: "Disappearing backpacks",
@@ -196,8 +190,7 @@ const comics = [
               },
             ],
             hoverTitle: "non native speaker problems",
-            blogPost: (
-              <>
+            blogPost: `
                 <div>
                   <p>
                     You know how some comics use angle brackets (&lt;&gt;) for
@@ -221,8 +214,7 @@ const comics = [
                     things! #goals
                   </p>
                 </div>
-              </>
-            ),
+                `,
           },
           {
             title: "Taverna",
@@ -235,8 +227,7 @@ const comics = [
               },
             ],
             hoverTitle: "Mystery food, my favorite!",
-            blogPost: (
-              <>
+            blogPost: `
                 <div>
                   <p>
                     Really had fun with this page. I’m trying all sorts of
@@ -259,8 +250,7 @@ const comics = [
                     might think yours is, let me know what you’d like to see!
                   </p>
                 </div>
-              </>
-            ),
+                `,
           },
           {
             title: "Return",
@@ -273,8 +263,7 @@ const comics = [
               },
             ],
             hoverTitle: "I'm so good at naming things",
-            blogPost: (
-              <>
+            blogPost: `
                 <div>
                   <p>
                     Hey, it’s November and they’re coming back from their summer
@@ -300,8 +289,7 @@ const comics = [
                     you have any ideas / something you’d like to see!
                   </p>
                 </div>
-              </>
-            ),
+                `,
           },
           {
             title: "Episode Wrap Up!",
@@ -314,8 +302,7 @@ const comics = [
               },
             ],
             hoverTitle: "isn't web radio romantic?",
-            blogPost: (
-              <>
+            blogPost: `
                 <div>
                   <p>Last page of Episode 1!</p>
                   <p>Next time we’ll start a new one.</p>
@@ -332,8 +319,7 @@ const comics = [
                     stickers along with my usual comics.
                   </p>
                 </div>
-              </>
-            ),
+                `,
           },
         ],
       },
@@ -413,13 +399,11 @@ const comics = [
               },
             ],
             hoverTitle: "a bit",
-            blogPost: (
-              <>
+            blogPost: `
                 <div>
                   <p>Making decisions is the worst @_@</p>
                 </div>
-              </>
-            ),
+                `,
           },
           {
             title: "Too Difficult",
@@ -433,8 +417,7 @@ const comics = [
             ],
             hoverTitle:
               "Accidental pointless reference! Where Are You Going was the name of my first zine.",
-            blogPost: (
-              <>
+            blogPost: `
                 <div>
                   <p>TFW you’re too hungry to order food… *grumble grumble*</p>
                   <p>
@@ -442,8 +425,7 @@ const comics = [
                     Stay tuned 🙂
                   </p>
                 </div>
-              </>
-            ),
+                `,
           },
           {
             title: "Get holiday cards and stuff!",
@@ -457,8 +439,7 @@ const comics = [
             ],
             hoverTitle:
               "The life changing magic of judging reality show contestants to feel better about yourself",
-            blogPost: (
-              <>
+            blogPost: `
                 <div>
                   <p>
                     You can now
@@ -485,8 +466,7 @@ const comics = [
                   </p>
                   <p>See you next week!</p>
                 </div>
-              </>
-            ),
+                `,
           },
         ],
       },
