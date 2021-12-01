@@ -13,6 +13,11 @@ function MyApp({ Component, pageProps }) {
             sans-serif;
         }
 
+        html,
+        body,
+        #__next {
+          height: 100%;
+        }
         * {
           box-sizing: border-box;
         }

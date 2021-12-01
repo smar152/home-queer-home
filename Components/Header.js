@@ -7,9 +7,10 @@ import { device, deviceSize } from "../data/device";
 const FullBanner = styled("div")`
   width: 100%;
   background-color: orange;
-  position: sticky;
+  /* position: sticky; */
   z-index: 2;
-  top: 0px;
+  /* top: 0px; */
+
   // top: -30px;
   /* padding-top: 30px; */
 `;
@@ -44,7 +45,11 @@ const MainNavigation = styled("nav")`
   /* text-transform: uppercase; */
 `;
 
-const MenuItem = styled("div")``;
+const MenuItem = styled("a")`
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+`;
 
 export default function Header() {
   return (
@@ -55,9 +60,9 @@ export default function Header() {
           rel="stylesheet"
         />
       </Head>
-      <FullBanner>
+      <FullBanner data-id="header-container">
         {/* <Logo /> */}
-        <SiteHeader>
+        <SiteHeader data-id="header-inner">
           <Link as="/" href="/">
             <Image
               src="/img/logo/HQHlogo.svg"
@@ -83,11 +88,21 @@ export default function Header() {
             />
           </Link>
           <MainNavigation>
-            <MenuItem>comic</MenuItem>
-            <MenuItem>archive</MenuItem>
-            <MenuItem>new readers</MenuItem>
-            <MenuItem>about</MenuItem>
-            <MenuItem>store</MenuItem>
+            <Link href="/">
+              <MenuItem>comic</MenuItem>
+            </Link>
+            <Link href="/archive">
+              <MenuItem>archive</MenuItem>
+            </Link>
+            <Link href="/new-readers">
+              <MenuItem>new readers</MenuItem>
+            </Link>
+            <Link href="/about">
+              <MenuItem>about</MenuItem>
+            </Link>
+            <MenuItem href="https://smar.gumroad.com/" target="_blank">
+              store
+            </MenuItem>
           </MainNavigation>
         </SiteHeader>
       </FullBanner>

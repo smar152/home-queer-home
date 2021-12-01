@@ -2,15 +2,15 @@ import Link from "next/link";
 import Image from "next/image";
 import styled from "styled-components";
 import Head from "next/dist/shared/lib/head";
+import { device, deviceSize } from "../data/device";
 
 const FullBanner = styled("div")`
-  margin-top: 100px;
   width: 100%;
   background-color: #bf3f1e;
   color: white;
-  position: sticky;
-  z-index: 2;
-  top: 0px;
+  /* position: sticky; */
+  /* z-index: 2; */
+  /* top: 0px; */
   // top: -30px;
   /* padding-top: 30px; */
 `;
@@ -27,6 +27,9 @@ const SiteHeader = styled("div")`
   justify-content: center;
   margin: auto;
   height: 50px;
+  @media ${device.tablet} {
+    width: ${deviceSize.tablet};
+  }
 `;
 
 const MainNavigation = styled("nav")`
@@ -50,7 +53,7 @@ export default function Footer() {
           rel="stylesheet"
         />
       </Head>
-      <FullBanner>
+      <FullBanner data-id="footer-container">
         {/* <Logo /> */}
         <SiteHeader>
           <MainNavigation>

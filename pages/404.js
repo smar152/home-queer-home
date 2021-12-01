@@ -1,15 +1,14 @@
 import Layout from "../Components/Layout";
 import InnerLayout from "../Components/PageInnerLayout";
 
-const NewReadersPage = () => {
+// pages/404.js
+export default function Custom404() {
   return (
     <Layout>
       <InnerLayout
-        title="New Readers"
-        three={<div>This comic is about three friends</div>}
+        title="Error 404"
+        three={<div>What were you looking for?</div>}
       />
     </Layout>
   );
-};
-
-export default NewReadersPage;
+}

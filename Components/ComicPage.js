@@ -10,7 +10,7 @@ const StPagePagination = styled("div")`
   display: flex;
   justify-content: space-between;
   position: sticky;
-  top: 50px;
+  top: 0px;
   padding: 10px;
   z-index: 1;
   background-color: white;
@@ -26,10 +26,16 @@ const StPageImages = styled("div")`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
 `;
 const StImageContainer = styled("div")`
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+`;
+const StImg = styled("img")`
+  width: 100%;
+`;
+
+const StImgLink = styled("a")`
+  display: block;
 `;
 
 const StPageDate = styled("div")`
@@ -59,8 +65,8 @@ const ComicPage = (props) => {
   } = page || {};
   const dateObj = new Date(`${date} 12:00:00`);
   return (
-    <StComicPage>
-      <StPagePagination>
+    <StComicPage data-id="comic-page">
+      <StPagePagination data-id="page-pagination">
         <div>
           <Link
             href={`/season/${previous.seasonNumber}/episode/${previous.episodeNumber}/page/${previous.pageNumber}`}
@@ -87,25 +93,25 @@ const ComicPage = (props) => {
       <Link
         href={`/season/${next.seasonNumber}/episode/${next.episodeNumber}/page/${next.pageNumber}`}
       >
-        <a>
-          <StPageImages title={hoverTitle}>
+        <StImgLink data-id="page-image-link">
+          <StPageImages title={hoverTitle} data-id="page-images">
             {images.map((image) => {
               const { url, alt } = image;
               return (
                 <StImageContainer>
-                  <Image
+                  <StImg
                     src={url}
                     key={url}
                     alt={alt}
-                    width="840px"
-                    height="1188px"
+                    // width="840px"
+                    // height="1188px"
                   />
                 </StImageContainer>
               );
               //return <img src={url} key={url} alt={alt} />;
             })}
           </StPageImages>
-        </a>
+        </StImgLink>
       </Link>
       {/* <BiggerNavigation previousChapterKey nextChapterKey /> */}
       {/* <ChapterTitle>{title}</ChapterTitle> */}
