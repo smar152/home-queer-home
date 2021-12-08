@@ -1,5 +1,5 @@
 import ComicPage from "../../../../../../Components/ComicPage";
-import Layout from "../../../../../../Components/Layout";
+import Layout from "../../../../../../Components/Layout/Layout";
 import seasons from "../../../../../../data/comics";
 
 const PagePage = ({ page, error }) => {

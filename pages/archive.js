@@ -1,5 +1,5 @@
-import Layout from "../Components/Layout";
-import InnerLayout from "../Components/PageInnerLayout";
+import Layout from "../Components/Layout/Layout";
+import InnerLayout from "../Components/Layout/PageInnerLayout";
 
 const content = <div>We're gonna need a bigger boat.</div>;
 

@@ -2,23 +2,25 @@ import Link from "next/link";
 import Image from "next/image";
 import styled from "styled-components";
 import Head from "next/dist/shared/lib/head";
-import { device, deviceSize } from "../data/device";
+import { device, deviceSize } from "../../data/device";
 
 const FullBanner = styled("div")`
   width: 100%;
   background-color: orange;
-  /* position: sticky; */
   z-index: 2;
-  /* top: 0px; */
-
-  // top: -30px;
-  /* padding-top: 30px; */
 `;
 
 const Logo = styled("div")`
   height: 30px;
   width: 300px;
   background: hotpink;
+`;
+
+const LogoArea = styled("div")`
+  @media ${device.tablet} {
+    display: flex;
+    width: 100%;
+  }
 `;
 
 const SiteHeader = styled("div")`
@@ -63,30 +65,32 @@ export default function Header() {
       <FullBanner data-id="header-container">
         {/* <Logo /> */}
         <SiteHeader data-id="header-inner">
-          <Link as="/" href="/">
-            <Image
-              src="/img/logo/HQHlogo.svg"
-              alt="Home Queer Home - logo"
-              width={128}
-              height={128}
-            />
-          </Link>
-          <Link as="/" href="/">
-            <Image
-              src="/img/logo/HQHlogo.svg"
-              alt="Home Queer Home - logo"
-              width={128}
-              height={128}
-            />
-          </Link>
-          <Link as="/" href="/">
-            <Image
-              src="/img/logo/HQHlogo.svg"
-              alt="Home Queer Home - logo"
-              width={128}
-              height={128}
-            />
-          </Link>
+          <LogoArea>
+            <Link as="/" href="/">
+              <Image
+                src="/img/logo/HQHlogo.svg"
+                alt="Home Queer Home - logo"
+                width={128}
+                height={128}
+              />
+            </Link>
+            <Link as="/" href="/">
+              <Image
+                src="/img/logo/HQHlogo.svg"
+                alt="Home Queer Home - logo"
+                width={128}
+                height={128}
+              />
+            </Link>
+            <Link as="/" href="/">
+              <Image
+                src="/img/logo/HQHlogo.svg"
+                alt="Home Queer Home - logo"
+                width={128}
+                height={128}
+              />
+            </Link>
+          </LogoArea>
           <MainNavigation>
             <Link href="/">
               <MenuItem>comic</MenuItem>

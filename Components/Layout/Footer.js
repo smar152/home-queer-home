@@ -2,17 +2,12 @@ import Link from "next/link";
 import Image from "next/image";
 import styled from "styled-components";
 import Head from "next/dist/shared/lib/head";
-import { device, deviceSize } from "../data/device";
+import { device, deviceSize } from "../../data/device";
 
 const FullBanner = styled("div")`
   width: 100%;
   background-color: #bf3f1e;
   color: white;
-  /* position: sticky; */
-  /* z-index: 2; */
-  /* top: 0px; */
-  // top: -30px;
-  /* padding-top: 30px; */
 `;
 
 const Logo = styled("div")`

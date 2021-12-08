@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { device, deviceSize } from "../data/device";
+import { device, deviceSize } from "../../data/device";
 import Footer from "./Footer";
 import Header, { headerMinHeight } from "./Header";
 

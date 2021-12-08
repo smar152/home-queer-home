@@ -38,8 +38,12 @@ const StImgLink = styled("a")`
   display: block;
 `;
 
+const StPostContainer = styled("div")`
+  padding-top: 80px;
+  padding-bottom: 40px;
+`;
+
 const StPageDate = styled("div")`
-  margin-top: 80px;
   font-weight: 400;
   font-size: 14px;
   text-align: right;
@@ -47,7 +51,7 @@ const StPageDate = styled("div")`
 
 const StPageTite = styled("h2")``;
 
-const StPagePost = styled("div")``;
+const StPostContent = styled("div")``;
 
 const ComicPage = (props) => {
   const { page, error } = props;
@@ -115,14 +119,16 @@ const ComicPage = (props) => {
       </Link>
       {/* <BiggerNavigation previousChapterKey nextChapterKey /> */}
       {/* <ChapterTitle>{title}</ChapterTitle> */}
-      <StPageDate>
-        {dateObj.toLocaleDateString("en-UK", {
-          dateStyle: "long",
-        })}
-        <hr />
-      </StPageDate>
-      <StPageTite>{title}</StPageTite>
-      <StPagePost dangerouslySetInnerHTML={{ __html: blogPost }} />
+      <StPostContainer>
+        <StPageDate>
+          {dateObj.toLocaleDateString("en-UK", {
+            dateStyle: "long",
+          })}
+          <hr />
+        </StPageDate>
+        <StPageTite>{title}</StPageTite>
+        <StPostContent dangerouslySetInnerHTML={{ __html: blogPost }} />
+      </StPostContainer>
     </StComicPage>
   );
 };
