@@ -1,37 +1,30 @@
 import Link from "next/link";
-import Image from "next/image";
 import styled from "styled-components";
 import Head from "next/dist/shared/lib/head";
 import { device, deviceSize } from "../../data/device";
 
-const FullBanner = styled("div")`
+const SiteHeader = styled("div")`
+  display: flex;
+  flex-direction: column;
   width: 100%;
   background-color: orange;
-  z-index: 2;
-`;
-
-const Logo = styled("div")`
-  height: 30px;
-  width: 300px;
-  background: hotpink;
+  /* z-index: 2; */
+  justify-content: center;
+  margin: auto;
+  height: 100px;
+  @media ${device.tablet} {
+    flex-direction: row;
+    width: ${deviceSize.tablet};
+  }
 `;
 
 const LogoArea = styled("div")`
-  @media ${device.tablet} {
-    display: flex;
-    width: 100%;
-  }
-`;
-
-const SiteHeader = styled("div")`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: auto;
+  /* display: flex;
   height: 50px;
+  width: 100%;
   @media ${device.tablet} {
-    width: ${deviceSize.tablet};
-  }
+    width: 370px;
+  } */
 `;
 
 const MainNavigation = styled("nav")`
@@ -53,6 +46,15 @@ const MenuItem = styled("a")`
   text-decoration: none;
 `;
 
+const StImg = styled("img")`
+  flex: 1;
+  flex-basis: 0px;
+  height: 50px;
+  width: 100%;
+  @media ${device.tablet} {
+    width: 370px;
+  }
+`;
 export default function Header() {
   return (
     <>
@@ -62,54 +64,33 @@ export default function Header() {
           rel="stylesheet"
         />
       </Head>
-      <FullBanner data-id="header-container">
-        {/* <Logo /> */}
-        <SiteHeader data-id="header-inner">
-          <LogoArea>
-            <Link as="/" href="/">
-              <Image
-                src="/img/logo/HQHlogo.svg"
-                alt="Home Queer Home - logo"
-                width={128}
-                height={128}
-              />
-            </Link>
-            <Link as="/" href="/">
-              <Image
-                src="/img/logo/HQHlogo.svg"
-                alt="Home Queer Home - logo"
-                width={128}
-                height={128}
-              />
-            </Link>
-            <Link as="/" href="/">
-              <Image
-                src="/img/logo/HQHlogo.svg"
-                alt="Home Queer Home - logo"
-                width={128}
-                height={128}
-              />
-            </Link>
-          </LogoArea>
-          <MainNavigation>
-            <Link href="/">
-              <MenuItem>comic</MenuItem>
-            </Link>
-            <Link href="/archive">
-              <MenuItem>archive</MenuItem>
-            </Link>
-            <Link href="/new-readers">
-              <MenuItem>new readers</MenuItem>
-            </Link>
-            <Link href="/about">
-              <MenuItem>about</MenuItem>
-            </Link>
-            <MenuItem href="https://smar.gumroad.com/" target="_blank">
-              store
-            </MenuItem>
-          </MainNavigation>
-        </SiteHeader>
-      </FullBanner>
+      <SiteHeader data-id="header-container">
+        <LogoArea data-id="logo-container">
+          <Link as="/" href="/">
+            <StImg
+              src="/img/logo/TempBlankLogo.png"
+              alt="Home Queer Home - logo"
+            />
+          </Link>
+        </LogoArea>
+        <MainNavigation data-id="main-navigation">
+          <Link href="/">
+            <MenuItem>comic</MenuItem>
+          </Link>
+          <Link href="/archive">
+            <MenuItem>archive</MenuItem>
+          </Link>
+          <Link href="/new-readers">
+            <MenuItem>new readers</MenuItem>
+          </Link>
+          <Link href="/about">
+            <MenuItem>about</MenuItem>
+          </Link>
+          <MenuItem href="https://smar.gumroad.com/" target="_blank">
+            store
+          </MenuItem>
+        </MainNavigation>
+      </SiteHeader>
     </>
   );
 }

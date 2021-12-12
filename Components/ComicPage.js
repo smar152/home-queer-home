@@ -76,7 +76,7 @@ const ComicPage = (props) => {
             href={`/season/${previous.seasonNumber}/episode/${previous.episodeNumber}/page/${previous.pageNumber}`}
           >
             <a>
-              <strong>{"<"} previous page</strong>
+              <strong>{"<"}</strong>
             </a>
           </Link>
           {/* {previousPageKey ? previousPageKey : "No Previous"} */}
@@ -89,7 +89,7 @@ const ComicPage = (props) => {
             href={`/season/${next.seasonNumber}/episode/${next.episodeNumber}/page/${next.pageNumber}`}
           >
             <a>
-              <strong>next page {">"}</strong>
+              <strong>{">"}</strong>
             </a>
           </Link>
         </div>
