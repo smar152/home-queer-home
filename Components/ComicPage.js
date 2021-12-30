@@ -28,10 +28,12 @@ const StPageImages = styled("div")`
   justify-content: center;
 `;
 const StImageContainer = styled("div")`
+  padding-top: 40px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 `;
 const StImg = styled("img")`
   width: 100%;
+  cursor: pointer;
 `;
 
 const StImgLink = styled("a")`
@@ -119,7 +121,7 @@ const ComicPage = (props) => {
       </Link>
       {/* <BiggerNavigation previousChapterKey nextChapterKey /> */}
       {/* <ChapterTitle>{title}</ChapterTitle> */}
-      <StPostContainer>
+      <StPostContainer data-id="post-container">
         <StPageDate>
           {dateObj.toLocaleDateString("en-UK", {
             dateStyle: "long",

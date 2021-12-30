@@ -9,12 +9,15 @@ const SiteHeader = styled("div")`
   width: 100%;
   background-color: orange;
   /* z-index: 2; */
-  justify-content: center;
+  justify-content: space-between;
   margin: auto;
   height: 100px;
   @media ${device.tablet} {
     flex-direction: row;
     width: ${deviceSize.tablet};
+  }
+  @media ${device.laptop} {
+    width: 100%;
   }
 `;
 
@@ -37,7 +40,9 @@ const MainNavigation = styled("nav")`
   justify-content: space-between;
   align-items: center;
 
-  /* text-transform: uppercase; */
+  @media ${device.laptop} {
+    max-width: 30%;
+  }
 `;
 
 const MenuItem = styled("a")`
@@ -68,7 +73,7 @@ export default function Header() {
         <LogoArea data-id="logo-container">
           <Link as="/" href="/">
             <StImg
-              src="/img/logo/TempBlankLogo.png"
+              src="/img/logo/HQHlogo-01.svg"
               alt="Home Queer Home - logo"
             />
           </Link>

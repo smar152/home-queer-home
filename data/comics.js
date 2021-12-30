@@ -433,7 +433,7 @@ const comics = [
             date: "2017-12-13",
             images: [
               {
-                url: "/img/pages/page0.jpg",
+                url: "/img/pages/page013.jpg",
                 alt: "The life changing magic of judging reality show contestants to feel better about yourself",
               },
             ],
