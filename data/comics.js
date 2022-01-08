@@ -1129,18 +1129,485 @@ const comics = [
         name: "Episode 1",
         pages: [
           {
-            title: "",
-            alt: "",
-            date: "2018-",
+            title: "Season 02 Page 01",
+            alt: "Maybe when I get another art level up, I will start remembering that people carry backpacks/handbags too, when they're on the outside world.",
+            date: "2018-09-05",
             images: [
               {
-                url: "/img/pages/page0.jpg",
+                url: "/img/pages/page032.jpg",
+                alt: "Maybe when I get another art level up, I will start remembering that people carry backpacks/handbags too, when they're on the outside world.",
+              },
+            ],
+            hoverTitle:
+              "Maybe when I get another art level up, I will start remembering that people carry backpacks/handbags too, when they're on the outside world.",
+            blogPost: `
+            <div>
+            <p>Yay, Season 2 starts today!<br>
+            (You can totally start from here even if you haven’t read a single page so far.)</p>
+            <p>It feels like a new start. As you can see we have a different page format in this season, hopefully the art and writing are better, and there are no episode divisions.</p>
+            <p>I’m glad I took a break from weekly deadlines. It did give me some perspective and time to work on this season in advance (no, I have no idea how to take actual breaks). I’ve outlined 40 strips and I’m so excited to start sharing them with you! </p>
+            <p>Remember to follow me on mostly instagram but other places too, where I share updates, sketches, other art and stuff related or not to this specific comic.</p>
+            <p>Thanks for reading! ❤</p>
+            <p><a href="https://www.instagram.com/smarmakescomics/" rel="noopener" target="_blank">Instagram</a> | <a href="https://twitter.com/SmarMakesComics" rel="noopener" target="_blank">Twitter</a> | <a href="https://www.facebook.com/smarMakesComics/" rel="noopener" target="_blank">Facebook</a> | <a href="http://smarmakescomics.tumblr.com/" rel="noopener" target="_blank">Tumblr</a> | <a href="https://www.etsy.com/shop/SmarMakesComics" rel="noopener" target="_blank">Etsy Shop</a> | <a href="https://gumroad.com/smar" rel="noopener" target="_blank">Gumroad</a> | <a href="https://www.patreon.com/smar" rel="noopener" target="_blank">Patreon</a></p>
+            <p>PS: I lowered the Gumroad prices – you can get now every comic I’ve self published for €0.99 each!</p></div>
+              `,
+          },
+          {
+            title: "Season 02 Page 02",
+            alt: "I clearly don't know what dragons look like.",
+            date: "2018-09-12",
+            images: [
+              {
+                url: "/img/pages/page033.jpg",
+                alt: "I clearly don't know what dragons look like.",
+              },
+            ],
+            hoverTitle: "I clearly don't know what dragons look like.",
+            blogPost: `
+            <div>
+              <p>Sometimes I’m just so happy with the pun titles my head comes up with?</p>
+              <p><a href="https://www.instagram.com/smarmakescomics/" rel="noopener" target="_blank">Instagram</a> | <a href="https://twitter.com/SmarMakesComics" rel="noopener" target="_blank">Twitter</a> | <a href="https://www.facebook.com/smarMakesComics/" rel="noopener" target="_blank">Facebook</a> | <a href="http://smarmakescomics.tumblr.com/" rel="noopener" target="_blank">Tumblr</a> | <a href="https://www.etsy.com/shop/SmarMakesComics" rel="noopener" target="_blank">Etsy Shop</a> | <a href="https://gumroad.com/smar" rel="noopener" target="_blank">Gumroad</a> | <a href="https://www.patreon.com/smar" rel="noopener" target="_blank">Patreon</a></p>
+            </div>
+              `,
+          },
+          {
+            title: "Season 02 Page 03",
+            alt: "is it accidental that everyone's hair is up and I started drawing season 2 in August?",
+            date: "2018-09-19",
+            images: [
+              {
+                url: "/img/pages/page034.jpg",
+                alt: "is it accidental that everyone's hair is up and I started drawing season 2 in August?",
+              },
+            ],
+            hoverTitle:
+              "is it accidental that everyone's hair is up and I started drawing season 2 in August?",
+            blogPost: `
+            <div><p>– Yay, managed to make a page despite the construction work happening outside my appartment this week and the stupid cold I managed to catch for some reason.<br>
+            – I’m also preparing an <strong>autobio strip for <a href="https://www.patreon.com/smar" rel="noopener" target="_blank">Patreon</a></strong>! I’m thankful to the people who decided to support me and I’m looking forward to doing more!</p>
+            <p><strong>Greece-related news:</strong><br>
+            – I will be at the <a href="https://www.facebook.com/events/934212480096609/" rel="noopener" target="_blank">Applied Arts Festival</a> next weekend!<br>
+            – 5 years later, I left issues of my comics in <a href="https://www.facebook.com/starcomics.gr/" rel="noopener" target="_blank">Star Comics</a> in Agia Paraskevi</p>
+            <p><a href="https://www.instagram.com/smarmakescomics/" rel="noopener" target="_blank">Instagram</a> | <a href="https://twitter.com/SmarMakesComics" rel="noopener" target="_blank">Twitter</a> | <a href="https://www.facebook.com/smarMakesComics/" rel="noopener" target="_blank">Facebook</a> | <a href="http://smarmakescomics.tumblr.com/" rel="noopener" target="_blank">Tumblr</a> | <a href="https://www.etsy.com/shop/SmarMakesComics" rel="noopener" target="_blank">Etsy Shop</a> | <a href="https://gumroad.com/smar" rel="noopener" target="_blank">Gumroad</a> | <a href="https://www.patreon.com/smar" rel="noopener" target="_blank">Patreon</a></p>               
+            </div>
+              `,
+          },
+          {
+            title: "Season 02 Page 04",
+            alt: "Sophia has already deleted that series from her watch list",
+            date: "2018-10-05",
+            images: [
+              {
+                url: "/img/pages/page035.jpg",
+                alt: "Sophia has already deleted that series from her watch list",
+              },
+            ],
+            hoverTitle:
+              "Sophia has already deleted that series from her watch list",
+            blogPost: `
+            <div>
+            <p>Not exactly in time this week either, but I’m trying to catch up.</p>
+            </div>
+              `,
+          },
+          {
+            title: "Season 02 Page 05",
+            alt: "My style(TM) is forgetting to draw chairs or red velvet cakes in subsequent panels.",
+            date: "2018-10-17",
+            images: [
+              {
+                url: "/img/pages/page036.jpg",
+                alt: "My style(TM) is forgetting to draw chairs or red velvet cakes in subsequent panels.",
+              },
+            ],
+            hoverTitle:
+              "My style(TM) is forgetting to draw chairs or red velvet cakes in subsequent panels.",
+            blogPost: `
+            <div><p>I’m officially 2 weeks behind but hey, it’s Wednesday and there’s an update! I’ll catch up eventually 🙂</p>
+            <p>The person appearing on the 6th panel is my patron MC! Thank you for the support ♡<br>
+            You can also appear on a future strip if you back my <a href="https://www.patreon.com/smar" rel="noopener" target="_blank">Patreon</a>!</p>
+            <p>I’m doing inktober but only if I have time / feel like it, so I’ve donw 3 so far. I really like how it’s going though! I’ve managed to let go of the guilt of having to do it every day and focus on making things I like instead. I’m looking forward to more of these in the coming days.</p>
+            <p>See you next week!</p>
+            <p><a href="https://www.instagram.com/smarmakescomics/" rel="noopener" target="_blank">Instagram</a> | <a href="https://twitter.com/SmarMakesComics" rel="noopener" target="_blank">Twitter</a> | <a href="https://www.facebook.com/smarMakesComics/" rel="noopener" target="_blank">Facebook</a> | <a href="http://smarmakescomics.tumblr.com/" rel="noopener" target="_blank">Tumblr</a> | <a href="https://www.etsy.com/shop/SmarMakesComics" rel="noopener" target="_blank">Etsy Shop</a> | <a href="https://gumroad.com/smar" rel="noopener" target="_blank">Gumroad</a> | <a href="https://www.patreon.com/smar" rel="noopener" target="_blank">Patreon</a></p>               
+            </div>
+              `,
+          },
+          {
+            title: "Season 02 Page 06",
+            alt: "Pro tip: Make yourself draw all the food right before lunch. And then get to the inking right before dinner.",
+            date: "2018-10-31",
+            images: [
+              {
+                url: "/img/pages/page037.jpg",
+                alt: "Pro tip: Make yourself draw all the food right before lunch. And then get to the inking right before dinner.",
+              },
+            ],
+            hoverTitle:
+              "Pro tip: Make yourself draw all the food right before lunch. And then get to the inking right before dinner.",
+            blogPost: `
+            <div>
+            <p>Got a new tablet and this is the first comic page I’ve sketched/inked using it. It takes some getting used to.</p>
+<p>Schedule watch: Life things have happened and I’m 3 updates behind. But I’m catching up! I’m posting another strip today, stay tuned.</p>
+<p><a href="https://www.instagram.com/smarmakescomics/" rel="noopener" target="_blank">Instagram</a> | <a href="https://twitter.com/SmarMakesComics" rel="noopener" target="_blank">Twitter</a> | <a href="https://www.facebook.com/smarMakesComics/" rel="noopener" target="_blank">Facebook</a> | <a href="http://smarmakescomics.tumblr.com/" rel="noopener" target="_blank">Tumblr</a> | <a href="https://www.etsy.com/shop/SmarMakesComics" rel="noopener" target="_blank">Etsy Shop</a> | <a href="https://gumroad.com/smar" rel="noopener" target="_blank">Gumroad</a> | <a href="https://www.patreon.com/smar" rel="noopener" target="_blank">Patreon</a></p>
+            </div>
+              `,
+          },
+          {
+            title: "Season 02 Page 07",
+            alt: "No pressure, actually nevermind, forget I ever existed.",
+            date: "2018-10-31",
+            images: [
+              {
+                url: "/img/pages/page038.jpg",
+                alt: "No pressure, actually nevermind, forget I ever existed.",
+              },
+            ],
+            hoverTitle:
+              "No pressure, actually nevermind, forget I ever existed.",
+            blogPost: `
+            <div>
+            <p>Happy Halloween!<br>
+Not really a scary update but an anxious one for sure.<br>
+For a more Halloweeny story, check out <a href="https://www.instagram.com/silenostar/" rel="noopener" target="_blank">Silena</a>‘s Inktober illustrations! She made the latest one while I was working on today’s updates :3</p>
+<p>Today was double update day! I’m happy to be catching up. Make sure you didn’t miss <a href="http://www.homequeerhome.com/comic/s02p06/" rel="noopener" target="_blank">the previous strip</a>.</p>
+<p><a href="https://www.instagram.com/smarmakescomics/" rel="noopener" target="_blank">Instagram</a> | <a href="https://twitter.com/SmarMakesComics" rel="noopener" target="_blank">Twitter</a> | <a href="https://www.facebook.com/smarMakesComics/" rel="noopener" target="_blank">Facebook</a> | <a href="http://smarmakescomics.tumblr.com/" rel="noopener" target="_blank">Tumblr</a> | <a href="https://www.etsy.com/shop/SmarMakesComics" rel="noopener" target="_blank">Etsy Shop</a> | <a href="https://gumroad.com/smar" rel="noopener" target="_blank">Gumroad</a> | <a href="https://www.patreon.com/smar" rel="noopener" target="_blank">Patreon</a></p>
+            </div>
+              `,
+          },
+          {
+            title: "Season 02 Page 08",
+            alt: "",
+            date: "2018-0-0",
+            images: [
+              {
+                url: "/img/pages/page039.jpg",
                 alt: "",
               },
             ],
             hoverTitle: "",
             blogPost: `
-            <div></div>
+            <div>
+            </div>
+              `,
+          },
+          {
+            title: "Season 02 Page 09",
+            alt: "",
+            date: "2018-0-0",
+            images: [
+              {
+                url: "/img/pages/page040.jpg",
+                alt: "",
+              },
+            ],
+            hoverTitle: "",
+            blogPost: `
+            <div>
+            </div>
+              `,
+          },
+          {
+            title: "Season 02 Page 10",
+            alt: "",
+            date: "2018-0-0",
+            images: [
+              {
+                url: "/img/pages/page041.jpg",
+                alt: "",
+              },
+            ],
+            hoverTitle: "",
+            blogPost: `
+            <div>
+            </div>
+              `,
+          },
+          {
+            title: "Season 02 Page 11",
+            alt: "",
+            date: "2018-0-0",
+            images: [
+              {
+                url: "/img/pages/page042.jpg",
+                alt: "",
+              },
+            ],
+            hoverTitle: "",
+            blogPost: `
+            <div>
+            </div>
+              `,
+          },
+          {
+            title: "Season 02 Page 12",
+            alt: "",
+            date: "2018-0-0",
+            images: [
+              {
+                url: "/img/pages/page043.jpg",
+                alt: "",
+              },
+            ],
+            hoverTitle: "",
+            blogPost: `
+            <div>
+            </div>
+              `,
+          },
+          {
+            title: "Season 02 Page 13",
+            alt: "",
+            date: "2018-0-0",
+            images: [
+              {
+                url: "/img/pages/page044.jpg",
+                alt: "",
+              },
+            ],
+            hoverTitle: "",
+            blogPost: `
+            <div>
+            </div>
+              `,
+          },
+          {
+            title: "Season 02 Page 14",
+            alt: "",
+            date: "2018-0-0",
+            images: [
+              {
+                url: "/img/pages/page045.jpg",
+                alt: "",
+              },
+            ],
+            hoverTitle: "",
+            blogPost: `
+            <div>
+            </div>
+              `,
+          },
+          {
+            title: "Season 02 Page 15",
+            alt: "",
+            date: "2018-0-0",
+            images: [
+              {
+                url: "/img/pages/page046.jpg",
+                alt: "",
+              },
+            ],
+            hoverTitle: "",
+            blogPost: `
+            <div>
+            </div>
+              `,
+          },
+          {
+            title: "Season 02 Page 16",
+            alt: "",
+            date: "2018-0-0",
+            images: [
+              {
+                url: "/img/pages/page047.jpg",
+                alt: "",
+              },
+            ],
+            hoverTitle: "",
+            blogPost: `
+            <div>
+            </div>
+              `,
+          },
+          {
+            title: "Season 02 Page 17",
+            alt: "",
+            date: "2018-0-0",
+            images: [
+              {
+                url: "/img/pages/page048.jpg",
+                alt: "",
+              },
+            ],
+            hoverTitle: "",
+            blogPost: `
+            <div>
+            </div>
+              `,
+          },
+          {
+            title: "Season 02 Page 18",
+            alt: "",
+            date: "2018-0-0",
+            images: [
+              {
+                url: "/img/pages/page049.jpg",
+                alt: "",
+              },
+            ],
+            hoverTitle: "",
+            blogPost: `
+            <div>
+            </div>
+              `,
+          },
+          {
+            title: "Season 02 Page 19",
+            alt: "",
+            date: "2018-0-0",
+            images: [
+              {
+                url: "/img/pages/page050.jpg",
+                alt: "",
+              },
+            ],
+            hoverTitle: "",
+            blogPost: `
+            <div>
+            </div>
+              `,
+          },
+          {
+            title: "Season 02 Page 20",
+            alt: "",
+            date: "2018-0-0",
+            images: [
+              {
+                url: "/img/pages/page051.jpg",
+                alt: "",
+              },
+            ],
+            hoverTitle: "",
+            blogPost: `
+            <div>
+            </div>
+              `,
+          },
+          {
+            title: "Season 02 Page 21",
+            alt: "",
+            date: "2018-0-0",
+            images: [
+              {
+                url: "/img/pages/page052.jpg",
+                alt: "",
+              },
+            ],
+            hoverTitle: "",
+            blogPost: `
+            <div>
+            </div>
+              `,
+          },
+          {
+            title: "Season 02 Page 22",
+            alt: "",
+            date: "2018-0-0",
+            images: [
+              {
+                url: "/img/pages/page053.jpg",
+                alt: "",
+              },
+            ],
+            hoverTitle: "",
+            blogPost: `
+            <div>
+            </div>
+              `,
+          },
+          {
+            title: "Season 02 Page 23",
+            alt: "",
+            date: "2018-0-0",
+            images: [
+              {
+                url: "/img/pages/page054.jpg",
+                alt: "",
+              },
+            ],
+            hoverTitle: "",
+            blogPost: `
+            <div>
+            </div>
+              `,
+          },
+          {
+            title: "Season 02 Page 24",
+            alt: "",
+            date: "2018-0-0",
+            images: [
+              {
+                url: "/img/pages/page055.jpg",
+                alt: "",
+              },
+            ],
+            hoverTitle: "",
+            blogPost: `
+            <div>
+            </div>
+              `,
+          },
+          {
+            title: "Season 02 Page 25",
+            alt: "",
+            date: "2018-0-0",
+            images: [
+              {
+                url: "/img/pages/page056.jpg",
+                alt: "",
+              },
+            ],
+            hoverTitle: "",
+            blogPost: `
+            <div>
+            </div>
+              `,
+          },
+          {
+            title: "Season 02 Page 26",
+            alt: "",
+            date: "2018-0-0",
+            images: [
+              {
+                url: "/img/pages/page057.jpg",
+                alt: "",
+              },
+            ],
+            hoverTitle: "",
+            blogPost: `
+            <div>
+            </div>
+              `,
+          },
+          {
+            title: "Season 02 Page 27",
+            alt: "",
+            date: "2018-0-0",
+            images: [
+              {
+                url: "/img/pages/page058.jpg",
+                alt: "",
+              },
+            ],
+            hoverTitle: "",
+            blogPost: `
+            <div>
+            </div>
+              `,
+          },
+          {
+            title: "Season 02 Page 28",
+            alt: "",
+            date: "2018-0-0",
+            images: [
+              {
+                url: "/img/pages/page059.jpg",
+                alt: "",
+              },
+            ],
+            hoverTitle: "",
+            blogPost: `
+            <div>
+            </div>
               `,
           },
         ],
