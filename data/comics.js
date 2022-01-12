@@ -1276,337 +1276,399 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
           },
           {
             title: "Season 02 Page 08",
-            alt: "",
-            date: "2018-0-0",
+            alt: "Season 02 Page 08",
+            date: "2018-11-07",
             images: [
               {
                 url: "/img/pages/page039.jpg",
-                alt: "",
+                alt: "Season 02 Page 08",
               },
             ],
-            hoverTitle: "",
+            hoverTitle: "Season 02 Page 08",
             blogPost: `
-            <div>
-            </div>
+            <div><p>Nothing much to report this week. I painted <a href="http://smarmakescomics.tumblr.com/post/179836016827/when-you-have-enough-time-to-practice-painting" rel="noopener" target="_blank">a couch</a> yesterday. Excited to do more painting!</p>
+            <p><a href="https://www.instagram.com/smarmakescomics/" rel="noopener" target="_blank">Instagram</a> | <a href="https://twitter.com/SmarMakesComics" rel="noopener" target="_blank">Twitter</a> | <a href="https://www.facebook.com/smarMakesComics/" rel="noopener" target="_blank">Facebook</a> | <a href="http://smarmakescomics.tumblr.com/" rel="noopener" target="_blank">Tumblr</a> | <a href="https://www.etsy.com/shop/SmarMakesComics" rel="noopener" target="_blank">Etsy Shop</a> | <a href="https://gumroad.com/smar" rel="noopener" target="_blank">Gumroad</a> | <a href="https://www.patreon.com/smar" rel="noopener" target="_blank">Patreon</a></p>
               `,
           },
           {
             title: "Season 02 Page 09",
-            alt: "",
-            date: "2018-0-0",
+            alt: "I almoat forgot Rita's glasses for a panel, remembered them in the coloring stage.",
+            date: "2018-11-18",
             images: [
               {
                 url: "/img/pages/page040.jpg",
-                alt: "",
+                alt: "I almoat forgot Rita's glasses for a panel, remembered them in the coloring stage.",
               },
             ],
-            hoverTitle: "",
+            hoverTitle:
+              "I almoat forgot Rita's glasses for a panel, remembered them in the coloring stage.",
             blogPost: `
-            <div>
+            <div><p>Not too happy with how this page looks but ok</p>
+            <p>Other news:<strong> I’ve started making daily diary comics!</strong><br>
+            Reading other people’s autobio comics has always been inspiring for me and I just decided to start on a random day and see how it goes. Well, it’s been a week and a day and I’m still very much into it! Not making the greatest art – actually I’m doing the simplest sketches, so it can be sustainable. But it relaxes me more than I thought it would and leaves me in the mood to make more art. I hope you’ll like them too!<br>
+            More info later today, stay tuned 🙂</p>
+            <p><a href="https://www.instagram.com/smarmakescomics/" rel="noopener" target="_blank">Instagram</a> | <a href="https://twitter.com/SmarMakesComics" rel="noopener" target="_blank">Twitter</a> | <a href="https://www.facebook.com/smarMakesComics/" rel="noopener" target="_blank">Facebook</a> | <a href="http://smarmakescomics.tumblr.com/" rel="noopener" target="_blank">Tumblr</a> | <a href="https://www.etsy.com/shop/SmarMakesComics" rel="noopener" target="_blank">Etsy Shop</a> | <a href="https://gumroad.com/smar" rel="noopener" target="_blank">Gumroad</a> | <a href="https://www.patreon.com/smar" rel="noopener" target="_blank">Patreon</a></p>
             </div>
               `,
           },
           {
             title: "Season 02 Page 10",
-            alt: "",
-            date: "2018-0-0",
+            alt: "when your crush is casually being adorable",
+            date: "2018-11-29",
             images: [
               {
                 url: "/img/pages/page041.jpg",
-                alt: "",
+                alt: "when your crush is casually being adorable",
               },
             ],
-            hoverTitle: "",
+            hoverTitle: "when your crush is casually being adorable",
             blogPost: `
-            <div>
+            <div><p>I’m catching up, check back tomorrow for an extra update!</p>
+            <p>Speaking of more comics, I’ve started making autobio ones, daily! I’ll be posting one per week on social media and all 5 of them on Patreon every week. You can see the first week <a href="https://www.patreon.com/posts/autobio-comics-22937483" rel="noopener" target="_blank">here</a>. The second one has already been posted for $2 patrons and I’ll be posting a third one tomorrow! I hope you’ll enjoy my experiments in diary comics and you’ll make my day if you decide to support them! ❤</p>
+            <p><a href="https://www.instagram.com/smarmakescomics/" rel="noopener" target="_blank">Instagram</a> | <a href="https://twitter.com/SmarMakesComics" rel="noopener" target="_blank">Twitter</a> | <a href="https://www.facebook.com/smarMakesComics/" rel="noopener" target="_blank">Facebook</a> | <a href="http://smarmakescomics.tumblr.com/" rel="noopener" target="_blank">Tumblr</a> | <a href="https://www.etsy.com/shop/SmarMakesComics" rel="noopener" target="_blank">Etsy Shop</a> | <a href="https://gumroad.com/smar" rel="noopener" target="_blank">Gumroad</a> | <a href="https://www.patreon.com/smar" rel="noopener" target="_blank">Patreon</a></p>
             </div>
               `,
           },
           {
             title: "Season 02 Page 11",
-            alt: "",
-            date: "2018-0-0",
+            alt: "sure yeah me too",
+            date: "2018-11-30",
             images: [
               {
                 url: "/img/pages/page042.jpg",
-                alt: "",
+                alt: "sure yeah me too",
               },
             ],
-            hoverTitle: "",
+            hoverTitle: "sure yeah me too",
             blogPost: `
-            <div>
+            <div><p>Part 2 of a double update for this week!</p>
+            <p>Just posted the <a href="https://www.patreon.com/posts/23024921" rel="noopener" target="_blank">3rd week</a> of daily autobio comics, too! You can subscribe for 2$ a month and get weekly updates <a href="https://www.patreon.com/posts/autobio-comics-22937483" rel="noopener" target="_blank">like this one</a>.</p>
+            <p><a href="https://www.instagram.com/smarmakescomics/" rel="noopener" target="_blank">Instagram</a> | <a href="https://twitter.com/SmarMakesComics" rel="noopener" target="_blank">Twitter</a> | <a href="https://www.facebook.com/smarMakesComics/" rel="noopener" target="_blank">Facebook</a> | <a href="http://smarmakescomics.tumblr.com/" rel="noopener" target="_blank">Tumblr</a> | <a href="https://www.etsy.com/shop/SmarMakesComics" rel="noopener" target="_blank">Etsy Shop</a> | <a href="https://gumroad.com/smar" rel="noopener" target="_blank">Gumroad</a> | <a href="https://www.patreon.com/smar" rel="noopener" target="_blank"><strong>Patreon</strong></a></p>
             </div>
               `,
           },
           {
             title: "Season 02 Page 12",
-            alt: "",
-            date: "2018-0-0",
+            alt: "if you ever do design a site based on a feeling, let me know.",
+            date: "2018-12-05",
             images: [
               {
                 url: "/img/pages/page043.jpg",
-                alt: "",
+                alt: "if you ever do design a site based on a feeling, let me know.",
               },
             ],
-            hoverTitle: "",
+            hoverTitle:
+              "if you ever do design a site based on a feeling, let me know.",
             blogPost: `
-            <div>
+            <div><p>So in this page I have finally done what everyone keeps asking me when they hear I’m a computer science student and I make comics: “maybe you could combine the two?”</p>
+            <p>It’s December, which means you might be looking for gift ideas, and I think <a href="https://www.etsy.com/shop/smarmakescomics" rel="noopener" target="_blank">funny comics about lesbians</a> could make some of your friends happy. Take a look at my <a href="https://www.etsy.com/shop/smarmakescomics" rel="noopener" target="_blank">Etsy shop</a>? All my comics are also available as pdfs – I recently finally made the 3rd issue of OMG Lesbians available! Check them all out <a href="https://gumroad.com/smar" rel="noopener" target="_blank">here</a>.</p>
+            <p>I really hope to make another update this week to catch up, we’ll see how that goes! Check back on Friday.</p>
+            <p><a href="https://www.instagram.com/smarmakescomics/" rel="noopener" target="_blank">Instagram</a> | <a href="https://twitter.com/SmarMakesComics" rel="noopener" target="_blank">Twitter</a> | <a href="https://www.facebook.com/smarMakesComics/" rel="noopener" target="_blank">Facebook</a> | <a href="http://smarmakescomics.tumblr.com/" rel="noopener" target="_blank">Tumblr</a> | <a href="https://www.etsy.com/shop/SmarMakesComics" rel="noopener" target="_blank">Etsy Shop</a> | <a href="https://gumroad.com/smar" rel="noopener" target="_blank">Gumroad</a> | <a href="https://www.patreon.com/smar" rel="noopener" target="_blank"><strong>Patreon</strong></a></p>
             </div>
               `,
           },
           {
             title: "Season 02 Page 13",
-            alt: "",
-            date: "2018-0-0",
+            alt: "Smar from the future here: I lost this page's post in the website move! Woops.",
+            date: "2018-12-13",
             images: [
               {
                 url: "/img/pages/page044.jpg",
-                alt: "",
+                alt: "Smar from the future here: I lost this page's post in the website move! Woops.",
               },
             ],
-            hoverTitle: "",
+            hoverTitle:
+              "Smar from the future here: I lost this page's post in the website move! Woops.",
             blogPost: `
             <div>
+            <p>Smar from the future here: I lost this page's post in the website move! Woops.</p>
+            <p><a href="https://www.instagram.com/smarmakescomics/" rel="noopener" target="_blank">Instagram</a> | <a href="https://twitter.com/SmarMakesComics" rel="noopener" target="_blank">Twitter</a> | <a href="https://www.facebook.com/smarMakesComics/" rel="noopener" target="_blank">Facebook</a> | <a href="http://smarmakescomics.tumblr.com/" rel="noopener" target="_blank">Tumblr</a> | <a href="https://www.etsy.com/shop/SmarMakesComics" rel="noopener" target="_blank">Etsy Shop</a> | <a href="https://gumroad.com/smar" rel="noopener" target="_blank">Gumroad</a> | <a href="https://www.patreon.com/smar" rel="noopener" target="_blank"><strong>Patreon</strong></a></p>
+            
             </div>
               `,
           },
           {
             title: "Season 02 Page 14",
-            alt: "",
-            date: "2018-0-0",
+            alt: "The thing that annoys me most about this page is that there's no graffiti/tags all over that building, to make it more Athens-y.",
+            date: "2018-12-21",
             images: [
               {
                 url: "/img/pages/page045.jpg",
-                alt: "",
+                alt: "The thing that annoys me most about this page is that there's no graffiti/tags all over that building, to make it more Athens-y.",
               },
             ],
-            hoverTitle: "",
+            hoverTitle:
+              "The thing that annoys me most about this page is that there's no graffiti/tags all over that building, to make it more Athens-y.",
             blogPost: `
-            <div>
+            <div><p>So this is officially the last 2018 update! I really tried to catch up, but I’m still 2 updates behind and honestly, I see no way of catching up now. I meant to be a good self boss and give myself <del>time to work on other projects</del>&nbsp;actual holidays from this comic, for 2 weeks so that’s what I’ll do. <a href="https://www.facebook.com/events/262838724390503/" target="_blank" rel="noopener">Come say hi tomorrow</a> if you’re in Athens, otherwise see you next year!&nbsp;I’ll still be around social media and doing (almost) daily autobio comics (new post is almost posted on Patreon). I’m working on the December rewards too, which actually helped me get the OMG Lesbians #4 translation going! Stay tuned for that too.</p>
+            <p>Thankfully Patreon supporters (like the one you see pictured on Panel 1) want to see themselves in the comic, otherwise I’d forget that people who are not the protagonists or their friends / love interests exist in this Athens place! You can see your face as the story unfolds by <a href="https://www.patreon.com/smar" target="_blank" rel="noopener">supporting me on Patreon too 🙂</a></p>
+            <p><a href="https://www.instagram.com/smarmakescomics/" target="_blank" rel="noopener">Instagram</a> | <a href="https://twitter.com/SmarMakesComics" target="_blank" rel="noopener">Twitter</a> | <a href="https://www.facebook.com/smarMakesComics/" target="_blank" rel="noopener">Facebook</a> |&nbsp;<a href="https://www.etsy.com/shop/SmarMakesComics" target="_blank" rel="noopener">Etsy Shop</a> | <a href="https://gumroad.com/smar" target="_blank" rel="noopener">Gumroad</a> | <a href="https://www.patreon.com/smar" target="_blank" rel="noopener"><strong>Patreon</strong></a></p>
             </div>
               `,
           },
           {
             title: "Season 02 Page 15",
-            alt: "",
-            date: "2018-0-0",
+            alt: "oh no...",
+            date: "2019-01-09",
             images: [
               {
                 url: "/img/pages/page046.jpg",
-                alt: "",
+                alt: "oh no...",
               },
             ],
-            hoverTitle: "",
+            hoverTitle: "oh no...",
             blogPost: `
-            <div>
+            <div><p>Happy New Year everyone!</p>
+            <p><a href="https://www.instagram.com/smarmakescomics/" target="_blank" rel="noopener">Instagram</a> | <a href="https://twitter.com/SmarMakesComics" target="_blank" rel="noopener">Twitter</a> | <a href="https://www.facebook.com/smarMakesComics/" target="_blank" rel="noopener">Facebook</a> |&nbsp;<a href="https://www.etsy.com/shop/SmarMakesComics" target="_blank" rel="noopener">Etsy Shop</a> | <a href="https://gumroad.com/smar" target="_blank" rel="noopener">Gumroad</a> | <a href="https://www.patreon.com/smar" target="_blank" rel="noopener"><strong>Patreon</strong></a></p>
             </div>
               `,
           },
           {
             title: "Season 02 Page 16",
-            alt: "",
-            date: "2018-0-0",
+            alt: "*glass shattering*",
+            date: "2019-01-16",
             images: [
               {
                 url: "/img/pages/page047.jpg",
-                alt: "",
+                alt: "*glass shattering*",
               },
             ],
-            hoverTitle: "",
+            hoverTitle: "*glass shattering*",
             blogPost: `
             <div>
+            <p>Happy Wednesday!</p>
+<p>Still in holiday spirit since I was 2 updates behind, and I actually made a change* and now we’re 3 updates behind! See you next Wednesday for the last strip of 2018 :’D</p>
+<p>See the back of the same <a href="https://www.patreon.com/smar">Patreon</a> supporter we met 2 strips ago. He’s friends with Gina apparently!</p>
+<p>(* Someone had planned a strip with 9 panels. Why! So I broke it up in 2 strips to make it more reasonable.)</p>
+<p><a href="https://www.instagram.com/smarmakescomics/" target="_blank" rel="noopener">Instagram</a> | <a href="https://twitter.com/SmarMakesComics" target="_blank" rel="noopener">Twitter</a> | <a href="https://www.facebook.com/smarMakesComics/" target="_blank" rel="noopener">Facebook</a> |&nbsp;<a href="https://www.etsy.com/shop/SmarMakesComics" target="_blank" rel="noopener">Etsy Shop</a> | <a href="https://gumroad.com/smar" target="_blank" rel="noopener">Gumroad</a> | <a href="https://www.patreon.com/smar" target="_blank" rel="noopener"><strong>Patreon</strong></a></p>
             </div>
               `,
           },
           {
             title: "Season 02 Page 17",
-            alt: "",
-            date: "2018-0-0",
+            alt: "oh no",
+            date: "2019-01-23",
             images: [
               {
                 url: "/img/pages/page048.jpg",
-                alt: "",
+                alt: "oh no",
               },
             ],
-            hoverTitle: "",
+            hoverTitle: "oh no",
             blogPost: `
             <div>
+            <p>So this was supposed to be the last page of 2018. Not quite caught up yet, but at least we’re done with last year’s pages!</p>
+<p>I tried a new thing with the inking but I don’t think I’ll be keeping it up. It made coloring more complicated and don’t really think it added much to the comic.</p>
+<p><a href="https://www.instagram.com/smarmakescomics/" target="_blank" rel="noopener">Instagram</a> | <a href="https://twitter.com/SmarMakesComics" target="_blank" rel="noopener">Twitter</a> | <a href="https://www.facebook.com/smarMakesComics/" target="_blank" rel="noopener">Facebook</a> |&nbsp;<a href="https://www.etsy.com/shop/SmarMakesComics" target="_blank" rel="noopener">Etsy Shop</a> | <a href="https://gumroad.com/smar" target="_blank" rel="noopener">Gumroad</a> | <a href="https://www.patreon.com/smar" target="_blank" rel="noopener"><strong>Patreon</strong></a></p>
             </div>
               `,
           },
           {
             title: "Season 02 Page 18",
-            alt: "",
-            date: "2018-0-0",
+            alt: "who knows why Danae is like the Mona Lisa here",
+            date: "2019-01-30",
             images: [
               {
                 url: "/img/pages/page049.jpg",
-                alt: "",
+                alt: "who knows why Danae is like the Mona Lisa here",
               },
             ],
-            hoverTitle: "",
+            hoverTitle: "who knows why Danae is like the Mona Lisa here",
             blogPost: `
             <div>
+            <p>I really enjoyed making this page ^_^</p>
+<p>It was supposed to be the first 2019 update, so I can officially wish you a happy new year!</p>
+<p>(I feel like this is like Home Queer Home’s <a href="https://en.wikipedia.org/wiki/Vasilopita">vasilopita</a> update: Why not have it on January 30th?)</p>
+<p><a href="https://www.instagram.com/smarmakescomics/" target="_blank" rel="noopener">Instagram</a> | <a href="https://twitter.com/SmarMakesComics" target="_blank" rel="noopener">Twitter</a> | <a href="https://www.facebook.com/smarMakesComics/" target="_blank" rel="noopener">Facebook</a> |&nbsp;<a href="https://www.etsy.com/shop/SmarMakesComics" target="_blank" rel="noopener">Etsy Shop</a> | <a href="https://gumroad.com/smar" target="_blank" rel="noopener">Gumroad</a> | <a href="https://www.patreon.com/smar" target="_blank" rel="noopener"><strong>Patreon</strong></a></p>
             </div>
               `,
           },
           {
             title: "Season 02 Page 19",
-            alt: "",
-            date: "2018-0-0",
+            alt: "I don't know what site is using this printed newspaper font but just go with it",
+            date: "2019-02-09",
             images: [
               {
                 url: "/img/pages/page050.jpg",
-                alt: "",
+                alt: "I don't know what site is using this printed newspaper font but just go with it",
               },
             ],
-            hoverTitle: "",
+            hoverTitle:
+              "I don't know what site is using this printed newspaper font but just go with it",
             blogPost: `
-            <div>
+            <div><p>A week ago was Hourly Comics Day – I spent a day making <a href="https://www.patreon.com/posts/hourly-comic-day-24483732">a couple of panels for every hour I was awake</a>.</p>
+            <p>I was simultaneously inking some of my autobio comics to get them ready for a zine I want to make this spring, so I was basically procrastinating making comics by making comics at all times.</p>
+            <p><a href="https://www.instagram.com/smarmakescomics/" target="_blank" rel="noopener">Instagram</a> | <a href="https://twitter.com/SmarMakesComics" target="_blank" rel="noopener">Twitter</a> | <a href="https://www.facebook.com/smarMakesComics/" target="_blank" rel="noopener">Facebook</a> |&nbsp;<a href="https://www.etsy.com/shop/SmarMakesComics" target="_blank" rel="noopener">Etsy Shop</a> | <a href="https://gumroad.com/smar" target="_blank" rel="noopener">Gumroad</a> | <a href="https://www.patreon.com/smar" target="_blank" rel="noopener"><strong>Patreon</strong></a></p>
             </div>
               `,
           },
           {
             title: "Season 02 Page 20",
-            alt: "",
-            date: "2018-0-0",
+            alt: "same bar different time of day",
+            date: "2019-02-15",
             images: [
               {
                 url: "/img/pages/page051.jpg",
-                alt: "",
+                alt: "same bar different time of day",
               },
             ],
-            hoverTitle: "",
+            hoverTitle: "same bar different time of day",
             blogPost: `
-            <div>
+            <div><p>Eventually I’ll include more graffiti on the buildings and Athens will look more like Athens</p>
+            <p><a href="https://www.instagram.com/smarmakescomics/" target="_blank" rel="noopener">Instagram</a> | <a href="https://twitter.com/SmarMakesComics" target="_blank" rel="noopener">Twitter</a> | <a href="https://www.facebook.com/smarMakesComics/" target="_blank" rel="noopener">Facebook</a> |&nbsp;<a href="https://www.etsy.com/shop/SmarMakesComics" target="_blank" rel="noopener">Etsy Shop</a> | <a href="https://gumroad.com/smar" target="_blank" rel="noopener">Gumroad</a> | <a href="https://www.patreon.com/smar" target="_blank" rel="noopener"><strong>Patreon</strong></a></p>
             </div>
               `,
           },
           {
             title: "Season 02 Page 21",
-            alt: "",
-            date: "2018-0-0",
+            alt: "The disappearing chair saga returns on panel 3",
+            date: "2019-02-27",
             images: [
               {
                 url: "/img/pages/page052.jpg",
-                alt: "",
+                alt: "The disappearing chair saga returns on panel 3",
               },
             ],
-            hoverTitle: "",
+            hoverTitle: "The disappearing chair saga returns on panel 3",
             blogPost: `
             <div>
+            <p>A couple of vague announcements:</p>
+<p>I won’t be at Comicdom Con, my application was rejected once again.</p>
+<p>I will be in&nbsp;a couple of other comic cons, stay tuned!</p>
+<p>PS: Apologies for the missed update. I had a deadline for a comic that I’m really excited to share with you soon!</p>
+<p><a href="https://www.instagram.com/smarmakescomics/" target="_blank" rel="noopener">Instagram</a> | <a href="https://twitter.com/SmarMakesComics" target="_blank" rel="noopener">Twitter</a> | <a href="https://www.facebook.com/smarMakesComics/" target="_blank" rel="noopener">Facebook</a> |&nbsp;<a href="https://www.etsy.com/shop/SmarMakesComics" target="_blank" rel="noopener">Etsy Shop</a> | <a href="https://gumroad.com/smar" target="_blank" rel="noopener">Gumroad</a> | <a href="https://www.patreon.com/smar" target="_blank" rel="noopener"><strong>Patreon</strong></a></p>
             </div>
               `,
           },
           {
             title: "Season 02 Page 22",
-            alt: "",
-            date: "2018-0-0",
+            alt: "Smar from the future here: I lost this page's post in the website move! Woops.",
+            date: "2019-03-06",
             images: [
               {
                 url: "/img/pages/page053.jpg",
-                alt: "",
+                alt: "Smar from the future here: I lost this page's post in the website move! Woops.",
               },
             ],
-            hoverTitle: "",
+            hoverTitle:
+              "Smar from the future here: I lost this page's post in the website move! Woops.",
             blogPost: `
             <div>
+            <p>Smar from the future here: I lost this page's post in the website move! Woops.</p>
+            <p><a href="https://www.instagram.com/smarmakescomics/" rel="noopener" target="_blank">Instagram</a> | <a href="https://twitter.com/SmarMakesComics" rel="noopener" target="_blank">Twitter</a> | <a href="https://www.facebook.com/smarMakesComics/" rel="noopener" target="_blank">Facebook</a> | <a href="http://smarmakescomics.tumblr.com/" rel="noopener" target="_blank">Tumblr</a> | <a href="https://www.etsy.com/shop/SmarMakesComics" rel="noopener" target="_blank">Etsy Shop</a> | <a href="https://gumroad.com/smar" rel="noopener" target="_blank">Gumroad</a> | <a href="https://www.patreon.com/smar" rel="noopener" target="_blank"><strong>Patreon</strong></a></p>
             </div>
               `,
           },
           {
             title: "Season 02 Page 23",
-            alt: "",
-            date: "2018-0-0",
+            alt: "No disappearing chairs on this one! I caught one that almost ran away on panel 4 but it's there now.",
+            date: "2019-03-14",
             images: [
               {
                 url: "/img/pages/page054.jpg",
-                alt: "",
+                alt: "No disappearing chairs on this one! I caught one that almost ran away on panel 4 but it's there now.",
               },
             ],
-            hoverTitle: "",
+            hoverTitle:
+              "No disappearing chairs on this one! I caught one that almost ran away on panel 4 but it's there now.",
             blogPost: `
-            <div>
+            <div><p>I’ve been inking a lot of black and white comics lately and working with color feels refreshing! I’m also experimenting with more free shading, hence the last panel.</p>
+            <p><a href="https://www.instagram.com/smarmakescomics/" target="_blank" rel="noopener">Instagram</a> | <a href="https://twitter.com/SmarMakesComics" target="_blank" rel="noopener">Twitter</a> | <a href="https://www.facebook.com/smarMakesComics/" target="_blank" rel="noopener">Facebook</a> |&nbsp;<a href="https://www.etsy.com/shop/SmarMakesComics" target="_blank" rel="noopener">Etsy Shop</a> | <a href="https://gumroad.com/smar" target="_blank" rel="noopener">Gumroad</a> | <a href="https://www.patreon.com/smar" target="_blank" rel="noopener"><strong>Patreon</strong></a></p>
             </div>
               `,
           },
           {
             title: "Season 02 Page 24",
-            alt: "",
-            date: "2018-0-0",
+            alt: "I'm having fun with Jo's shirts lately",
+            date: "2019-03-27",
             images: [
               {
                 url: "/img/pages/page055.jpg",
-                alt: "",
+                alt: "I'm having fun with Jo's shirts lately",
               },
             ],
-            hoverTitle: "",
+            hoverTitle: "I'm having fun with Jo's shirts lately",
             blogPost: `
-            <div>
+            <div><p>Hey!</p>
+            <p><a href="https://www.autostraddle.com/please-not-forever-19">Here’s a comic</a> I made for Autostraddle, on growing up non straight!</p>
+            <p>I’m so glad I can finally share it. Being accepted to make a comic for their birthday issue was my first success of the year. I made a quite personal comic essay, not the easiest thing, and I’m so happy/sorry to see people relate to it!</p>
+            <p>I’m sorry this was supposed to be last week’s update, but these months have been so busy with cool projects like that and I’m stubbornly not pausing the webcomic while at it.</p>
+            <p><a href="https://www.instagram.com/smarmakescomics/" target="_blank" rel="noopener">Instagram</a> | <a href="https://twitter.com/SmarMakesComics" target="_blank" rel="noopener">Twitter</a> | <a href="https://www.facebook.com/smarMakesComics/" target="_blank" rel="noopener">Facebook</a> |&nbsp;<a href="https://www.etsy.com/shop/SmarMakesComics" target="_blank" rel="noopener">Etsy Shop</a> | <a href="https://gumroad.com/smar" target="_blank" rel="noopener">Gumroad</a> | <a href="https://www.patreon.com/smar" target="_blank" rel="noopener"><strong>Patreon</strong></a></p>
             </div>
               `,
           },
           {
             title: "Season 02 Page 25",
-            alt: "",
-            date: "2018-0-0",
+            alt: "every now and then I remember I have to include more smoking if this comic has a chance to look realistic",
+            date: "2019-05-01",
             images: [
               {
                 url: "/img/pages/page056.jpg",
-                alt: "",
+                alt: "every now and then I remember I have to include more smoking if this comic has a chance to look realistic",
               },
             ],
-            hoverTitle: "",
+            hoverTitle:
+              "every now and then I remember I have to include more smoking if this comic has a chance to look realistic",
             blogPost: `
-            <div>
+            <div><p>I just made a special Easter comic by making it about other holidays.</p>
+            <p>Hey, HQH is back!</p>
+            <p>I didn’t plan on taking this time off but it’s always pretty much impossible to keep up with a webcomic around comic con season.</p>
+            <p>I’ve made a new zine featuring (inked) autobio comics I’ve been making for Patreon supporters, went to Cyprus, and I’m getting ready for The Comic Con in Thessaloniki. See you there / next week here!</p>
+            <p><a href="https://www.instagram.com/smarmakescomics/" target="_blank" rel="noopener">Instagram</a> | <a href="https://twitter.com/SmarMakesComics" target="_blank" rel="noopener">Twitter</a> | <a href="https://www.facebook.com/smarMakesComics/" target="_blank" rel="noopener">Facebook</a> |&nbsp;<a href="https://www.etsy.com/shop/SmarMakesComics" target="_blank" rel="noopener">Etsy Shop</a> | <a href="https://gumroad.com/smar" target="_blank" rel="noopener">Gumroad</a> | <a href="https://www.patreon.com/smar" target="_blank" rel="noopener"><strong>Patreon</strong></a></p>
             </div>
               `,
           },
           {
             title: "Season 02 Page 26",
-            alt: "",
-            date: "2018-0-0",
+            alt: "No shade, smoking readers",
+            date: "2019-05-28",
             images: [
               {
                 url: "/img/pages/page057.jpg",
-                alt: "",
+                alt: "No shade, smoking readers",
               },
             ],
-            hoverTitle: "",
+            hoverTitle: "No shade, smoking readers",
             blogPost: `
-            <div>
+            <div><p>Hopefully part 1 of a double update, hopefully see you tomorrow!</p>
+            <p><a href="https://www.instagram.com/smarmakescomics/" target="_blank" rel="noopener">Instagram</a> | <a href="https://twitter.com/SmarMakesComics" target="_blank" rel="noopener">Twitter</a> | <a href="https://www.facebook.com/smarMakesComics/" target="_blank" rel="noopener">Facebook</a> |&nbsp;<a href="https://www.etsy.com/shop/SmarMakesComics" target="_blank" rel="noopener">Etsy Shop</a> | <a href="https://gumroad.com/smar" target="_blank" rel="noopener">Gumroad</a> | <a href="https://www.patreon.com/smar" target="_blank" rel="noopener"><strong>Patreon</strong></a></p>
             </div>
               `,
           },
           {
             title: "Season 02 Page 27",
-            alt: "",
-            date: "2018-0-0",
+            alt: "um while making this comic i realized i haven't drawn enough butts in my life.",
+            date: "2019-06-06",
             images: [
               {
                 url: "/img/pages/page058.jpg",
-                alt: "",
+                alt: "um while making this comic i realized i haven't drawn enough butts in my life.",
               },
             ],
-            hoverTitle: "",
+            hoverTitle:
+              "um while making this comic i realized i haven't drawn enough butts in my life.",
             blogPost: `
             <div>
+            <p>If you’re in Athens, come by Colour Youth’s <a href="https://www.facebook.com/events/2336331359958975/">Bazaar</a> and/or Queer Ink’s “<a href="https://www.facebook.com/events/2328210430788031/">What is Queer Writing?</a>” event and find my zines ✨💖🦄🐳🧠</p>
+<p><a href="https://www.instagram.com/smarmakescomics/" target="_blank" rel="noopener">Instagram</a> | <a href="https://twitter.com/SmarMakesComics" target="_blank" rel="noopener">Twitter</a> | <a href="https://www.facebook.com/smarMakesComics/" target="_blank" rel="noopener">Facebook</a> |&nbsp;<a href="https://www.etsy.com/shop/SmarMakesComics" target="_blank" rel="noopener">Etsy Shop</a> | <a href="https://gumroad.com/smar" target="_blank" rel="noopener">Gumroad</a> | <a href="https://www.patreon.com/smar" target="_blank" rel="noopener"><strong>Patreon</strong></a></p>
             </div>
               `,
           },
           {
             title: "Season 02 Page 28",
-            alt: "",
-            date: "2018-0-0",
+            alt: "why would honesty work???",
+            date: "2019-06-13",
             images: [
               {
                 url: "/img/pages/page059.jpg",
-                alt: "",
+                alt: "why would honesty work???",
               },
             ],
-            hoverTitle: "",
+            hoverTitle: "why would honesty work???",
             blogPost: `
             <div>
+            <p>Trying different coloring things this week.</p>
+<p><a href="https://www.instagram.com/smarmakescomics/" target="_blank" rel="noopener">Instagram</a> | <a href="https://twitter.com/SmarMakesComics" target="_blank" rel="noopener">Twitter</a> | <a href="https://www.facebook.com/smarMakesComics/" target="_blank" rel="noopener">Facebook</a> |&nbsp;<a href="https://www.etsy.com/shop/SmarMakesComics" target="_blank" rel="noopener">Etsy Shop</a> | <a href="https://gumroad.com/smar" target="_blank" rel="noopener">Gumroad</a> | <a href="https://www.patreon.com/smar" target="_blank" rel="noopener"><strong>Patreon</strong></a></p>
             </div>
               `,
           },
