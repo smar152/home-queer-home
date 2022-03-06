@@ -6,7 +6,7 @@ import { device, deviceSize } from "../../data/device";
 
 const FullBanner = styled("div")`
   width: 100%;
-  background-color: #bf3f1e;
+  background-color: #0f3963;
   color: white;
 `;
 

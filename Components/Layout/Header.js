@@ -28,6 +28,7 @@ const LogoArea = styled("div")`
   @media ${device.tablet} {
     width: 370px;
   } */
+  cursor: pointer;
 `;
 
 const MainNavigation = styled("nav")`
@@ -84,9 +85,6 @@ export default function Header() {
           </Link>
           <Link href="/archive">
             <MenuItem>archive</MenuItem>
-          </Link>
-          <Link href="/new-readers">
-            <MenuItem>new readers</MenuItem>
           </Link>
           <Link href="/about">
             <MenuItem>about</MenuItem>

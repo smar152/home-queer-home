@@ -73,6 +73,7 @@ export const getServerSideProps = async ({ params, res }) => {
   updateIndicesForBrowser(previous);
   updateIndicesForBrowser(next);
   let error = "";
+  //This doesn't ever show up
   if (!page) {
     error = `can't find season ${seasonNumber} episode ${episodeNumber} page ${pageNumber}`;
   } else {
