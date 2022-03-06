@@ -11,7 +11,7 @@ const SiteHeader = styled("div")`
   /* z-index: 2; */
   justify-content: space-between;
   margin: auto;
-  height: 100px;
+  flex-grow: 0;
   @media ${device.tablet} {
     flex-direction: row;
     width: ${deviceSize.tablet};
@@ -80,7 +80,7 @@ export default function Header() {
           </Link>
         </LogoArea>
         <MainNavigation data-id="main-navigation">
-          <Link href="/">
+          <Link href="/season/1/episode/1/page/1">
             <MenuItem>comic</MenuItem>
           </Link>
           <Link href="/archive">

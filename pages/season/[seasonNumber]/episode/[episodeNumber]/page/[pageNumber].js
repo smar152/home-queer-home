@@ -6,20 +6,20 @@ import seasons from "../../../../../../data/comics";
 
 const PagePage = ({ page, error }) => {
   const router = useRouter();
-  let url = "";
-  const handleUserKeyPress = useCallback((event) => {
-    console.log("hi", page.pageNumber);
-    const { key, keyCode } = event;
-    if (keyCode === 37) {
-      url = `/season/${page.previous.seasonNumber}/episode/${page.previous.episodeNumber}/page/${page.previous.pageNumber}`;
-      console.log("PREVIOUS PAGE", url);
-      router.push(url);
-    } else if (keyCode === 39) {
-      url = `/season/${page.next.seasonNumber}/episode/${page.next.episodeNumber}/page/${page.next.pageNumber}`;
-      console.log("NEXT PAGE");
+
+  const handleUserKeyPress = (event) => {
+    const { keyCode } = event;
+    const pageKeyMap = {
+      37: page.previous,
+      39: page.next,
+    };
+    const newPage = pageKeyMap[keyCode];
+    if (newPage) {
+      const { seasonNumber, episodeNumber, pageNumber } = newPage;
+      const url = `/season/${seasonNumber}/episode/${episodeNumber}/page/${pageNumber}`;
       router.push(url);
     }
-  }, []);
+  };
 
   useEffect(() => {
     window.addEventListener("keydown", handleUserKeyPress);

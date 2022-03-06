@@ -5,7 +5,9 @@ import Link from "next/link";
 const StComicPage = styled("div")`
   display: flex;
   flex-direction: column;
+  min-height: calc(100vh - 40px);
 `;
+
 const StPagePagination = styled("div")`
   display: flex;
   justify-content: space-between;
