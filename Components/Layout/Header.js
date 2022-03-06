@@ -2,6 +2,7 @@ import Link from "next/link";
 import styled from "styled-components";
 import Head from "next/dist/shared/lib/head";
 import { device, deviceSize } from "../../data/device";
+import comics, { getLastComicPageNumbers } from "../../data/comics";
 
 const SiteHeader = styled("div")`
   display: flex;
@@ -62,6 +63,10 @@ const StImg = styled("img")`
   }
 `;
 export default function Header() {
+  const lastComicPage = getLastComicPageNumbers();
+  const url = `/season/${lastComicPage.lastComicSeasonNumber + 1}/episode/${
+    lastComicPage.lastComicEpisodeNumber + 1
+  }/page/${lastComicPage.lastComicPageNumber + 1}`;
   return (
     <>
       <Head>
@@ -80,7 +85,7 @@ export default function Header() {
           </Link>
         </LogoArea>
         <MainNavigation data-id="main-navigation">
-          <Link href="/season/1/episode/1/page/1">
+          <Link href={url}>
             <MenuItem>comic</MenuItem>
           </Link>
           <Link href="/archive">

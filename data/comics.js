@@ -1678,4 +1678,21 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
   },
 ];
 
+export function getLastComicPageNumbers() {
+  const lastComicSeason = comics[comics.length - 1];
+  const lastComicSeasonNumber = comics.length - 1;
+  const lastComicEpisode =
+    lastComicSeason.episodes[lastComicSeason.episodes.length - 1];
+  const lastComicEpisodeNumber = lastComicSeason.episodes.length - 1;
+  const lastComicPage =
+    lastComicEpisode.pages[lastComicEpisode.pages.length - 1];
+  const lastComicPageNumber = lastComicEpisode.pages.length - 1;
+  const lastComicPageNumbers = {
+    lastComicSeasonNumber,
+    lastComicEpisodeNumber,
+    lastComicPageNumber,
+  };
+  return lastComicPageNumbers;
+}
+
 export default comics;
