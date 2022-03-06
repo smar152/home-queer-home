@@ -1,8 +1,33 @@
+import react, { useEffect, useCallback, useState, setState } from "react";
+import { useRouter } from "next/router";
 import ComicPage from "../../../../../../Components/ComicPage";
 import Layout from "../../../../../../Components/Layout/Layout";
 import seasons from "../../../../../../data/comics";
 
 const PagePage = ({ page, error }) => {
+  const router = useRouter();
+  let url = "";
+  const handleUserKeyPress = useCallback((event) => {
+    console.log("hi", page.pageNumber);
+    const { key, keyCode } = event;
+    if (keyCode === 37) {
+      url = `/season/${page.previous.seasonNumber}/episode/${page.previous.episodeNumber}/page/${page.previous.pageNumber}`;
+      console.log("PREVIOUS PAGE", url);
+      router.push(url);
+    } else if (keyCode === 39) {
+      url = `/season/${page.next.seasonNumber}/episode/${page.next.episodeNumber}/page/${page.next.pageNumber}`;
+      console.log("NEXT PAGE");
+      router.push(url);
+    }
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("keydown", handleUserKeyPress);
+    return () => {
+      window.removeEventListener("keydown", handleUserKeyPress);
+    };
+  }, [handleUserKeyPress]);
+
   return (
     <Layout>
       <ComicPage page={page} error={error} />
