@@ -42,6 +42,25 @@ const AboutPage = () => {
                 width="100%"
               />
             </MeetTheArtist>
+            <h2>This website</h2>
+            <p>
+              I'm still a believer in indie projects having their own
+              decentralized space online. A while ago I decided to move away
+              from Wordpress and make my own website for the comic, so I can
+              play with it as much as I want to. ✨
+            </p>
+            <p>
+              It's made in React with Next.js
+              <br /> You can see the code in{" "}
+              <a
+                href="https://github.com/smar152/home-queer-home"
+                taget="_blank"
+              >
+                this GitHub repository
+              </a>
+              .
+            </p>
+            <p> Huge thanks to @heypano for the invaluable help!</p>
           </div>
         }
       />
