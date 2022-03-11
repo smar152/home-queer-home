@@ -5,36 +5,37 @@ import styled from "styled-components";
 
 const ComingSoonContainer = styled("div")`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
 `;
 
 const LogoColumn = styled("div")`
-  width: 50%;
   display: flex;
   flex-direction: column;
+  height: 70vh;
 `;
 
 const CopyColumn = styled("div")`
-  width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  /* background-color: #ffc852; */
+  align-items: center;
+  height: 30vh;
+  justify-content: flex-start;
+  background-color: #ffc852;
 `;
 
 const Credits = styled("p")`
-  font-weight: 300;
+  font-weight: 400;
   font-size: 3rem;
   margin-bottom: 0;
 `;
 
 const ComingSoon = styled("p")`
   font-weight: 600;
-  font-size: 5rem;
+  font-size: 4rem;
   margin-top: 0;
   margin-bottom: 80px;
-  color: #ffc852;
+  color: white;
 `;
 
 export default function Home() {

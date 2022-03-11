@@ -69,12 +69,6 @@ export default function Header() {
   }/page/${lastComicPage.lastComicPageNumber + 1}`;
   return (
     <>
-      <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=DM+Sans&display=optional"
-          rel="stylesheet"
-        />
-      </Head>
       <SiteHeader data-id="header-container">
         <LogoArea data-id="logo-container">
           <Link as="/" href="/">
