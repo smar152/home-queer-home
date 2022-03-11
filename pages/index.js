@@ -13,6 +13,9 @@ const LogoColumn = styled("div")`
   display: flex;
   flex-direction: column;
   height: 70vh;
+  img {
+    height: 100%;
+  }
 `;
 
 const CopyColumn = styled("div")`
