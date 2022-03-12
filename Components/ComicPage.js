@@ -91,9 +91,9 @@ const ComicPage = (props) => {
     const isNext = mx / window.innerWidth > threshold;
     let url;
     if (isPrevious) {
-      url = getPageUrl(next);
-    } else if (isNext) {
       url = getPageUrl(previous);
+    } else if (isNext) {
+      url = getPageUrl(next);
     }
     api.start({ x: down ? mx : 0 });
     if (url) {
