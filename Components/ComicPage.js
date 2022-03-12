@@ -1,6 +1,8 @@
 import styled from "styled-components";
-import Image from "next/image";
 import Link from "next/link";
+import { useSpring, animated } from "@react-spring/web";
+import { useDrag } from "@use-gesture/react";
+import { useRouter } from "next/router";
 
 const StComicPage = styled("div")`
   display: flex;
@@ -24,15 +26,18 @@ const StPagePagination = styled("div")`
     color: orange;
   }
 `;
+
 const StPageImages = styled("div")`
   display: flex;
   align-items: center;
   justify-content: center;
 `;
+
 const StImageContainer = styled("div")`
   padding-top: 40px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 `;
+
 const StImg = styled("img")`
   width: 100%;
   cursor: pointer;
@@ -57,6 +62,10 @@ const StPageTite = styled("h2")``;
 
 const StPostContent = styled("div")``;
 
+function getPageUrl({ pageNumber, episodeNumber, seasonNumber }) {
+  return `/season/${seasonNumber}/episode/${episodeNumber}/page/${pageNumber}`;
+}
+
 const ComicPage = (props) => {
   const { page, error } = props;
   const {
@@ -72,13 +81,41 @@ const ComicPage = (props) => {
     next,
   } = page || {};
   const dateObj = new Date(`${date} 12:00:00`);
+  const router = useRouter();
+  const [{ x, y }, api] = useSpring(() => ({ x: 0, y: 0 }));
+
+  // Set the drag hook and define component movement based on gesture data.
+  const bind = useDrag(({ down, movement: [mx, my] }) => {
+    const threshold = 0.3;
+    const isPrevious = mx / window.innerWidth < -threshold;
+    const isNext = mx / window.innerWidth > threshold;
+    let url;
+    if (isPrevious) {
+      url = getPageUrl(previous);
+    } else if (isNext) {
+      url = getPageUrl(next);
+    }
+    api.start({ x: down ? mx : 0 });
+    if (url) {
+      console.log(url);
+      setTimeout(() => {
+        router.push(url);
+      }, 1000);
+    }
+  });
+
   return (
     <StComicPage data-id="comic-page">
+      <button
+        onClick={() => {
+          router.push(getPageUrl(previous));
+        }}
+      >
+        go
+      </button>
       <StPagePagination data-id="page-pagination">
         <div>
-          <Link
-            href={`/season/${previous.seasonNumber}/episode/${previous.episodeNumber}/page/${previous.pageNumber}`}
-          >
+          <Link href={getPageUrl(previous)}>
             <a>
               <strong>{"<"}</strong>
             </a>
@@ -89,31 +126,32 @@ const ComicPage = (props) => {
           Season {seasonNumber + 1} Episode {episodeNumber + 1}
         </div>
         <div>
-          <Link
-            href={`/season/${next.seasonNumber}/episode/${next.episodeNumber}/page/${next.pageNumber}`}
-          >
+          <Link href={getPageUrl(next)}>
             <a>
               <strong>{">"}</strong>
             </a>
           </Link>
         </div>
       </StPagePagination>
-      <Link
-        href={`/season/${next.seasonNumber}/episode/${next.episodeNumber}/page/${next.pageNumber}`}
-      >
+      <Link href={getPageUrl(next)}>
         <StImgLink data-id="page-image-link">
           <StPageImages title={hoverTitle} data-id="page-images">
             {images.map((image) => {
               const { url, alt } = image;
               return (
                 <StImageContainer>
-                  <StImg
-                    src={url}
-                    key={url}
-                    alt={alt}
-                    // width="840px"
-                    // height="1188px"
-                  />
+                  <animated.div
+                    {...bind()}
+                    style={{ x, y, touchAction: "none" }}
+                  >
+                    <StImg
+                      src={url}
+                      key={url}
+                      alt={alt}
+                      // width="840px"
+                      // height="1188px"
+                    />
+                  </animated.div>
                 </StImageContainer>
               );
               //return <img src={url} key={url} alt={alt} />;
