@@ -103,14 +103,14 @@ const ComicPage = (props) => {
 
   return (
     <StComicPage data-id="comic-page">
-      <button
-        onClick={() => {
-          router.push(getPageUrl(previous));
-        }}
-      >
-        go
-      </button>
       <StPagePagination data-id="page-pagination">
+        <div>
+          <Link href={getPageUrl(previous)}>
+            <a>
+              <strong>{"<"}</strong>
+            </a>
+          </Link>
+        </div>
         <div>
           Season {seasonNumber + 1} Episode {episodeNumber + 1}
         </div>
