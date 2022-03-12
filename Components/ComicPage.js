@@ -87,8 +87,8 @@ const ComicPage = (props) => {
   // Set the drag hook and define component movement based on gesture data.
   const bind = useDrag(({ down, movement: [mx, my] }) => {
     const threshold = 0.3;
-    const isPrevious = mx / window.innerWidth < -threshold;
-    const isNext = mx / window.innerWidth > threshold;
+    const isPrevious = mx / window.innerWidth > threshold;
+    const isNext = mx / window.innerWidth < -threshold;
     let url;
     if (isPrevious) {
       url = getPageUrl(previous);
