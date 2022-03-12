@@ -91,16 +91,13 @@ const ComicPage = (props) => {
     const isNext = mx / window.innerWidth > threshold;
     let url;
     if (isPrevious) {
-      url = getPageUrl(previous);
-    } else if (isNext) {
       url = getPageUrl(next);
+    } else if (isNext) {
+      url = getPageUrl(previous);
     }
     api.start({ x: down ? mx : 0 });
     if (url) {
-      console.log(url);
-      setTimeout(() => {
-        router.push(url);
-      }, 1000);
+      router.push(url);
     }
   });
 
@@ -114,14 +111,6 @@ const ComicPage = (props) => {
         go
       </button>
       <StPagePagination data-id="page-pagination">
-        <div>
-          <Link href={getPageUrl(previous)}>
-            <a>
-              <strong>{"<"}</strong>
-            </a>
-          </Link>
-          {/* {previousPageKey ? previousPageKey : "No Previous"} */}
-        </div>
         <div>
           Season {seasonNumber + 1} Episode {episodeNumber + 1}
         </div>
