@@ -11,6 +11,7 @@ const StComicPage = styled("div")`
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - 40px);
+  overflow: hidden;
 `;
 
 const StPagePagination = styled("div")`
@@ -49,6 +50,7 @@ const StImg = styled("img")`
 const StImgLink = styled("a")`
   display: block;
   position: sticky;
+  overflow: hidden;
   z-index: 1;
   @media ${device.laptop} {
     position: relative;
