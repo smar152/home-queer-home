@@ -79,7 +79,7 @@ function getPageUrl({ pageNumber, episodeNumber, seasonNumber }) {
 }
 
 function getDragData({ mx, my }) {
-  const threshold = 0.8;
+  const threshold = 0.6;
   const isPrevious = mx / window.innerWidth > threshold;
   const isNext = mx / window.innerWidth < -threshold;
   return {
