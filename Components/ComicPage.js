@@ -50,7 +50,7 @@ const StImg = styled("img")`
 const StImgLink = styled("a")`
   display: block;
   position: sticky;
-  overflow-x: hidden;
+  overflow: visible;
   z-index: 1;
   @media ${device.laptop} {
     position: relative;
