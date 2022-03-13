@@ -6,6 +6,7 @@ import { createUseGesture, dragAction, pinchAction } from "@use-gesture/react";
 import { useEffect, useRef } from "react";
 import { useRouter } from "next/router";
 import { device } from "../data/device";
+import debounce from "debounce";
 
 const StComicPage = styled("div")`
   display: flex;
@@ -78,7 +79,7 @@ function getPageUrl({ pageNumber, episodeNumber, seasonNumber }) {
 }
 
 function getDragData({ mx, my }) {
-  const threshold = 0.3;
+  const threshold = 0.8;
   const isPrevious = mx / window.innerWidth > threshold;
   const isNext = mx / window.innerWidth < -threshold;
   return {
@@ -86,6 +87,8 @@ function getDragData({ mx, my }) {
     isNext,
   };
 }
+
+const vibrate = debounce(window.navigator.vibrate, 200);
 
 const ComicPage = (props) => {
   const { page, error } = props;
@@ -134,7 +137,7 @@ const ComicPage = (props) => {
         if (pinching) return cancel();
         const { isPrevious, isNext } = getDragData({ mx, my });
         if ((isPrevious || isNext) && window.navigator.vibrate) {
-          window.navigator.vibrate(100);
+          vibrate(100);
         }
 
         api.start({ x: down ? mx : 0, y: my });
