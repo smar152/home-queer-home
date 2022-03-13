@@ -5,6 +5,7 @@ import { useSpring, animated } from "@react-spring/web";
 import { createUseGesture, dragAction, pinchAction } from "@use-gesture/react";
 import { useEffect, useRef } from "react";
 import { useRouter } from "next/router";
+import { device } from "../data/device";
 
 const StComicPage = styled("div")`
   display: flex;
@@ -47,6 +48,12 @@ const StImg = styled("img")`
 
 const StImgLink = styled("a")`
   display: block;
+  position: sticky;
+  z-index: 1;
+  @media ${device.laptop} {
+    position: relative;
+    z-index: 0;
+  }
 `;
 
 const StPostContainer = styled("div")`
