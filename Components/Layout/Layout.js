@@ -35,7 +35,6 @@ const Layout = (props) => {
           {children}
         </ComicPageContainer>
       </MainContent>
-      <Footer />
     </LayoutContainer>
   );
 };
