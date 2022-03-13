@@ -77,6 +77,16 @@ function getPageUrl({ pageNumber, episodeNumber, seasonNumber }) {
   return `/season/${seasonNumber}/episode/${episodeNumber}/page/${pageNumber}`;
 }
 
+function getDragData({ mx, my }) {
+  const threshold = 0.3;
+  const isPrevious = mx / window.innerWidth > threshold;
+  const isNext = mx / window.innerWidth < -threshold;
+  return {
+    isPrevious,
+    isNext,
+  };
+}
+
 const ComicPage = (props) => {
   const { page, error } = props;
   const {
@@ -93,17 +103,6 @@ const ComicPage = (props) => {
   } = page || {};
   const dateObj = new Date(`${date} 12:00:00`);
   const router = useRouter();
-  // const [{ x, y }, api] = useSpring(() => ({ x: 0, y: 0 }));
-  // const config = {
-  //   // global options such as `target`
-  //   ...genericOptions,
-  //   // gesture specific options
-  //   drag: dragOptions,
-  //   wheel: wheelOptions,
-  //   pinch: pinchOptions,
-  //   scroll: scrollOptions,
-  //   hover: hoverOptions,
-  // };
 
   const useGesture = createUseGesture([dragAction, pinchAction]);
 
@@ -131,9 +130,26 @@ const ComicPage = (props) => {
     {
       // onHover: ({ active, event }) => console.log('hover', event, active),
       // onMove: ({ event }) => console.log('move', event),
-      onDrag: ({ pinching, cancel, offset: [x, y], ...rest }) => {
+      onDrag: ({ pinching, cancel, down, offset: [mx, my], ...rest }) => {
         if (pinching) return cancel();
-        api.start({ x, y });
+        const { isPrevious, isNext } = getDragData({ mx, my });
+        if ((isPrevious || isNext) && window.navigator.vibrate) {
+          window.navigator.vibrate(100);
+        }
+
+        api.start({ x: down ? mx : 0, y: my });
+      },
+      onDragEnd: ({ pinching, cancel, down, offset: [mx, my], ...rest }) => {
+        const { isPrevious, isNext } = getDragData({ mx, my });
+        let url;
+        if (isPrevious) {
+          url = getPageUrl(previous);
+        } else if (isNext) {
+          url = getPageUrl(next);
+        }
+        if (url) {
+          router.push(url);
+        }
       },
       onPinch: ({
         origin: [ox, oy],
@@ -151,7 +167,7 @@ const ComicPage = (props) => {
 
         const x = memo[0] - (ms - 1) * memo[2];
         const y = memo[1] - (ms - 1) * memo[3];
-        api.start({ scale: s, rotateZ: a, x, y });
+        api.start({ scale: s });
         return memo;
       },
     },
@@ -165,23 +181,6 @@ const ComicPage = (props) => {
       },
     }
   );
-
-  // Set the drag hook and define component movement based on gesture data.
-  // const bind = useDrag(({ down, movement: [mx, my] }) => {
-  //   const threshold = 0.3;
-  //   const isPrevious = mx / window.innerWidth > threshold;
-  //   const isNext = mx / window.innerWidth < -threshold;
-  //   let url;
-  //   if (isPrevious) {
-  //     url = getPageUrl(previous);
-  //   } else if (isNext) {
-  //     url = getPageUrl(next);
-  //   }
-  //   api.start({ x: down ? mx : 0 });
-  //   if (url) {
-  //     router.push(url);
-  //   }
-  // });
 
   return (
     <StComicPage data-id="comic-page">
