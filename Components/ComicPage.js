@@ -158,7 +158,11 @@ const ComicPage = (props) => {
     {
       target: ref,
       drag: { from: () => [style.x.get(), style.y.get()] },
-      pinch: { scaleBounds: { min: 0.5, max: 2 }, rubberband: true },
+      pinch: {
+        scaleBounds: { min: 0.5, max: 2 },
+        angleBounds: { min: -20, max: 20 },
+        rubberband: true,
+      },
     }
   );
 
