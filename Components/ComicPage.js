@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import Link from "next/link";
+
 import { useSpring, animated } from "@react-spring/web";
-import { useDrag } from "@use-gesture/react";
+import { createUseGesture, dragAction, pinchAction } from "@use-gesture/react";
+import { useEffect, useRef } from "react";
 import { useRouter } from "next/router";
 
 const StComicPage = styled("div")`
@@ -82,24 +84,91 @@ const ComicPage = (props) => {
   } = page || {};
   const dateObj = new Date(`${date} 12:00:00`);
   const router = useRouter();
-  const [{ x, y }, api] = useSpring(() => ({ x: 0, y: 0 }));
+  // const [{ x, y }, api] = useSpring(() => ({ x: 0, y: 0 }));
+  // const config = {
+  //   // global options such as `target`
+  //   ...genericOptions,
+  //   // gesture specific options
+  //   drag: dragOptions,
+  //   wheel: wheelOptions,
+  //   pinch: pinchOptions,
+  //   scroll: scrollOptions,
+  //   hover: hoverOptions,
+  // };
+
+  const useGesture = createUseGesture([dragAction, pinchAction]);
+
+  useEffect(() => {
+    const handler = (e) => e.preventDefault();
+    document.addEventListener("gesturestart", handler);
+    document.addEventListener("gesturechange", handler);
+    document.addEventListener("gestureend", handler);
+    return () => {
+      document.removeEventListener("gesturestart", handler);
+      document.removeEventListener("gesturechange", handler);
+      document.removeEventListener("gestureend", handler);
+    };
+  }, []);
+
+  const [style, api] = useSpring(() => ({
+    x: 0,
+    y: 0,
+    scale: 1,
+    rotateZ: 0,
+  }));
+  const ref = useRef(null);
+
+  useGesture(
+    {
+      // onHover: ({ active, event }) => console.log('hover', event, active),
+      // onMove: ({ event }) => console.log('move', event),
+      onDrag: ({ pinching, cancel, offset: [x, y], ...rest }) => {
+        if (pinching) return cancel();
+        api.start({ x, y });
+      },
+      onPinch: ({
+        origin: [ox, oy],
+        first,
+        movement: [ms],
+        offset: [s, a],
+        memo,
+      }) => {
+        if (first) {
+          const { width, height, x, y } = ref.current.getBoundingClientRect();
+          const tx = ox - (x + width / 2);
+          const ty = oy - (y + height / 2);
+          memo = [style.x.get(), style.y.get(), tx, ty];
+        }
+
+        const x = memo[0] - (ms - 1) * memo[2];
+        const y = memo[1] - (ms - 1) * memo[3];
+        api.start({ scale: s, rotateZ: a, x, y });
+        return memo;
+      },
+    },
+    {
+      target: ref,
+      drag: { from: () => [style.x.get(), style.y.get()] },
+      pinch: { scaleBounds: { min: 0.5, max: 2 }, rubberband: true },
+    }
+  );
 
   // Set the drag hook and define component movement based on gesture data.
-  const bind = useDrag(({ down, movement: [mx, my] }) => {
-    const threshold = 0.3;
-    const isPrevious = mx / window.innerWidth > threshold;
-    const isNext = mx / window.innerWidth < -threshold;
-    let url;
-    if (isPrevious) {
-      url = getPageUrl(previous);
-    } else if (isNext) {
-      url = getPageUrl(next);
-    }
-    api.start({ x: down ? mx : 0 });
-    if (url) {
-      router.push(url);
-    }
-  });
+  // const bind = useDrag(({ down, movement: [mx, my] }) => {
+  //   const threshold = 0.3;
+  //   const isPrevious = mx / window.innerWidth > threshold;
+  //   const isNext = mx / window.innerWidth < -threshold;
+  //   let url;
+  //   if (isPrevious) {
+  //     url = getPageUrl(previous);
+  //   } else if (isNext) {
+  //     url = getPageUrl(next);
+  //   }
+  //   api.start({ x: down ? mx : 0 });
+  //   if (url) {
+  //     router.push(url);
+  //   }
+  // });
 
   return (
     <StComicPage data-id="comic-page">
@@ -124,15 +193,21 @@ const ComicPage = (props) => {
       </StPagePagination>
       <Link href={getPageUrl(next)}>
         <StImgLink data-id="page-image-link">
-          <StPageImages title={hoverTitle} data-id="page-images">
-            {images.map((image) => {
-              const { url, alt } = image;
-              return (
-                <StImageContainer>
-                  <animated.div
-                    {...bind()}
-                    style={{ x, y, touchAction: "none" }}
-                  >
+          <animated.div
+            ref={ref}
+            style={{
+              ...style,
+              willChange: "transform",
+              touchAction: "none",
+              userSelect: "none",
+              overflow: "hidden",
+            }}
+          >
+            <StPageImages title={hoverTitle} data-id="page-images">
+              {images.map((image) => {
+                const { url, alt } = image;
+                return (
+                  <StImageContainer>
                     <StImg
                       src={url}
                       key={url}
@@ -140,12 +215,12 @@ const ComicPage = (props) => {
                       // width="840px"
                       // height="1188px"
                     />
-                  </animated.div>
-                </StImageContainer>
-              );
-              //return <img src={url} key={url} alt={alt} />;
-            })}
-          </StPageImages>
+                  </StImageContainer>
+                );
+                //return <img src={url} key={url} alt={alt} />;
+              })}
+            </StPageImages>
+          </animated.div>
         </StImgLink>
       </Link>
       {/* <BiggerNavigation previousChapterKey nextChapterKey /> */}
