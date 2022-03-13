@@ -88,7 +88,9 @@ function getDragData({ mx, my }) {
   };
 }
 
-const vibrate = debounce(window.navigator.vibrate, 200);
+const vibrate = debounce((pattern) => {
+  window.navigator.vibrate(pattern);
+}, 200);
 
 const ComicPage = (props) => {
   const { page, error } = props;
