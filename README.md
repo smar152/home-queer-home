@@ -1,1 +1,1 @@
-Coming Soon Page for the Homw Queer Home Webcomic
+Custom webcomic site for the Home Queer Home project.
