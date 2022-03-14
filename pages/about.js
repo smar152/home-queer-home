@@ -34,14 +34,6 @@ const AboutPage = () => {
             </p>
             <p>Born in 1991, I live in Athens, Greece with the silliest cat.</p>
             <p>Not accepting commissions or freelance work at the moment.</p>
-            <h2>Obviously Outdated</h2>
-            <MeetTheArtist>
-              <img
-                src="/img/MeetTheArtist.jpg"
-                alt="Meet the Smar"
-                width="100%"
-              />
-            </MeetTheArtist>
             <h2>This website</h2>
             <p>
               I'm still a believer in indie projects having their own
@@ -60,7 +52,21 @@ const AboutPage = () => {
               </a>
               .
             </p>
-            <p> Huge thanks to @heypano for the invaluable help!</p>
+            <p>
+              Huge thanks to{" "}
+              <a href="https://heypano.com/#/" taget="_blank">
+                Pano
+              </a>{" "}
+              for the invaluable help!
+            </p>
+            <h2>Obviously Outdated Meet The Artist Meme</h2>
+            <MeetTheArtist>
+              <img
+                src="/img/MeetTheArtist.jpg"
+                alt="Meet the Smar"
+                width="100%"
+              />
+            </MeetTheArtist>
           </div>
         }
       />

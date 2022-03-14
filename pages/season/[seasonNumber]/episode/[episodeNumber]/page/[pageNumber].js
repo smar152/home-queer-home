@@ -1,8 +1,13 @@
 import react, { useEffect, useCallback, useState, setState } from "react";
+import styled from "styled-components";
 import { useRouter } from "next/router";
 import ComicPage from "../../../../../../Components/ComicPage";
 import Layout from "../../../../../../Components/Layout/Layout";
 import comics from "../../../../../../data/comics";
+
+const StComicPageLayout = styled("div")`
+  margin: 0px -20px;
+`;
 
 const PagePage = ({ page, error }) => {
   const router = useRouter();
@@ -30,7 +35,9 @@ const PagePage = ({ page, error }) => {
 
   return (
     <Layout>
-      <ComicPage page={page} error={error} />
+      <StComicPageLayout data-id="comic-page-layout">
+        <ComicPage page={page} error={error} />
+      </StComicPageLayout>
     </Layout>
   );
 };

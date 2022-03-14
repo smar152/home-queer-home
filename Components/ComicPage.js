@@ -24,6 +24,14 @@ const StPagePagination = styled("div")`
     color: orange;
   }
 `;
+
+const StSeason = styled("span")`
+  font-weight: 400;
+`;
+const StEpisode = styled("span")`
+  font-weight: 600;
+`;
+
 const StPageImages = styled("div")`
   display: flex;
   align-items: center;
@@ -83,10 +91,11 @@ const ComicPage = (props) => {
               <strong>{"<"}</strong>
             </a>
           </Link>
-          {/* {previousPageKey ? previousPageKey : "No Previous"} */}
         </div>
         <div>
-          Season {seasonNumber + 1} Episode {episodeNumber + 1}
+          <StSeason>season {seasonNumber + 1} | </StSeason>
+          <StEpisode>episode {episodeNumber + 1} </StEpisode>| page{" "}
+          {pageNumber + 1}
         </div>
         <div>
           <Link

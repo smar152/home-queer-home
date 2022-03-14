@@ -18,6 +18,7 @@ const ComicPageContainer = styled("div")`
 
 const MainContent = styled("div")`
   flex: 1;
+  margin: 0px 20px;
 
   @media ${device.tablet} {
     width: ${deviceSize.tablet};
