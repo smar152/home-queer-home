@@ -50,6 +50,10 @@ const StImgLink = styled("a")`
   display: block;
 `;
 
+const StLink = styled("a")`
+  cursor: pointer;
+`;
+
 const StPostContainer = styled("div")`
   padding-top: 80px;
   padding-bottom: 40px;
@@ -84,21 +88,35 @@ const ComicPage = (props) => {
     <StComicPage data-id="comic-page">
       <StPagePagination data-id="page-pagination">
         <div>
-          <Link
+          <StLink
+            key="prevPageLink"
             href={`/season/${previous.seasonNumber}/episode/${previous.episodeNumber}/page/${previous.pageNumber}`}
           >
             <a>
               <strong>{"<"}</strong>
             </a>
-          </Link>
+          </StLink>
         </div>
         <div>
-          <StSeason>season {seasonNumber + 1} | </StSeason>
-          <StEpisode>episode {episodeNumber + 1} </StEpisode>| page{" "}
-          {pageNumber + 1}
+          <StLink
+            key="seasonLink"
+            href={`/season/${seasonNumber + 1}/episode/${1}/page/${1}`}
+          >
+            <StSeason>season {seasonNumber + 1} | </StSeason>
+          </StLink>
+          <StLink
+            key="seasonLink"
+            href={`/season/${seasonNumber + 1}/episode/${
+              episodeNumber + 1
+            }/page/${1}`}
+          >
+            <StEpisode>episode {episodeNumber + 1} </StEpisode>
+          </StLink>
+          | page {pageNumber + 1}
         </div>
         <div>
           <Link
+            key="nextPageLink"
             href={`/season/${next.seasonNumber}/episode/${next.episodeNumber}/page/${next.pageNumber}`}
           >
             <a>
