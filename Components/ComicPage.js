@@ -27,9 +27,27 @@ const StPagePagination = styled("div")`
 
 const StSeason = styled("span")`
   font-weight: 400;
+  color: orange;
+  padding: 10px 15px 5px 15px;
+  border: solid 2px orange;
+  border-radius: 0px 0px 20px 20px;
+  transition: background-color 200ms ease 0s;
+  :hover {
+    background-color: orange;
+    color: white;
+  }
 `;
 const StEpisode = styled("span")`
-  font-weight: 600;
+  font-weight: 400;
+  margin: 0px -2px;
+`;
+
+const StPage = styled("span")`
+  padding: 10px 15px 5px 15px;
+  border: solid 2px orange;
+  border-radius: 0px 0px 20px 20px;
+  background-color: orange;
+  color: white;
 `;
 
 const StPageImages = styled("div")`
@@ -102,7 +120,7 @@ const ComicPage = (props) => {
             key="seasonLink"
             href={`/season/${seasonNumber + 1}/episode/${1}/page/${1}`}
           >
-            <StSeason>season {seasonNumber + 1} | </StSeason>
+            <StSeason>season {seasonNumber + 1}</StSeason>
           </StLink>
           <StLink
             key="seasonLink"
@@ -110,9 +128,11 @@ const ComicPage = (props) => {
               episodeNumber + 1
             }/page/${1}`}
           >
-            <StEpisode>episode {episodeNumber + 1} </StEpisode>
+            <StEpisode>
+              <StSeason>episode {episodeNumber + 1}</StSeason>
+            </StEpisode>
           </StLink>
-          | page {pageNumber + 1}
+          <StPage>page {pageNumber + 1}</StPage>
         </div>
         <div>
           <Link
