@@ -13,6 +13,7 @@ const SiteHeader = styled("div")`
   justify-content: space-between;
   margin: auto;
   flex-grow: 0;
+  font-size: 1.1rem;
   @media ${device.tablet} {
     flex-direction: row;
     width: ${deviceSize.tablet};

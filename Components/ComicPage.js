@@ -1,11 +1,16 @@
 import styled from "styled-components";
 import Image from "next/image";
 import Link from "next/link";
+import ChevronDoubleLeft from "./Icons/ChevronDoubleLeft";
+import ChevronDoubleRight from "./Icons/ChevronDoubleRight";
+import ChevronRight from "./Icons/ChevronRight";
+import ChevronLeft from "./Icons/ChevronLeft";
 
 const StComicPage = styled("div")`
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - 40px);
+  font-size: 1.1rem;
 `;
 
 const StPagePagination = styled("div")`
@@ -13,11 +18,9 @@ const StPagePagination = styled("div")`
   justify-content: space-between;
   position: sticky;
   top: 0px;
-  padding: 10px;
   z-index: 1;
   background-color: white;
   color: darkorange;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
   a {
     text-decoration: none;
@@ -25,21 +28,27 @@ const StPagePagination = styled("div")`
   }
 `;
 
-const StSeason = styled("span")`
+const StSeason = styled.div`
+  display: inline-flex;
   font-weight: 400;
   color: orange;
   padding: 10px 15px 5px 15px;
-  border: solid 2px orange;
+  outline: solid 2px orange;
+  outline-offset: -1px;
+  position: relative;
+  top: -2px;
   border-radius: 0px 0px 20px 20px;
-  transition: background-color 200ms ease 0s;
+  transition: background-color 400ms ease 0s;
   :hover {
     background-color: orange;
     color: white;
   }
 `;
-const StEpisode = styled("span")`
-  font-weight: 400;
-  margin: 0px -2px;
+const StPaginationIcon = styled(StSeason)`
+  font-size: 2rem;
+  svg {
+    height: 1.3rem;
+  }
 `;
 
 const StPage = styled("span")`
@@ -57,7 +66,6 @@ const StPageImages = styled("div")`
 `;
 const StImageContainer = styled("div")`
   padding-top: 40px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 `;
 const StImg = styled("img")`
   width: 100%;
@@ -106,13 +114,18 @@ const ComicPage = (props) => {
     <StComicPage data-id="comic-page">
       <StPagePagination data-id="page-pagination">
         <div>
+          <StLink key="firstPageLink" href={`/season/1/episode/1/page/1`}>
+            <StPaginationIcon>
+              <ChevronDoubleLeft />
+            </StPaginationIcon>
+          </StLink>
           <StLink
             key="prevPageLink"
             href={`/season/${previous.seasonNumber}/episode/${previous.episodeNumber}/page/${previous.pageNumber}`}
           >
-            <a>
-              <strong>{"<"}</strong>
-            </a>
+            <StPaginationIcon>
+              <ChevronLeft />
+            </StPaginationIcon>
           </StLink>
         </div>
         <div>
@@ -128,9 +141,7 @@ const ComicPage = (props) => {
               episodeNumber + 1
             }/page/${1}`}
           >
-            <StEpisode>
-              <StSeason>episode {episodeNumber + 1}</StSeason>
-            </StEpisode>
+            <StSeason>episode {episodeNumber + 1}</StSeason>
           </StLink>
           <StPage>page {pageNumber + 1}</StPage>
         </div>
@@ -139,9 +150,17 @@ const ComicPage = (props) => {
             key="nextPageLink"
             href={`/season/${next.seasonNumber}/episode/${next.episodeNumber}/page/${next.pageNumber}`}
           >
-            <a>
-              <strong>{">"}</strong>
-            </a>
+            <StPaginationIcon>
+              <ChevronRight />
+            </StPaginationIcon>
+          </Link>
+          <Link
+            key="nextPageLink"
+            href={`/season/${next.seasonNumber}/episode/${next.episodeNumber}/page/${next.pageNumber}`}
+          >
+            <StPaginationIcon>
+              <ChevronDoubleRight />
+            </StPaginationIcon>
           </Link>
         </div>
       </StPagePagination>
