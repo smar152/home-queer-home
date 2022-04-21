@@ -38,13 +38,16 @@ const MainNavigation = styled("nav")`
   color: white;
   padding: 12px;
   font-family: "DM Sans", "FuturaStdBold", Helvetica, Arial;
-  display: flex;
   flex-grow: 1;
   justify-content: space-between;
   align-items: center;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
 
   @media ${device.laptop} {
-    max-width: 30%;
+    flex-grow: 0;
+    width: 400px;
   }
 `;
 
@@ -52,6 +55,9 @@ const MenuItem = styled("a")`
   cursor: pointer;
   color: white;
   text-decoration: none;
+  &:hover {
+    font-weight: 600;
+  }
 `;
 
 const StImg = styled("img")`

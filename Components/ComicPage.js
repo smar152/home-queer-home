@@ -146,25 +146,25 @@ const ComicPage = (props) => {
           <StPage>page {pageNumber + 1}</StPage>
         </div>
         <div>
-          <Link
+          <StLink
             key="nextPageLink"
             href={`/season/${next.seasonNumber}/episode/${next.episodeNumber}/page/${next.pageNumber}`}
           >
             <StPaginationIcon>
               <ChevronRight />
             </StPaginationIcon>
-          </Link>
-          <Link
+          </StLink>
+          <StLink
             key="nextPageLink"
             href={`/season/${next.seasonNumber}/episode/${next.episodeNumber}/page/${next.pageNumber}`}
           >
             <StPaginationIcon>
               <ChevronDoubleRight />
             </StPaginationIcon>
-          </Link>
+          </StLink>
         </div>
       </StPagePagination>
-      <Link
+      <StLink
         href={`/season/${next.seasonNumber}/episode/${next.episodeNumber}/page/${next.pageNumber}`}
       >
         <StImgLink data-id="page-image-link">
@@ -186,7 +186,7 @@ const ComicPage = (props) => {
             })}
           </StPageImages>
         </StImgLink>
-      </Link>
+      </StLink>
       {/* <BiggerNavigation previousChapterKey nextChapterKey /> */}
       {/* <ChapterTitle>{title}</ChapterTitle> */}
       <StPostContainer data-id="post-container">
