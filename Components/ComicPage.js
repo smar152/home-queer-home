@@ -19,7 +19,6 @@ const StPagePagination = styled("div")`
   position: sticky;
   top: 0px;
   z-index: 1;
-  background-color: white;
   color: darkorange;
 
   a {
@@ -39,8 +38,10 @@ const StSeason = styled.div`
   top: -2px;
   border-radius: 0px 0px 20px 20px;
   transition: background-color 400ms ease 0s;
+  background-color: rgba(255, 255, 255, 0.97);
+
   :hover {
-    background-color: orange;
+    background-color: rgba(255, 165, 0, 0.97);
     color: white;
   }
 `;
