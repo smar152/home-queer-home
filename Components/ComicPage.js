@@ -5,6 +5,7 @@ import ChevronDoubleLeft from "./Icons/ChevronDoubleLeft";
 import ChevronDoubleRight from "./Icons/ChevronDoubleRight";
 import ChevronRight from "./Icons/ChevronRight";
 import ChevronLeft from "./Icons/ChevronLeft";
+import comics, { getLastComicPageNumbers } from "./../data/comics";
 
 const StComicPage = styled("div")`
   display: flex;
@@ -97,6 +98,11 @@ const StPageTite = styled("h2")``;
 const StPostContent = styled("div")``;
 
 const ComicPage = (props) => {
+  const lastComicPage = getLastComicPageNumbers();
+
+  const url = `/season/${lastComicPage.lastComicSeasonNumber + 1}/episode/${
+    lastComicPage.lastComicEpisodeNumber + 1
+  }/page/${lastComicPage.lastComicPageNumber + 1}`;
   const { page, error } = props;
   const {
     title,
@@ -155,10 +161,7 @@ const ComicPage = (props) => {
               <ChevronRight />
             </StPaginationIcon>
           </StLink>
-          <StLink
-            key="nextPageLink"
-            href={`/season/${next.seasonNumber}/episode/${next.episodeNumber}/page/${next.pageNumber}`}
-          >
+          <StLink key="nextPageLink" href={`${url}`}>
             <StPaginationIcon>
               <ChevronDoubleRight />
             </StPaginationIcon>
