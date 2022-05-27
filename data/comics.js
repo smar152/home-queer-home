@@ -1126,7 +1126,7 @@ const comics = [
     name: "Season Two",
     episodes: [
       {
-        name: "Episode 1",
+        name: "Episode 01",
         pages: [
           {
             title: "Season 02 Page 01",
