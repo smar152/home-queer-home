@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Image from "next/image";
+import Image from "./Image";
 import Link from "next/link";
 import ChevronDoubleLeft from "./Icons/ChevronDoubleLeft";
 import ChevronDoubleRight from "./Icons/ChevronDoubleRight";
@@ -65,13 +65,6 @@ const StPageImages = styled("div")`
   display: flex;
   align-items: center;
   justify-content: center;
-`;
-const StImageContainer = styled("div")`
-  padding-top: 40px;
-`;
-const StImg = styled("img")`
-  width: 100%;
-  cursor: pointer;
 `;
 
 const StImgLink = styled("a")`
@@ -175,17 +168,7 @@ const ComicPage = (props) => {
           <StPageImages title={hoverTitle} data-id="page-images">
             {images.map((image) => {
               const { url, alt } = image;
-              return (
-                <StImageContainer>
-                  <StImg
-                    src={url}
-                    key={url}
-                    alt={alt}
-                    // width="840px"
-                    // height="1188px"
-                  />
-                </StImageContainer>
-              );
+              return <Image key={url} src={url} alt={alt} />;
               //return <img src={url} key={url} alt={alt} />;
             })}
           </StPageImages>

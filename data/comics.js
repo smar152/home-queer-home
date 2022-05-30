@@ -1,8 +1,3 @@
-const widths = {
-  1: 1200,
-  2: 900,
-};
-
 const comics = [
   {
     name: "Season One",
@@ -14,7 +9,13 @@ const comics = [
             title: "Hello World",
             alt: "aw maaan",
             date: "2017-09-20",
-            images: [{ url: "/img/pages/page1.jpg", alt: "bla" }],
+            images: [
+              {
+                url: "/img/pages/page1.jpg",
+                alt: "bla",
+                width: 1200,
+              },
+            ],
             hoverTitle: "Bla bla",
             blogPost: `
                 <div>
@@ -95,6 +96,7 @@ const comics = [
               {
                 url: "/img/pages/page2.jpg",
                 alt: "When getting a discount > anything else",
+                width: 900,
               },
             ],
             hoverTitle: "When getting a discount > anything else",
@@ -115,6 +117,7 @@ const comics = [
               {
                 url: "/img/pages/page3.jpg",
                 alt: "frappé on the beach because greece",
+                width: 900,
               },
             ],
             hoverTitle: "frappé on the beach because greece",
@@ -145,6 +148,7 @@ const comics = [
               {
                 url: "/img/pages/page4.jpg",
                 alt: "Ah, the sea",
+                width: 900,
               },
             ],
             hoverTitle: "Ah, the sea",
@@ -192,6 +196,7 @@ const comics = [
               {
                 url: "/img/pages/page5.jpg",
                 alt: "non native speaker problems",
+                width: 900,
               },
             ],
             hoverTitle: "non native speaker problems",
@@ -229,6 +234,7 @@ const comics = [
               {
                 url: "/img/pages/page6.jpg",
                 alt: "Mystery food, my favorite!",
+                width: 900,
               },
             ],
             hoverTitle: "Mystery food, my favorite!",
@@ -265,6 +271,7 @@ const comics = [
               {
                 url: "/img/pages/page7.jpg",
                 alt: "I'm so good at naming things",
+                width: 900,
               },
             ],
             hoverTitle: "I'm so good at naming things",
@@ -304,6 +311,7 @@ const comics = [
               {
                 url: "/img/pages/page8.jpg",
                 alt: "isn't web radio romantic?",
+                width: 900,
               },
             ],
             hoverTitle: "isn't web radio romantic?",
@@ -339,6 +347,7 @@ const comics = [
               {
                 url: "/img/pages/page9.jpg",
                 alt: "raise your hand if you'd watch this reality show",
+                width: 900,
               },
             ],
             hoverTitle: "raise your hand if you'd watch this reality show",
@@ -369,6 +378,7 @@ const comics = [
               {
                 url: "/img/pages/page10.jpg",
                 alt: "...nevermind",
+                width: 900,
               },
             ],
             hoverTitle: "...nevermind",
@@ -401,6 +411,7 @@ const comics = [
               {
                 url: "/img/pages/page11.jpg",
                 alt: "a bit",
+                width: 900,
               },
             ],
             hoverTitle: "a bit",
@@ -420,6 +431,7 @@ const comics = [
                 url: "/img/pages/page12.jpg",
                 alt:
                   "Accidental pointless reference! Where Are You Going was the name of my first zine.",
+                width: 900,
               },
             ],
             hoverTitle:
@@ -444,6 +456,7 @@ const comics = [
                 url: "/img/pages/page13.jpg",
                 alt:
                   "The life changing magic of judging reality show contestants to feel better about yourself",
+                width: 900,
               },
             ],
             hoverTitle:
@@ -492,6 +505,7 @@ const comics = [
                 url: "/img/pages/page14.jpg",
                 alt:
                   "I'm taking gardening lesson so that's the best fictional game I could come up with at the moment.",
+                width: 900,
               },
             ],
             hoverTitle:
@@ -536,6 +550,7 @@ const comics = [
               {
                 url: "/img/pages/page15.jpg",
                 alt: "Happy New Year",
+                width: 900,
               },
             ],
             hoverTitle: "Happy New Year",
@@ -578,6 +593,7 @@ const comics = [
               {
                 url: "/img/pages/page16.jpg",
                 alt: "this page is sponsored by fluffy bunny slippers",
+                width: 900,
               },
             ],
             hoverTitle: "this page is sponsored by fluffy bunny slippers",
@@ -613,6 +629,7 @@ const comics = [
               {
                 url: "/img/pages/page17.jpg",
                 alt: "how is that even possible",
+                width: 900,
               },
             ],
             hoverTitle: "how is that even possible",
@@ -630,6 +647,7 @@ const comics = [
               {
                 url: "/img/pages/page18.jpg",
                 alt: "not everyone is into humans all the time",
+                width: 900,
               },
             ],
             hoverTitle: "not everyone is into humans all the time",
@@ -647,6 +665,7 @@ const comics = [
               {
                 url: "/img/pages/page19.jpg",
                 alt: "my favorite character on this page is the couch blanket",
+                width: 900,
               },
             ],
             hoverTitle:
@@ -669,6 +688,7 @@ const comics = [
               {
                 url: "/img/pages/page20.jpg",
                 alt: "translation: &quot;dude! dude!&quot;",
+                width: 900,
               },
             ],
             hoverTitle: "translation: &quot;dude! dude!&quot;",
@@ -693,6 +713,7 @@ const comics = [
                 url: "/img/pages/page21.jpg",
                 alt:
                   "I don&#39;t know what my beef is with teenagers, second page in a row where they&#39;re the villains",
+                width: 900,
               },
             ],
             hoverTitle:
@@ -751,6 +772,7 @@ const comics = [
               {
                 url: "/img/pages/page22.jpg",
                 alt: "the dangers of going out :o",
+                width: 900,
               },
             ],
             hoverTitle: "the dangers of going out :o",
@@ -793,6 +815,7 @@ const comics = [
               {
                 url: "/img/pages/page23.jpg",
                 alt: "I *almost* forgot to draw Rita&#39;s glasses.",
+                width: 900,
               },
             ],
             hoverTitle: "I *almost* forgot to draw Rita&#39;s glasses.",
@@ -839,6 +862,7 @@ const comics = [
                 url: "/img/pages/page24.jpg",
                 alt:
                   "I only realized how much this seems like an advertisement while doing the lettering.",
+                width: 900,
               },
             ],
             hoverTitle:
@@ -891,6 +915,7 @@ const comics = [
                 url: "/img/pages/page25.jpg",
                 alt:
                   "I can&#39;t believe that the same plant that we call doggy in Greek is called snapdragon in English.",
+                width: 900,
               },
             ],
             hoverTitle:
@@ -925,6 +950,7 @@ const comics = [
               {
                 url: "/img/pages/page26.jpg",
                 alt: "if you insist",
+                width: 900,
               },
             ],
             hoverTitle: "if you insist",
@@ -962,6 +988,7 @@ const comics = [
                 url: "/img/pages/page27.jpg",
                 alt:
                   "Danae&#39;s views on stalking do not necessarily reflect the views of the creator of this comic.",
+                width: 900,
               },
             ],
             hoverTitle:
@@ -997,6 +1024,7 @@ const comics = [
               {
                 url: "/img/pages/page28.jpg",
                 alt: "definitely not trying too hard",
+                width: 1000,
               },
             ],
             hoverTitle: "definitely not trying too hard",
@@ -1045,6 +1073,7 @@ const comics = [
               {
                 url: "/img/pages/page29.jpg",
                 alt: "no plants were harmed in the making of this comic",
+                width: 1000,
               },
             ],
             hoverTitle: "no plants were harmed in the making of this comic",
@@ -1073,6 +1102,7 @@ const comics = [
               {
                 url: "/img/pages/page30.jpg",
                 alt: "#anxietyy",
+                width: 1000,
               },
             ],
             hoverTitle: "#anxietyy",
@@ -1099,6 +1129,7 @@ const comics = [
               {
                 url: "/img/pages/page31.jpg",
                 alt: "31",
+                width: 1000,
               },
             ],
             hoverTitle: "31",
@@ -1157,6 +1188,7 @@ const comics = [
                 url: "/img/pages/page32.jpg",
                 alt:
                   "Maybe when I get another art level up, I will start remembering that people carry backpacks/handbags too, when they're on the outside world.",
+                width: 900,
               },
             ],
             hoverTitle:
@@ -1181,6 +1213,7 @@ const comics = [
               {
                 url: "/img/pages/page33.jpg",
                 alt: "I clearly don't know what dragons look like.",
+                width: 900,
               },
             ],
             hoverTitle: "I clearly don't know what dragons look like.",
@@ -1201,6 +1234,7 @@ const comics = [
                 url: "/img/pages/page34.jpg",
                 alt:
                   "is it accidental that everyone's hair is up and I started drawing season 2 in August?",
+                width: 900,
               },
             ],
             hoverTitle:
@@ -1224,6 +1258,7 @@ const comics = [
                 url: "/img/pages/page35.jpg",
                 alt:
                   "Sophia has already deleted that series from her watch list",
+                width: 1200,
               },
             ],
             hoverTitle:
@@ -1244,6 +1279,7 @@ const comics = [
                 url: "/img/pages/page36.jpg",
                 alt:
                   "My style(TM) is forgetting to draw chairs or red velvet cakes in subsequent panels.",
+                width: 1200,
               },
             ],
             hoverTitle:
@@ -1268,6 +1304,7 @@ const comics = [
                 url: "/img/pages/page37.jpg",
                 alt:
                   "Pro tip: Make yourself draw all the food right before lunch. And then get to the inking right before dinner.",
+                width: 1200,
               },
             ],
             hoverTitle:
@@ -1288,6 +1325,7 @@ const comics = [
               {
                 url: "/img/pages/page38.jpg",
                 alt: "No pressure, actually nevermind, forget I ever existed.",
+                width: 1200,
               },
             ],
             hoverTitle:
@@ -1310,6 +1348,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
               {
                 url: "/img/pages/page39.jpg",
                 alt: "Season 02 Page 08",
+                width: 1200,
               },
             ],
             hoverTitle: "Season 02 Page 08",
@@ -1328,6 +1367,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
                 url: "/img/pages/page40.jpg",
                 alt:
                   "I almoat forgot Rita's glasses for a panel, remembered them in the coloring stage.",
+                width: 1200,
               },
             ],
             hoverTitle:
@@ -1349,6 +1389,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
               {
                 url: "/img/pages/page41.jpg",
                 alt: "when your crush is casually being adorable",
+                width: 1200,
               },
             ],
             hoverTitle: "when your crush is casually being adorable",
@@ -1367,6 +1408,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
               {
                 url: "/img/pages/page42.jpg",
                 alt: "sure yeah me too",
+                width: 1200,
               },
             ],
             hoverTitle: "sure yeah me too",
@@ -1387,6 +1429,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
                 url: "/img/pages/page43.jpg",
                 alt:
                   "if you ever do design a site based on a feeling, let me know.",
+                width: 1200,
               },
             ],
             hoverTitle:
@@ -1409,6 +1452,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
                 url: "/img/pages/page44.jpg",
                 alt:
                   "Smar from the future here: I lost this page's post in the website move! Woops.",
+                width: 1200,
               },
             ],
             hoverTitle:
@@ -1431,6 +1475,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
                 url: "/img/pages/page45.jpg",
                 alt:
                   "The thing that annoys me most about this page is that there's no graffiti/tags all over that building, to make it more Athens-y.",
+                width: 1200,
               },
             ],
             hoverTitle:
@@ -1450,6 +1495,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
               {
                 url: "/img/pages/page46.jpg",
                 alt: "oh no...",
+                width: 1200,
               },
             ],
             hoverTitle: "oh no...",
@@ -1467,6 +1513,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
               {
                 url: "/img/pages/page47.jpg",
                 alt: "*glass shattering*",
+                width: 1200,
               },
             ],
             hoverTitle: "*glass shattering*",
@@ -1488,6 +1535,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
               {
                 url: "/img/pages/page48.jpg",
                 alt: "oh no",
+                width: 1200,
               },
             ],
             hoverTitle: "oh no",
@@ -1507,6 +1555,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
               {
                 url: "/img/pages/page49.jpg",
                 alt: "who knows why Danae is like the Mona Lisa here",
+                width: 1200,
               },
             ],
             hoverTitle: "who knows why Danae is like the Mona Lisa here",
@@ -1529,6 +1578,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
                 url: "/img/pages/page50.jpg",
                 alt:
                   "I don't know what site is using this printed newspaper font but just go with it",
+                width: 1200,
               },
             ],
             hoverTitle:
@@ -1548,6 +1598,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
               {
                 url: "/img/pages/page51.jpg",
                 alt: "same bar different time of day",
+                width: 1200,
               },
             ],
             hoverTitle: "same bar different time of day",
@@ -1565,6 +1616,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
               {
                 url: "/img/pages/page52.jpg",
                 alt: "The disappearing chair saga returns on panel 3",
+                width: 1200,
               },
             ],
             hoverTitle: "The disappearing chair saga returns on panel 3",
@@ -1588,6 +1640,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
                 url: "/img/pages/page53.jpg",
                 alt:
                   "Smar from the future here: I lost this page's post in the website move! Woops.",
+                width: 1200,
               },
             ],
             hoverTitle:
@@ -1609,6 +1662,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
                 url: "/img/pages/page54.jpg",
                 alt:
                   "No disappearing chairs on this one! I caught one that almost ran away on panel 4 but it's there now.",
+                width: 1200,
               },
             ],
             hoverTitle:
@@ -1627,6 +1681,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
               {
                 url: "/img/pages/page55.jpg",
                 alt: "I'm having fun with Jo's shirts lately",
+                width: 1200,
               },
             ],
             hoverTitle: "I'm having fun with Jo's shirts lately",
@@ -1649,6 +1704,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
                 url: "/img/pages/page56.jpg",
                 alt:
                   "every now and then I remember I have to include more smoking if this comic has a chance to look realistic",
+                width: 1200,
               },
             ],
             hoverTitle:
@@ -1670,6 +1726,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
               {
                 url: "/img/pages/page57.jpg",
                 alt: "No shade, smoking readers",
+                width: 1215,
               },
             ],
             hoverTitle: "No shade, smoking readers",
@@ -1689,6 +1746,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
                 url: "/img/pages/page58.jpg",
                 alt:
                   "um while making this comic i realized i haven't drawn enough butts in my life.",
+                width: 1200,
               },
             ],
             hoverTitle:
@@ -1708,6 +1766,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
               {
                 url: "/img/pages/page59.jpg",
                 alt: "why would honesty work???",
+                width: 1200,
               },
             ],
             hoverTitle: "why would honesty work???",
