@@ -1,3 +1,8 @@
+const widths = {
+  1: 1200,
+  2: 900,
+};
+
 const comics = [
   {
     name: "Season One",
@@ -9,7 +14,7 @@ const comics = [
             title: "Hello World",
             alt: "aw maaan",
             date: "2017-09-20",
-            images: [{ url: "/img/pages/page001.jpg", alt: "bla" }],
+            images: [{ url: "/img/pages/page1.jpg", alt: "bla" }],
             hoverTitle: "Bla bla",
             blogPost: `
                 <div>
@@ -88,7 +93,7 @@ const comics = [
             date: "2017-09-27",
             images: [
               {
-                url: "/img/pages/page002.jpg",
+                url: "/img/pages/page2.jpg",
                 alt: "When getting a discount > anything else",
               },
             ],
@@ -108,7 +113,7 @@ const comics = [
             date: "2017-10-04",
             images: [
               {
-                url: "/img/pages/page003.jpg",
+                url: "/img/pages/page3.jpg",
                 alt: "frappé on the beach because greece",
               },
             ],
@@ -138,7 +143,7 @@ const comics = [
             date: "2017-10-11",
             images: [
               {
-                url: "/img/pages/page004.jpg",
+                url: "/img/pages/page4.jpg",
                 alt: "Ah, the sea",
               },
             ],
@@ -185,7 +190,7 @@ const comics = [
             date: "2017-10-18",
             images: [
               {
-                url: "/img/pages/page005.jpg",
+                url: "/img/pages/page5.jpg",
                 alt: "non native speaker problems",
               },
             ],
@@ -222,7 +227,7 @@ const comics = [
             date: "2017-10-25",
             images: [
               {
-                url: "/img/pages/page006.jpg",
+                url: "/img/pages/page6.jpg",
                 alt: "Mystery food, my favorite!",
               },
             ],
@@ -258,7 +263,7 @@ const comics = [
             date: "2017-11-01",
             images: [
               {
-                url: "/img/pages/page007.jpg",
+                url: "/img/pages/page7.jpg",
                 alt: "I'm so good at naming things",
               },
             ],
@@ -297,7 +302,7 @@ const comics = [
             date: "2017-11-08",
             images: [
               {
-                url: "/img/pages/page008.jpg",
+                url: "/img/pages/page8.jpg",
                 alt: "isn't web radio romantic?",
               },
             ],
@@ -332,7 +337,7 @@ const comics = [
             date: "2017-11-15",
             images: [
               {
-                url: "/img/pages/page009.jpg",
+                url: "/img/pages/page9.jpg",
                 alt: "raise your hand if you'd watch this reality show",
               },
             ],
@@ -362,7 +367,7 @@ const comics = [
             date: "2017-11-22",
             images: [
               {
-                url: "/img/pages/page010.jpg",
+                url: "/img/pages/page10.jpg",
                 alt: "...nevermind",
               },
             ],
@@ -394,7 +399,7 @@ const comics = [
             date: "2017-11-29",
             images: [
               {
-                url: "/img/pages/page011.jpg",
+                url: "/img/pages/page11.jpg",
                 alt: "a bit",
               },
             ],
@@ -407,12 +412,14 @@ const comics = [
           },
           {
             title: "Too Difficult",
-            alt: "Accidental pointless reference! Where Are You Going was the name of my first zine.",
+            alt:
+              "Accidental pointless reference! Where Are You Going was the name of my first zine.",
             date: "2017-12-06",
             images: [
               {
-                url: "/img/pages/page012.jpg",
-                alt: "Accidental pointless reference! Where Are You Going was the name of my first zine.",
+                url: "/img/pages/page12.jpg",
+                alt:
+                  "Accidental pointless reference! Where Are You Going was the name of my first zine.",
               },
             ],
             hoverTitle:
@@ -429,12 +436,14 @@ const comics = [
           },
           {
             title: "Get holiday cards and stuff!",
-            alt: "The life changing magic of judging reality show contestants to feel better about yourself",
+            alt:
+              "The life changing magic of judging reality show contestants to feel better about yourself",
             date: "2017-12-13",
             images: [
               {
-                url: "/img/pages/page013.jpg",
-                alt: "The life changing magic of judging reality show contestants to feel better about yourself",
+                url: "/img/pages/page13.jpg",
+                alt:
+                  "The life changing magic of judging reality show contestants to feel better about yourself",
               },
             ],
             hoverTitle:
@@ -475,12 +484,14 @@ const comics = [
         pages: [
           {
             title: "Secret Santa",
-            alt: "I'm taking gardening lesson so that's the best fictional game I could come up with at the moment.",
+            alt:
+              "I'm taking gardening lesson so that's the best fictional game I could come up with at the moment.",
             date: "2017-12-20",
             images: [
               {
-                url: "/img/pages/page014.jpg",
-                alt: "I'm taking gardening lesson so that's the best fictional game I could come up with at the moment.",
+                url: "/img/pages/page14.jpg",
+                alt:
+                  "I'm taking gardening lesson so that's the best fictional game I could come up with at the moment.",
               },
             ],
             hoverTitle:
@@ -523,7 +534,7 @@ const comics = [
             date: "2018-01-10",
             images: [
               {
-                url: "/img/pages/page015.jpg",
+                url: "/img/pages/page15.jpg",
                 alt: "Happy New Year",
               },
             ],
@@ -565,7 +576,7 @@ const comics = [
             date: "2018-01-17",
             images: [
               {
-                url: "/img/pages/page016.jpg",
+                url: "/img/pages/page16.jpg",
                 alt: "this page is sponsored by fluffy bunny slippers",
               },
             ],
@@ -600,7 +611,7 @@ const comics = [
             date: "2018-01-24",
             images: [
               {
-                url: "/img/pages/page017.jpg",
+                url: "/img/pages/page17.jpg",
                 alt: "how is that even possible",
               },
             ],
@@ -617,7 +628,7 @@ const comics = [
             date: "2018-01-31",
             images: [
               {
-                url: "/img/pages/page018.jpg",
+                url: "/img/pages/page18.jpg",
                 alt: "not everyone is into humans all the time",
               },
             ],
@@ -634,7 +645,7 @@ const comics = [
             date: "2018-02-14",
             images: [
               {
-                url: "/img/pages/page019.jpg",
+                url: "/img/pages/page19.jpg",
                 alt: "my favorite character on this page is the couch blanket",
               },
             ],
@@ -656,7 +667,7 @@ const comics = [
             date: "2018-02-21",
             images: [
               {
-                url: "/img/pages/page020.jpg",
+                url: "/img/pages/page20.jpg",
                 alt: "translation: &quot;dude! dude!&quot;",
               },
             ],
@@ -674,12 +685,14 @@ const comics = [
           },
           {
             title: "Spring Comic Conventions",
-            alt: "I don&#39;t know what my beef is with teenagers, second page in a row where they&#39;re the villains",
+            alt:
+              "I don&#39;t know what my beef is with teenagers, second page in a row where they&#39;re the villains",
             date: "2018-02-18",
             images: [
               {
-                url: "/img/pages/page021.jpg",
-                alt: "I don&#39;t know what my beef is with teenagers, second page in a row where they&#39;re the villains",
+                url: "/img/pages/page21.jpg",
+                alt:
+                  "I don&#39;t know what my beef is with teenagers, second page in a row where they&#39;re the villains",
               },
             ],
             hoverTitle:
@@ -736,7 +749,7 @@ const comics = [
             date: "2018-03-07",
             images: [
               {
-                url: "/img/pages/page022.jpg",
+                url: "/img/pages/page22.jpg",
                 alt: "the dangers of going out :o",
               },
             ],
@@ -778,7 +791,7 @@ const comics = [
             date: "2018-03-14",
             images: [
               {
-                url: "/img/pages/page023.jpg",
+                url: "/img/pages/page23.jpg",
                 alt: "I *almost* forgot to draw Rita&#39;s glasses.",
               },
             ],
@@ -818,12 +831,14 @@ const comics = [
           },
           {
             title: "24",
-            alt: "I only realized how much this seems like an advertisement while doing the lettering.",
+            alt:
+              "I only realized how much this seems like an advertisement while doing the lettering.",
             date: "2018-03-21",
             images: [
               {
-                url: "/img/pages/page024.jpg",
-                alt: "I only realized how much this seems like an advertisement while doing the lettering.",
+                url: "/img/pages/page24.jpg",
+                alt:
+                  "I only realized how much this seems like an advertisement while doing the lettering.",
               },
             ],
             hoverTitle:
@@ -868,12 +883,14 @@ const comics = [
         pages: [
           {
             title: "Little dog flower",
-            alt: "I can&#39;t believe that the same plant that we call doggy in Greek is called snapdragon in English.",
+            alt:
+              "I can&#39;t believe that the same plant that we call doggy in Greek is called snapdragon in English.",
             date: "2018-04-05",
             images: [
               {
-                url: "/img/pages/page025.jpg",
-                alt: "I can&#39;t believe that the same plant that we call doggy in Greek is called snapdragon in English.",
+                url: "/img/pages/page25.jpg",
+                alt:
+                  "I can&#39;t believe that the same plant that we call doggy in Greek is called snapdragon in English.",
               },
             ],
             hoverTitle:
@@ -906,7 +923,7 @@ const comics = [
             date: "2018-04-18",
             images: [
               {
-                url: "/img/pages/page026.jpg",
+                url: "/img/pages/page26.jpg",
                 alt: "if you insist",
               },
             ],
@@ -937,12 +954,14 @@ const comics = [
           },
           {
             title: "27",
-            alt: "Danae&#39;s views on stalking do not necessarily reflect the views of the creator of this comic.",
+            alt:
+              "Danae&#39;s views on stalking do not necessarily reflect the views of the creator of this comic.",
             date: "2018-05-02",
             images: [
               {
-                url: "/img/pages/page027.jpg",
-                alt: "Danae&#39;s views on stalking do not necessarily reflect the views of the creator of this comic.",
+                url: "/img/pages/page27.jpg",
+                alt:
+                  "Danae&#39;s views on stalking do not necessarily reflect the views of the creator of this comic.",
               },
             ],
             hoverTitle:
@@ -976,7 +995,7 @@ const comics = [
             date: "2018-05-16",
             images: [
               {
-                url: "/img/pages/page028.jpg",
+                url: "/img/pages/page28.jpg",
                 alt: "definitely not trying too hard",
               },
             ],
@@ -1024,7 +1043,7 @@ const comics = [
             date: "2018-05-24",
             images: [
               {
-                url: "/img/pages/page029.jpg",
+                url: "/img/pages/page29.jpg",
                 alt: "no plants were harmed in the making of this comic",
               },
             ],
@@ -1052,7 +1071,7 @@ const comics = [
             date: "2018-06-06",
             images: [
               {
-                url: "/img/pages/page030.jpg",
+                url: "/img/pages/page30.jpg",
                 alt: "#anxietyy",
               },
             ],
@@ -1078,7 +1097,7 @@ const comics = [
             date: "2018-06-29",
             images: [
               {
-                url: "/img/pages/page031.jpg",
+                url: "/img/pages/page31.jpg",
                 alt: "31",
               },
             ],
@@ -1130,12 +1149,14 @@ const comics = [
         pages: [
           {
             title: "Season 02 Page 01",
-            alt: "Maybe when I get another art level up, I will start remembering that people carry backpacks/handbags too, when they're on the outside world.",
+            alt:
+              "Maybe when I get another art level up, I will start remembering that people carry backpacks/handbags too, when they're on the outside world.",
             date: "2018-09-05",
             images: [
               {
-                url: "/img/pages/page032.jpg",
-                alt: "Maybe when I get another art level up, I will start remembering that people carry backpacks/handbags too, when they're on the outside world.",
+                url: "/img/pages/page32.jpg",
+                alt:
+                  "Maybe when I get another art level up, I will start remembering that people carry backpacks/handbags too, when they're on the outside world.",
               },
             ],
             hoverTitle:
@@ -1158,7 +1179,7 @@ const comics = [
             date: "2018-09-12",
             images: [
               {
-                url: "/img/pages/page033.jpg",
+                url: "/img/pages/page33.jpg",
                 alt: "I clearly don't know what dragons look like.",
               },
             ],
@@ -1172,12 +1193,14 @@ const comics = [
           },
           {
             title: "Season 02 Page 03",
-            alt: "is it accidental that everyone's hair is up and I started drawing season 2 in August?",
+            alt:
+              "is it accidental that everyone's hair is up and I started drawing season 2 in August?",
             date: "2018-09-19",
             images: [
               {
-                url: "/img/pages/page034.jpg",
-                alt: "is it accidental that everyone's hair is up and I started drawing season 2 in August?",
+                url: "/img/pages/page34.jpg",
+                alt:
+                  "is it accidental that everyone's hair is up and I started drawing season 2 in August?",
               },
             ],
             hoverTitle:
@@ -1198,8 +1221,9 @@ const comics = [
             date: "2018-10-05",
             images: [
               {
-                url: "/img/pages/page035.jpg",
-                alt: "Sophia has already deleted that series from her watch list",
+                url: "/img/pages/page35.jpg",
+                alt:
+                  "Sophia has already deleted that series from her watch list",
               },
             ],
             hoverTitle:
@@ -1212,12 +1236,14 @@ const comics = [
           },
           {
             title: "Season 02 Page 05",
-            alt: "My style(TM) is forgetting to draw chairs or red velvet cakes in subsequent panels.",
+            alt:
+              "My style(TM) is forgetting to draw chairs or red velvet cakes in subsequent panels.",
             date: "2018-10-17",
             images: [
               {
-                url: "/img/pages/page036.jpg",
-                alt: "My style(TM) is forgetting to draw chairs or red velvet cakes in subsequent panels.",
+                url: "/img/pages/page36.jpg",
+                alt:
+                  "My style(TM) is forgetting to draw chairs or red velvet cakes in subsequent panels.",
               },
             ],
             hoverTitle:
@@ -1234,12 +1260,14 @@ const comics = [
           },
           {
             title: "Season 02 Page 06",
-            alt: "Pro tip: Make yourself draw all the food right before lunch. And then get to the inking right before dinner.",
+            alt:
+              "Pro tip: Make yourself draw all the food right before lunch. And then get to the inking right before dinner.",
             date: "2018-10-31",
             images: [
               {
-                url: "/img/pages/page037.jpg",
-                alt: "Pro tip: Make yourself draw all the food right before lunch. And then get to the inking right before dinner.",
+                url: "/img/pages/page37.jpg",
+                alt:
+                  "Pro tip: Make yourself draw all the food right before lunch. And then get to the inking right before dinner.",
               },
             ],
             hoverTitle:
@@ -1258,7 +1286,7 @@ const comics = [
             date: "2018-10-31",
             images: [
               {
-                url: "/img/pages/page038.jpg",
+                url: "/img/pages/page38.jpg",
                 alt: "No pressure, actually nevermind, forget I ever existed.",
               },
             ],
@@ -1280,7 +1308,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
             date: "2018-11-07",
             images: [
               {
-                url: "/img/pages/page039.jpg",
+                url: "/img/pages/page39.jpg",
                 alt: "Season 02 Page 08",
               },
             ],
@@ -1292,12 +1320,14 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
           },
           {
             title: "Season 02 Page 09",
-            alt: "I almoat forgot Rita's glasses for a panel, remembered them in the coloring stage.",
+            alt:
+              "I almoat forgot Rita's glasses for a panel, remembered them in the coloring stage.",
             date: "2018-11-18",
             images: [
               {
-                url: "/img/pages/page040.jpg",
-                alt: "I almoat forgot Rita's glasses for a panel, remembered them in the coloring stage.",
+                url: "/img/pages/page40.jpg",
+                alt:
+                  "I almoat forgot Rita's glasses for a panel, remembered them in the coloring stage.",
               },
             ],
             hoverTitle:
@@ -1317,7 +1347,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
             date: "2018-11-29",
             images: [
               {
-                url: "/img/pages/page041.jpg",
+                url: "/img/pages/page41.jpg",
                 alt: "when your crush is casually being adorable",
               },
             ],
@@ -1335,7 +1365,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
             date: "2018-11-30",
             images: [
               {
-                url: "/img/pages/page042.jpg",
+                url: "/img/pages/page42.jpg",
                 alt: "sure yeah me too",
               },
             ],
@@ -1349,12 +1379,14 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
           },
           {
             title: "Season 02 Page 12",
-            alt: "if you ever do design a site based on a feeling, let me know.",
+            alt:
+              "if you ever do design a site based on a feeling, let me know.",
             date: "2018-12-05",
             images: [
               {
-                url: "/img/pages/page043.jpg",
-                alt: "if you ever do design a site based on a feeling, let me know.",
+                url: "/img/pages/page43.jpg",
+                alt:
+                  "if you ever do design a site based on a feeling, let me know.",
               },
             ],
             hoverTitle:
@@ -1369,12 +1401,14 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
           },
           {
             title: "Season 02 Page 13",
-            alt: "Smar from the future here: I lost this page's post in the website move! Woops.",
+            alt:
+              "Smar from the future here: I lost this page's post in the website move! Woops.",
             date: "2018-12-13",
             images: [
               {
-                url: "/img/pages/page044.jpg",
-                alt: "Smar from the future here: I lost this page's post in the website move! Woops.",
+                url: "/img/pages/page44.jpg",
+                alt:
+                  "Smar from the future here: I lost this page's post in the website move! Woops.",
               },
             ],
             hoverTitle:
@@ -1389,12 +1423,14 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
           },
           {
             title: "Season 02 Page 14",
-            alt: "The thing that annoys me most about this page is that there's no graffiti/tags all over that building, to make it more Athens-y.",
+            alt:
+              "The thing that annoys me most about this page is that there's no graffiti/tags all over that building, to make it more Athens-y.",
             date: "2018-12-21",
             images: [
               {
-                url: "/img/pages/page045.jpg",
-                alt: "The thing that annoys me most about this page is that there's no graffiti/tags all over that building, to make it more Athens-y.",
+                url: "/img/pages/page45.jpg",
+                alt:
+                  "The thing that annoys me most about this page is that there's no graffiti/tags all over that building, to make it more Athens-y.",
               },
             ],
             hoverTitle:
@@ -1412,7 +1448,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
             date: "2019-01-09",
             images: [
               {
-                url: "/img/pages/page046.jpg",
+                url: "/img/pages/page46.jpg",
                 alt: "oh no...",
               },
             ],
@@ -1429,7 +1465,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
             date: "2019-01-16",
             images: [
               {
-                url: "/img/pages/page047.jpg",
+                url: "/img/pages/page47.jpg",
                 alt: "*glass shattering*",
               },
             ],
@@ -1450,7 +1486,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
             date: "2019-01-23",
             images: [
               {
-                url: "/img/pages/page048.jpg",
+                url: "/img/pages/page48.jpg",
                 alt: "oh no",
               },
             ],
@@ -1469,7 +1505,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
             date: "2019-01-30",
             images: [
               {
-                url: "/img/pages/page049.jpg",
+                url: "/img/pages/page49.jpg",
                 alt: "who knows why Danae is like the Mona Lisa here",
               },
             ],
@@ -1485,12 +1521,14 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
           },
           {
             title: "Season 02 Page 19",
-            alt: "I don't know what site is using this printed newspaper font but just go with it",
+            alt:
+              "I don't know what site is using this printed newspaper font but just go with it",
             date: "2019-02-09",
             images: [
               {
-                url: "/img/pages/page050.jpg",
-                alt: "I don't know what site is using this printed newspaper font but just go with it",
+                url: "/img/pages/page50.jpg",
+                alt:
+                  "I don't know what site is using this printed newspaper font but just go with it",
               },
             ],
             hoverTitle:
@@ -1508,7 +1546,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
             date: "2019-02-15",
             images: [
               {
-                url: "/img/pages/page051.jpg",
+                url: "/img/pages/page51.jpg",
                 alt: "same bar different time of day",
               },
             ],
@@ -1525,7 +1563,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
             date: "2019-02-27",
             images: [
               {
-                url: "/img/pages/page052.jpg",
+                url: "/img/pages/page52.jpg",
                 alt: "The disappearing chair saga returns on panel 3",
               },
             ],
@@ -1542,12 +1580,14 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
           },
           {
             title: "Season 02 Page 22",
-            alt: "Smar from the future here: I lost this page's post in the website move! Woops.",
+            alt:
+              "Smar from the future here: I lost this page's post in the website move! Woops.",
             date: "2019-03-06",
             images: [
               {
-                url: "/img/pages/page053.jpg",
-                alt: "Smar from the future here: I lost this page's post in the website move! Woops.",
+                url: "/img/pages/page53.jpg",
+                alt:
+                  "Smar from the future here: I lost this page's post in the website move! Woops.",
               },
             ],
             hoverTitle:
@@ -1561,12 +1601,14 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
           },
           {
             title: "Season 02 Page 23",
-            alt: "No disappearing chairs on this one! I caught one that almost ran away on panel 4 but it's there now.",
+            alt:
+              "No disappearing chairs on this one! I caught one that almost ran away on panel 4 but it's there now.",
             date: "2019-03-14",
             images: [
               {
-                url: "/img/pages/page054.jpg",
-                alt: "No disappearing chairs on this one! I caught one that almost ran away on panel 4 but it's there now.",
+                url: "/img/pages/page54.jpg",
+                alt:
+                  "No disappearing chairs on this one! I caught one that almost ran away on panel 4 but it's there now.",
               },
             ],
             hoverTitle:
@@ -1583,7 +1625,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
             date: "2019-03-27",
             images: [
               {
-                url: "/img/pages/page055.jpg",
+                url: "/img/pages/page55.jpg",
                 alt: "I'm having fun with Jo's shirts lately",
               },
             ],
@@ -1599,12 +1641,14 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
           },
           {
             title: "Season 02 Page 25",
-            alt: "every now and then I remember I have to include more smoking if this comic has a chance to look realistic",
+            alt:
+              "every now and then I remember I have to include more smoking if this comic has a chance to look realistic",
             date: "2019-05-01",
             images: [
               {
-                url: "/img/pages/page056.jpg",
-                alt: "every now and then I remember I have to include more smoking if this comic has a chance to look realistic",
+                url: "/img/pages/page56.jpg",
+                alt:
+                  "every now and then I remember I have to include more smoking if this comic has a chance to look realistic",
               },
             ],
             hoverTitle:
@@ -1624,7 +1668,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
             date: "2019-05-28",
             images: [
               {
-                url: "/img/pages/page057.jpg",
+                url: "/img/pages/page57.jpg",
                 alt: "No shade, smoking readers",
               },
             ],
@@ -1637,12 +1681,14 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
           },
           {
             title: "Season 02 Page 27",
-            alt: "um while making this comic i realized i haven't drawn enough butts in my life.",
+            alt:
+              "um while making this comic i realized i haven't drawn enough butts in my life.",
             date: "2019-06-06",
             images: [
               {
-                url: "/img/pages/page058.jpg",
-                alt: "um while making this comic i realized i haven't drawn enough butts in my life.",
+                url: "/img/pages/page58.jpg",
+                alt:
+                  "um while making this comic i realized i haven't drawn enough butts in my life.",
               },
             ],
             hoverTitle:
@@ -1660,7 +1706,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
             date: "2019-06-13",
             images: [
               {
-                url: "/img/pages/page059.jpg",
+                url: "/img/pages/page59.jpg",
                 alt: "why would honesty work???",
               },
             ],
