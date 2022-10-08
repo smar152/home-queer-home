@@ -6,6 +6,7 @@ import ChevronDoubleRight from "./Icons/ChevronDoubleRight";
 import ChevronRight from "./Icons/ChevronRight";
 import ChevronLeft from "./Icons/ChevronLeft";
 import comics, { getLastComicPageNumbers } from "./../data/comics";
+import {device} from "../data/device";
 
 const StComicPage = styled("div")`
   display: flex;
@@ -76,8 +77,10 @@ const StLink = styled("a")`
 `;
 
 const StPostContainer = styled("div")`
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding: 80px 15px 40px 15px;
+  @media ${device.tablet} {
+    padding: 80px 0px 40px 0px;
+  }
 `;
 
 const StPageDate = styled("div")`
@@ -169,7 +172,6 @@ const ComicPage = (props) => {
             {images.map((image) => {
               const { url, alt } = image;
               return <Image key={url} src={url} alt={alt} />;
-              //return <img src={url} key={url} alt={alt} />;
             })}
           </StPageImages>
         </StImgLink>
