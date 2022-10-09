@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import Image from "./Image";
-import Link from "next/link";
 import ChevronDoubleLeft from "./Icons/ChevronDoubleLeft";
 import ChevronDoubleRight from "./Icons/ChevronDoubleRight";
 import ChevronRight from "./Icons/ChevronRight";
 import ChevronLeft from "./Icons/ChevronLeft";
-import comics, { getLastComicPageNumbers } from "./../data/comics";
-import {device} from "../data/device";
+import { getLastComicPageNumbers } from "./../data/comics";
+import {device, deviceSize} from "../data/device";
+import React, {useState} from "react";
 
 const StComicPage = styled("div")`
   display: flex;
@@ -113,6 +113,27 @@ const ComicPage = (props) => {
     next,
   } = page || {};
   const dateObj = new Date(`${date} 12:00:00`);
+  const [seasonString, setSeasonString] = useState("season");
+  const [episodeString, setEpisodeString] = useState("episode");
+  const [pageString, setPageString] = useState("page");
+
+  React.useEffect(() => {
+    function handleResize() {
+      console.log('resized to: ', window.innerWidth, 'x', window.innerHeight)
+      if(window.innerWidth.toString() < deviceSize.mobileL){
+        setSeasonString("s");
+        setEpisodeString("e");
+        setPageString("p");
+      }
+      else{
+        setSeasonString("season");
+        setEpisodeString("episode");
+        setPageString("page");
+      }
+    }
+    window.addEventListener('resize', handleResize);
+    });
+
   return (
     <StComicPage data-id="comic-page">
       <StPagePagination data-id="page-pagination">
@@ -136,7 +157,7 @@ const ComicPage = (props) => {
             key="seasonLink"
             href={`/season/${seasonNumber + 1}/episode/${1}/page/${1}`}
           >
-            <StSeason>season {seasonNumber + 1}</StSeason>
+            <StSeason>{seasonString} {seasonNumber + 1}</StSeason>
           </StLink>
           <StLink
             key="seasonLink"
@@ -144,9 +165,9 @@ const ComicPage = (props) => {
               episodeNumber + 1
             }/page/${1}`}
           >
-            <StSeason>episode {episodeNumber + 1}</StSeason>
+            <StSeason>{episodeString} {episodeNumber + 1}</StSeason>
           </StLink>
-          <StPage>page {pageNumber + 1}</StPage>
+          <StPage>{pageString} {pageNumber + 1}</StPage>
         </div>
         <div>
           <StLink
