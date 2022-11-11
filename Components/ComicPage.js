@@ -1,11 +1,10 @@
 import styled from "styled-components";
 import Image from "./Image";
-import Link from "next/link";
 import ChevronDoubleLeft from "./Icons/ChevronDoubleLeft";
 import ChevronDoubleRight from "./Icons/ChevronDoubleRight";
 import ChevronRight from "./Icons/ChevronRight";
 import ChevronLeft from "./Icons/ChevronLeft";
-import comics, { getLastComicPageNumbers } from "./../data/comics";
+import { getLastComicPageNumbers } from "./../data/comics";
 
 const StComicPage = styled("div")`
   display: flex;
@@ -78,6 +77,10 @@ const StLink = styled("a")`
 const StPostContainer = styled("div")`
   padding-top: 80px;
   padding-bottom: 40px;
+  @media (max-width: 768px) {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
 `;
 
 const StPageDate = styled("div")`
@@ -88,7 +91,8 @@ const StPageDate = styled("div")`
 
 const StPageTite = styled("h2")``;
 
-const StPostContent = styled("div")``;
+const StPostContent = styled("div")`
+`;
 
 const ComicPage = (props) => {
   const lastComicPage = getLastComicPageNumbers();
