@@ -13,6 +13,7 @@ const StComicPage = styled("div")`
   font-size: 1.1rem;
 `;
 
+
 const StHideOnMobile = styled("div")`
   @media (max-width: 768px) {
     display:none;
@@ -51,6 +52,7 @@ const StSeason = styled.div`
     color: white;
   }
 `;
+
 const StPaginationIcon = styled(StSeason)`
   font-size: 2rem;
   svg {
@@ -64,6 +66,12 @@ const StPage = styled("span")`
   border-radius: 0px 0px 20px 20px;
   background-color: orange;
   color: white;
+`;
+
+const StCircleOnMobile = styled("div")`
+  @media (max-width: 768px) {
+  border-radius: 46px;
+  }
 `;
 
 const StPageImages = styled("div")`
@@ -95,7 +103,7 @@ const StPageDate = styled("div")`
   text-align: right;
 `;
 
-const StPageTite = styled("h2")``;
+const StPageTitle = styled("h2")``;
 
 const StPostContent = styled("div")`
 `;
@@ -124,11 +132,13 @@ const ComicPage = (props) => {
     <StComicPage data-id="comic-page">
       <StPagePagination data-id="page-pagination">
         <div>
-          <StLink key="firstPageLink" href={`/season/1/episode/1/page/1`}>
-            <StPaginationIcon>
-              <ChevronDoubleLeft />
-            </StPaginationIcon>
-          </StLink>
+          <StCircleOnMobile data-id="circle">
+            <StLink key="firstPageLink" href={`/season/1/episode/1/page/1`}>
+              <StPaginationIcon data-id="pagination-icon">
+                <ChevronDoubleLeft />
+              </StPaginationIcon>
+            </StLink>
+          </StCircleOnMobile>
           <StHideOnMobile>
           <StLink
             key="prevPageLink"
@@ -168,11 +178,13 @@ const ComicPage = (props) => {
               </StPaginationIcon>
             </StLink>
           </StHideOnMobile>
-          <StLink key="lastPageLink" href={`${url}`}>
-            <StPaginationIcon>
-              <ChevronDoubleRight />
-            </StPaginationIcon>
-          </StLink>
+          <StCircleOnMobile>
+            <StLink key="lastPageLink" href={`${url}`}>
+              <StPaginationIcon>
+                <ChevronDoubleRight />
+              </StPaginationIcon>
+            </StLink>
+          </StCircleOnMobile>
         </div>
       </StPagePagination>
       <StLink
@@ -194,7 +206,7 @@ const ComicPage = (props) => {
           })}
           <hr />
         </StPageDate>
-        <StPageTite>{title}</StPageTite>
+        <StPageTitle>{title}</StPageTitle>
         <StPostContent dangerouslySetInnerHTML={{ __html: blogPost }} />
       </StPostContainer>
     </StComicPage>
