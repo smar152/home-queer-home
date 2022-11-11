@@ -13,6 +13,12 @@ const StComicPage = styled("div")`
   font-size: 1.1rem;
 `;
 
+const StHideOnMobile = styled("div")`
+  @media (max-width: 768px) {
+    display:none;
+  }
+`;
+
 const StPagePagination = styled("div")`
   display: flex;
   justify-content: space-between;
@@ -123,6 +129,7 @@ const ComicPage = (props) => {
               <ChevronDoubleLeft />
             </StPaginationIcon>
           </StLink>
+          <StHideOnMobile>
           <StLink
             key="prevPageLink"
             href={`/season/${previous.seasonNumber}/episode/${previous.episodeNumber}/page/${previous.pageNumber}`}
@@ -131,6 +138,7 @@ const ComicPage = (props) => {
               <ChevronLeft />
             </StPaginationIcon>
           </StLink>
+          </StHideOnMobile>
         </div>
         <div>
           <StLink
@@ -150,15 +158,17 @@ const ComicPage = (props) => {
           <StPage>page {pageNumber + 1}</StPage>
         </div>
         <div>
-          <StLink
-            key="nextPageLink"
-            href={`/season/${next.seasonNumber}/episode/${next.episodeNumber}/page/${next.pageNumber}`}
-          >
-            <StPaginationIcon>
-              <ChevronRight />
-            </StPaginationIcon>
-          </StLink>
-          <StLink key="nextPageLink" href={`${url}`}>
+          <StHideOnMobile>
+            <StLink
+              key="nextPageLink"
+              href={`/season/${next.seasonNumber}/episode/${next.episodeNumber}/page/${next.pageNumber}`}
+            >
+              <StPaginationIcon>
+                <ChevronRight />
+              </StPaginationIcon>
+            </StLink>
+          </StHideOnMobile>
+          <StLink key="lastPageLink" href={`${url}`}>
             <StPaginationIcon>
               <ChevronDoubleRight />
             </StPaginationIcon>
@@ -173,13 +183,10 @@ const ComicPage = (props) => {
             {images.map((image) => {
               const { url, alt } = image;
               return <Image key={url} src={url} alt={alt} />;
-              //return <img src={url} key={url} alt={alt} />;
             })}
           </StPageImages>
         </StImgLink>
       </StLink>
-      {/* <BiggerNavigation previousChapterKey nextChapterKey /> */}
-      {/* <ChapterTitle>{title}</ChapterTitle> */}
       <StPostContainer data-id="post-container">
         <StPageDate>
           {dateObj.toLocaleDateString("en-UK", {
