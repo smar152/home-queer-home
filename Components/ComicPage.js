@@ -4,7 +4,7 @@ import ChevronDoubleLeft from "./Icons/ChevronDoubleLeft";
 import ChevronDoubleRight from "./Icons/ChevronDoubleRight";
 import ChevronRight from "./Icons/ChevronRight";
 import ChevronLeft from "./Icons/ChevronLeft";
-import { getLastComicPageNumbers } from "./../data/comics";
+import { getLastComicPageNumbers } from "../data/comics";
 
 const StComicPage = styled("div")`
   display: flex;
@@ -13,10 +13,9 @@ const StComicPage = styled("div")`
   font-size: 1.1rem;
 `;
 
-
 const StHideOnMobile = styled("div")`
   @media (max-width: 768px) {
-    display:none;
+    display: none;
   }
 `;
 
@@ -32,12 +31,14 @@ const StPagePagination = styled("div")`
     text-decoration: none;
     color: orange;
   }
+  @media (max-width: 768px) {
+    transform: translateY(-50%);
+  }
 `;
 
 const StSeason = styled.div`
   display: inline-flex;
   font-weight: 400;
-  color: orange;
   padding: 10px 15px 5px 15px;
   outline: solid 2px orange;
   outline-offset: -1px;
@@ -46,8 +47,14 @@ const StSeason = styled.div`
   border-radius: 0px 0px 20px 20px;
   transition: background-color 400ms ease 0s;
   background-color: rgba(255, 255, 255, 0.97);
+  color: orange;
 
   :hover {
+    background-color: rgba(255, 165, 0, 0.97);
+    color: white;
+  }
+
+  @media (max-width: 768px) {
     background-color: rgba(255, 165, 0, 0.97);
     color: white;
   }
@@ -58,6 +65,13 @@ const StPaginationIcon = styled(StSeason)`
   svg {
     height: 1.3rem;
   }
+  @media (max-width: 768px) {
+    border-radius: 46px;
+    padding: 7px;
+    margin: 0px 15px;
+    background-color: white;
+    color: orange;
+  }
 `;
 
 const StPage = styled("span")`
@@ -66,12 +80,6 @@ const StPage = styled("span")`
   border-radius: 0px 0px 20px 20px;
   background-color: orange;
   color: white;
-`;
-
-const StCircleOnMobile = styled("div")`
-  @media (max-width: 768px) {
-  border-radius: 46px;
-  }
 `;
 
 const StPageImages = styled("div")`
@@ -105,8 +113,7 @@ const StPageDate = styled("div")`
 
 const StPageTitle = styled("h2")``;
 
-const StPostContent = styled("div")`
-`;
+const StPostContent = styled("div")``;
 
 const ComicPage = (props) => {
   const lastComicPage = getLastComicPageNumbers();
@@ -132,22 +139,20 @@ const ComicPage = (props) => {
     <StComicPage data-id="comic-page">
       <StPagePagination data-id="page-pagination">
         <div>
-          <StCircleOnMobile data-id="circle">
-            <StLink key="firstPageLink" href={`/season/1/episode/1/page/1`}>
-              <StPaginationIcon data-id="pagination-icon">
-                <ChevronDoubleLeft />
-              </StPaginationIcon>
-            </StLink>
-          </StCircleOnMobile>
-          <StHideOnMobile>
-          <StLink
-            key="prevPageLink"
-            href={`/season/${previous.seasonNumber}/episode/${previous.episodeNumber}/page/${previous.pageNumber}`}
-          >
-            <StPaginationIcon>
-              <ChevronLeft />
+          <StLink key="firstPageLink" href={`/season/1/episode/1/page/1`}>
+            <StPaginationIcon data-id="pagination-icon">
+              <ChevronDoubleLeft />
             </StPaginationIcon>
           </StLink>
+          <StHideOnMobile>
+            <StLink
+              key="prevPageLink"
+              href={`/season/${previous.seasonNumber}/episode/${previous.episodeNumber}/page/${previous.pageNumber}`}
+            >
+              <StPaginationIcon>
+                <ChevronLeft />
+              </StPaginationIcon>
+            </StLink>
           </StHideOnMobile>
         </div>
         <div>
@@ -165,7 +170,9 @@ const ComicPage = (props) => {
           >
             <StSeason>episode {episodeNumber + 1}</StSeason>
           </StLink>
-          <StPage>page {pageNumber + 1}</StPage>
+          <StHideOnMobile>
+            <StPage>page {pageNumber + 1}</StPage>
+          </StHideOnMobile>
         </div>
         <div>
           <StHideOnMobile>
@@ -178,13 +185,11 @@ const ComicPage = (props) => {
               </StPaginationIcon>
             </StLink>
           </StHideOnMobile>
-          <StCircleOnMobile>
-            <StLink key="lastPageLink" href={`${url}`}>
-              <StPaginationIcon>
-                <ChevronDoubleRight />
-              </StPaginationIcon>
-            </StLink>
-          </StCircleOnMobile>
+          <StLink key="lastPageLink" href={`${url}`}>
+            <StPaginationIcon>
+              <ChevronDoubleRight />
+            </StPaginationIcon>
+          </StLink>
         </div>
       </StPagePagination>
       <StLink

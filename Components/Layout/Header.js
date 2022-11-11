@@ -37,6 +37,9 @@ const MainNavigation = styled("nav")`
   background: orange;
   color: white;
   padding: 12px;
+  @media (max-width: 768px) {
+    padding-bottom: 30px;
+  }
   font-family: "DM Sans", "FuturaStdBold", Helvetica, Arial;
   flex-grow: 1;
   justify-content: space-between;
