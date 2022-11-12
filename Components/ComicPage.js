@@ -36,6 +36,10 @@ const StPagePagination = styled("div")`
   }
 `;
 
+const StPageNavigationArrows = styled("div")`
+  display: flex;
+`;
+
 const StSeason = styled.div`
   display: inline-flex;
   font-weight: 400;
@@ -138,7 +142,7 @@ const ComicPage = (props) => {
   return (
     <StComicPage data-id="comic-page">
       <StPagePagination data-id="page-pagination">
-        <div>
+        <StPageNavigationArrows>
           <StLink key="firstPageLink" href={`/season/1/episode/1/page/1`}>
             <StPaginationIcon data-id="pagination-icon">
               <ChevronDoubleLeft />
@@ -154,8 +158,8 @@ const ComicPage = (props) => {
               </StPaginationIcon>
             </StLink>
           </StHideOnMobile>
-        </div>
-        <div>
+        </StPageNavigationArrows>
+        <StPageNavigationArrows>
           <StLink
             key="seasonLink"
             href={`/season/${seasonNumber + 1}/episode/${1}/page/${1}`}
@@ -173,8 +177,8 @@ const ComicPage = (props) => {
           <StHideOnMobile>
             <StPage>page {pageNumber + 1}</StPage>
           </StHideOnMobile>
-        </div>
-        <div>
+        </StPageNavigationArrows>
+        <StPageNavigationArrows>
           <StHideOnMobile>
             <StLink
               key="nextPageLink"
@@ -190,7 +194,7 @@ const ComicPage = (props) => {
               <ChevronDoubleRight />
             </StPaginationIcon>
           </StLink>
-        </div>
+        </StPageNavigationArrows>
       </StPagePagination>
       <StLink
         href={`/season/${next.seasonNumber}/episode/${next.episodeNumber}/page/${next.pageNumber}`}
