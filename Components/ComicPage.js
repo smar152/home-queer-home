@@ -106,6 +106,7 @@ const StPostContainer = styled("div")`
   @media (max-width: 768px) {
     padding-left: 35px;
     padding-right: 35px;
+    padding-bottom: 70px;
   }
 `;
 
@@ -118,6 +119,13 @@ const StPageDate = styled("div")`
 const StPageTitle = styled("h2")``;
 
 const StPostContent = styled("div")``;
+
+const StMobilePageNavigation = styled("div")`
+  display: none;
+  @media (max-width: 768px) {
+    display: flex;
+  }
+`;
 
 const ComicPage = (props) => {
   const lastComicPage = getLastComicPageNumbers();
@@ -218,6 +226,7 @@ const ComicPage = (props) => {
         <StPageTitle>{title}</StPageTitle>
         <StPostContent dangerouslySetInnerHTML={{ __html: blogPost }} />
       </StPostContainer>
+      <StMobilePageNavigation>hi</StMobilePageNavigation>
     </StComicPage>
   );
 };
