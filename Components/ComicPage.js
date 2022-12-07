@@ -69,7 +69,7 @@ const StPaginationIcon = styled(StSeason)`
     height: 1.3rem;
   }
   @media (max-width: 768px) {
-      border-radius: 46px;
+    border-radius: 46px;
     padding: 7px;
     margin: 0px 15px;
     background-color: white;
@@ -83,6 +83,14 @@ const StPage = styled("span")`
   border-radius: 0px 0px 20px 20px;
   background-color: orange;
   color: white;
+`;
+
+const StPaginationIconMobile = styled(StPaginationIcon)`
+  svg {
+    height: 2.6rem;
+  }
+  transform: translateY(-20%);
+  border: solid 2px orange;
 `;
 
 const StPageImages = styled("div")`
@@ -105,7 +113,7 @@ const StPostContainer = styled("div")`
   @media (max-width: 768px) {
     padding-left: 35px;
     padding-right: 35px;
-    padding-bottom: 70px;
+    padding-bottom: 120px;
   }
 `;
 
@@ -123,7 +131,15 @@ const StMobilePageNavigation = styled("div")`
   display: none;
   @media (max-width: 768px) {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: orange;
+    height: 60px;
+    z-index: 242343;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding-bottom: 25px;
   }
 `;
 
@@ -231,13 +247,23 @@ const ComicPage = (props) => {
         <StPostContent dangerouslySetInnerHTML={{ __html: blogPost }} />
       </StPostContainer>
       <StMobilePageNavigation>
-        <StPaginationIcon>
-          <ChevronLeft />
-        </StPaginationIcon>
+        <StLink
+          key="prevPageLink"
+          href={`/season/${previous.seasonNumber}/episode/${previous.episodeNumber}/page/${previous.pageNumber}`}
+        >
+          <StPaginationIconMobile>
+            <ChevronLeft />
+          </StPaginationIconMobile>
+        </StLink>
         <StMobilePageNumber>episode page {pageNumber + 1}</StMobilePageNumber>
-        <StPaginationIcon>
-          <ChevronRight />
-        </StPaginationIcon>
+        <StLink
+          key="nextPageLink"
+          href={`/season/${next.seasonNumber}/episode/${next.episodeNumber}/page/${next.pageNumber}`}
+        >
+          <StPaginationIconMobile>
+            <ChevronRight />
+          </StPaginationIconMobile>
+        </StLink>
       </StMobilePageNavigation>
     </StComicPage>
   );
