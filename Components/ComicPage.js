@@ -9,7 +9,6 @@ import { getLastComicPageNumbers } from "../data/comics";
 const StComicPage = styled("div")`
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 40px);
   font-size: 1.1rem;
 `;
 
@@ -70,7 +69,7 @@ const StPaginationIcon = styled(StSeason)`
     height: 1.3rem;
   }
   @media (max-width: 768px) {
-    border-radius: 46px;
+      border-radius: 46px;
     padding: 7px;
     margin: 0px 15px;
     background-color: white;
@@ -124,7 +123,12 @@ const StMobilePageNavigation = styled("div")`
   display: none;
   @media (max-width: 768px) {
     display: flex;
+    background-color: orange;
   }
+`;
+
+const StMobilePageNumber = styled("span")`
+  color: white;
 `;
 
 const ComicPage = (props) => {
@@ -226,7 +230,15 @@ const ComicPage = (props) => {
         <StPageTitle>{title}</StPageTitle>
         <StPostContent dangerouslySetInnerHTML={{ __html: blogPost }} />
       </StPostContainer>
-      <StMobilePageNavigation>hi</StMobilePageNavigation>
+      <StMobilePageNavigation>
+        <StPaginationIcon>
+          <ChevronLeft />
+        </StPaginationIcon>
+        <StMobilePageNumber>episode page {pageNumber + 1}</StMobilePageNumber>
+        <StPaginationIcon>
+          <ChevronRight />
+        </StPaginationIcon>
+      </StMobilePageNavigation>
     </StComicPage>
   );
 };
