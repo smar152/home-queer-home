@@ -7,7 +7,7 @@ import ChevronLeft from "./Icons/ChevronLeft";
 import { getLastComicPageNumbers } from "../data/comics";
 
 const StComicPage = styled("div")`
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   font-size: 1.1rem;
 `;
@@ -40,7 +40,7 @@ const StPageNavigationArrows = styled("div")`
 `;
 
 const StSeason = styled.div`
-  display: inline-flex;
+  display: flex;
   font-weight: 400;
   padding: 10px 15px 5px 15px;
   outline: solid 2px orange;
@@ -77,9 +77,7 @@ const StPaginationIcon = styled(StSeason)`
   }
 `;
 
-const StPage = styled("span")`
-  padding: 10px 15px 5px 15px;
-  border: solid 2px orange;
+const StPage = styled(StSeason)`
   border-radius: 0px 0px 20px 20px;
   background-color: orange;
   color: white;
