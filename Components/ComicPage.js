@@ -1,16 +1,25 @@
 import styled from "styled-components";
+import Head from "next/head";
 import Image from "./Image";
 import ChevronDoubleLeft from "./Icons/ChevronDoubleLeft";
 import ChevronDoubleRight from "./Icons/ChevronDoubleRight";
 import ChevronRight from "./Icons/ChevronRight";
 import ChevronLeft from "./Icons/ChevronLeft";
-import { getLastComicPageNumbers } from "./../data/comics";
+import {
+  getLastComicPageNumbers,
+  getTotalEpisodePagesNumber,
+} from "../data/comics";
 
 const StComicPage = styled("div")`
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
-  min-height: calc(100vh - 40px);
   font-size: 1.1rem;
+`;
+
+const StHideOnMobile = styled("div")`
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const StPagePagination = styled("div")`
@@ -25,12 +34,18 @@ const StPagePagination = styled("div")`
     text-decoration: none;
     color: orange;
   }
+  @media (max-width: 768px) {
+    transform: translateY(-50%);
+  }
+`;
+
+const StPageNavigationArrows = styled("div")`
+  display: flex;
 `;
 
 const StSeason = styled.div`
-  display: inline-flex;
+  display: flex;
   font-weight: 400;
-  color: orange;
   padding: 10px 15px 5px 15px;
   outline: solid 2px orange;
   outline-offset: -1px;
@@ -39,25 +54,45 @@ const StSeason = styled.div`
   border-radius: 0px 0px 20px 20px;
   transition: background-color 400ms ease 0s;
   background-color: rgba(255, 255, 255, 0.97);
+  color: orange;
 
   :hover {
     background-color: rgba(255, 165, 0, 0.97);
     color: white;
   }
+
+  @media (max-width: 768px) {
+    background-color: rgba(255, 165, 0, 0.97);
+    color: white;
+  }
 `;
+
 const StPaginationIcon = styled(StSeason)`
   font-size: 2rem;
   svg {
     height: 1.3rem;
   }
+  @media (max-width: 768px) {
+    border-radius: 46px;
+    padding: 7px;
+    margin: 0px 15px;
+    background-color: white;
+    color: orange;
+  }
 `;
 
-const StPage = styled("span")`
-  padding: 10px 15px 5px 15px;
-  border: solid 2px orange;
+const StPage = styled(StSeason)`
   border-radius: 0px 0px 20px 20px;
   background-color: orange;
   color: white;
+`;
+
+const StPaginationIconMobile = styled(StPaginationIcon)`
+  svg {
+    height: 2.6rem;
+  }
+  transform: translateY(-20%);
+  border: solid 2px orange;
 `;
 
 const StPageImages = styled("div")`
@@ -80,6 +115,7 @@ const StPostContainer = styled("div")`
   @media (max-width: 768px) {
     padding-left: 35px;
     padding-right: 35px;
+    padding-bottom: 120px;
   }
 `;
 
@@ -89,9 +125,28 @@ const StPageDate = styled("div")`
   text-align: right;
 `;
 
-const StPageTite = styled("h2")``;
+const StPageTitle = styled("h2")``;
 
-const StPostContent = styled("div")`
+const StPostContent = styled("div")``;
+
+const StMobilePageNavigation = styled("div")`
+  display: none;
+  @media (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: orange;
+    height: 60px;
+    z-index: 242343;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding-bottom: 25px;
+  }
+`;
+
+const StMobilePageNumber = styled("span")`
+  color: white;
 `;
 
 const ComicPage = (props) => {
@@ -114,25 +169,37 @@ const ComicPage = (props) => {
     next,
   } = page || {};
   const dateObj = new Date(`${date} 12:00:00`);
+  const totalEpisodePages = getTotalEpisodePagesNumber(
+    seasonNumber,
+    episodeNumber
+  );
   return (
     <StComicPage data-id="comic-page">
+      <Head>
+        <title>
+          Home Queer Home: s{seasonNumber + 1}e{episodeNumber + 1}p
+          {pageNumber + 1}
+        </title>
+      </Head>
       <StPagePagination data-id="page-pagination">
-        <div>
+        <StPageNavigationArrows>
           <StLink key="firstPageLink" href={`/season/1/episode/1/page/1`}>
-            <StPaginationIcon>
+            <StPaginationIcon data-id="pagination-icon">
               <ChevronDoubleLeft />
             </StPaginationIcon>
           </StLink>
-          <StLink
-            key="prevPageLink"
-            href={`/season/${previous.seasonNumber}/episode/${previous.episodeNumber}/page/${previous.pageNumber}`}
-          >
-            <StPaginationIcon>
-              <ChevronLeft />
-            </StPaginationIcon>
-          </StLink>
-        </div>
-        <div>
+          <StHideOnMobile>
+            <StLink
+              key="prevPageLink"
+              href={`/season/${previous.seasonNumber}/episode/${previous.episodeNumber}/page/${previous.pageNumber}`}
+            >
+              <StPaginationIcon>
+                <ChevronLeft />
+              </StPaginationIcon>
+            </StLink>
+          </StHideOnMobile>
+        </StPageNavigationArrows>
+        <StPageNavigationArrows>
           <StLink
             key="seasonLink"
             href={`/season/${seasonNumber + 1}/episode/${1}/page/${1}`}
@@ -147,23 +214,27 @@ const ComicPage = (props) => {
           >
             <StSeason>episode {episodeNumber + 1}</StSeason>
           </StLink>
-          <StPage>page {pageNumber + 1}</StPage>
-        </div>
-        <div>
-          <StLink
-            key="nextPageLink"
-            href={`/season/${next.seasonNumber}/episode/${next.episodeNumber}/page/${next.pageNumber}`}
-          >
-            <StPaginationIcon>
-              <ChevronRight />
-            </StPaginationIcon>
-          </StLink>
-          <StLink key="nextPageLink" href={`${url}`}>
+          <StHideOnMobile>
+            <StPage>page {pageNumber + 1}</StPage>
+          </StHideOnMobile>
+        </StPageNavigationArrows>
+        <StPageNavigationArrows>
+          <StHideOnMobile>
+            <StLink
+              key="nextPageLink"
+              href={`/season/${next.seasonNumber}/episode/${next.episodeNumber}/page/${next.pageNumber}`}
+            >
+              <StPaginationIcon>
+                <ChevronRight />
+              </StPaginationIcon>
+            </StLink>
+          </StHideOnMobile>
+          <StLink key="lastPageLink" href={`${url}`}>
             <StPaginationIcon>
               <ChevronDoubleRight />
             </StPaginationIcon>
           </StLink>
-        </div>
+        </StPageNavigationArrows>
       </StPagePagination>
       <StLink
         href={`/season/${next.seasonNumber}/episode/${next.episodeNumber}/page/${next.pageNumber}`}
@@ -173,13 +244,10 @@ const ComicPage = (props) => {
             {images.map((image) => {
               const { url, alt } = image;
               return <Image key={url} src={url} alt={alt} />;
-              //return <img src={url} key={url} alt={alt} />;
             })}
           </StPageImages>
         </StImgLink>
       </StLink>
-      {/* <BiggerNavigation previousChapterKey nextChapterKey /> */}
-      {/* <ChapterTitle>{title}</ChapterTitle> */}
       <StPostContainer data-id="post-container">
         <StPageDate>
           {dateObj.toLocaleDateString("en-UK", {
@@ -187,9 +255,30 @@ const ComicPage = (props) => {
           })}
           <hr />
         </StPageDate>
-        <StPageTite>{title}</StPageTite>
+        <StPageTitle>{title}</StPageTitle>
         <StPostContent dangerouslySetInnerHTML={{ __html: blogPost }} />
       </StPostContainer>
+      <StMobilePageNavigation>
+        <StLink
+          key="prevPageLink"
+          href={`/season/${previous.seasonNumber}/episode/${previous.episodeNumber}/page/${previous.pageNumber}`}
+        >
+          <StPaginationIconMobile>
+            <ChevronLeft />
+          </StPaginationIconMobile>
+        </StLink>
+        <StMobilePageNumber>
+          episode page {pageNumber + 1}/{totalEpisodePages}
+        </StMobilePageNumber>
+        <StLink
+          key="nextPageLink"
+          href={`/season/${next.seasonNumber}/episode/${next.episodeNumber}/page/${next.pageNumber}`}
+        >
+          <StPaginationIconMobile>
+            <ChevronRight />
+          </StPaginationIconMobile>
+        </StLink>
+      </StMobilePageNavigation>
     </StComicPage>
   );
 };
