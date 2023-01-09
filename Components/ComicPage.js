@@ -14,6 +14,7 @@ const StComicPage = styled("div")`
   display: inline-flex;
   flex-direction: column;
   font-size: 1.1rem;
+  width: 100%;
 `;
 
 const StHideOnMobile = styled("div")`
@@ -125,6 +126,8 @@ const StPageDate = styled("div")`
   text-align: right;
 `;
 
+const StError = styled.div``;
+
 const StPageTitle = styled("h2")``;
 
 const StPostContent = styled("div")``;
@@ -173,6 +176,15 @@ const ComicPage = (props) => {
     seasonNumber,
     episodeNumber
   );
+  const havePage =
+    Number.isInteger(seasonNumber) &&
+    Number.isInteger(episodeNumber) &&
+    Number.isInteger(pageNumber);
+  const noValueText = "s̸͙͓̐e̷̥̾ͅc̴̠̊̈ȓ̶͇̥ę̵͝ṭ̵̳̃͂";
+  const seasonNumberText = havePage ? seasonNumber + 1 : noValueText;
+  const episodeNumberText = havePage ? episodeNumber + 1 : noValueText;
+  const pageNumberText = havePage ? pageNumber + 1 : noValueText;
+
   return (
     <StComicPage data-id="comic-page">
       <Head>
@@ -191,7 +203,7 @@ const ComicPage = (props) => {
           <StHideOnMobile>
             <StLink
               key="prevPageLink"
-              href={`/season/${previous.seasonNumber}/episode/${previous.episodeNumber}/page/${previous.pageNumber}`}
+              href={`/season/${previous?.seasonNumber}/episode/${previous?.episodeNumber}/page/${previous?.pageNumber}`}
             >
               <StPaginationIcon>
                 <ChevronLeft />
@@ -204,7 +216,7 @@ const ComicPage = (props) => {
             key="seasonLink"
             href={`/season/${seasonNumber + 1}/episode/${1}/page/${1}`}
           >
-            <StSeason>season {seasonNumber + 1}</StSeason>
+            <StSeason>season {seasonNumberText}</StSeason>
           </StLink>
           <StLink
             key="seasonLink"
@@ -212,17 +224,17 @@ const ComicPage = (props) => {
               episodeNumber + 1
             }/page/${1}`}
           >
-            <StSeason>episode {episodeNumber + 1}</StSeason>
+            <StSeason>episode {episodeNumberText}</StSeason>
           </StLink>
           <StHideOnMobile>
-            <StPage>page {pageNumber + 1}</StPage>
+            <StPage>page {pageNumberText}</StPage>
           </StHideOnMobile>
         </StPageNavigationArrows>
         <StPageNavigationArrows>
           <StHideOnMobile>
             <StLink
               key="nextPageLink"
-              href={`/season/${next.seasonNumber}/episode/${next.episodeNumber}/page/${next.pageNumber}`}
+              href={`/season/${next?.seasonNumber}/episode/${next?.episodeNumber}/page/${next?.pageNumber}`}
             >
               <StPaginationIcon>
                 <ChevronRight />
@@ -237,11 +249,11 @@ const ComicPage = (props) => {
         </StPageNavigationArrows>
       </StPagePagination>
       <StLink
-        href={`/season/${next.seasonNumber}/episode/${next.episodeNumber}/page/${next.pageNumber}`}
+        href={`/season/${next?.seasonNumber}/episode/${next?.episodeNumber}/page/${next?.pageNumber}`}
       >
         <StImgLink data-id="page-image-link">
           <StPageImages title={hoverTitle} data-id="page-images">
-            {images.map((image) => {
+            {images?.map?.((image) => {
               const { url, alt } = image;
               return <Image key={url} src={url} alt={alt} />;
             })}
@@ -249,19 +261,28 @@ const ComicPage = (props) => {
         </StImgLink>
       </StLink>
       <StPostContainer data-id="post-container">
-        <StPageDate>
-          {dateObj.toLocaleDateString("en-UK", {
-            dateStyle: "long",
-          })}
-          <hr />
-        </StPageDate>
-        <StPageTitle>{title}</StPageTitle>
-        <StPostContent dangerouslySetInnerHTML={{ __html: blogPost }} />
+        {error && (
+          <StPostContent>
+            <StError>{error}</StError>
+          </StPostContent>
+        )}
+        {havePage && (
+          <>
+            <StPageDate>
+              {dateObj.toLocaleDateString("en-UK", {
+                dateStyle: "long",
+              })}
+              <hr />
+            </StPageDate>
+            <StPageTitle>{title}</StPageTitle>
+            <StPostContent dangerouslySetInnerHTML={{ __html: blogPost }} />
+          </>
+        )}
       </StPostContainer>
       <StMobilePageNavigation>
         <StLink
           key="prevPageLink"
-          href={`/season/${previous.seasonNumber}/episode/${previous.episodeNumber}/page/${previous.pageNumber}`}
+          href={`/season/${previous?.seasonNumber}/episode/${previous?.episodeNumber}/page/${previous?.pageNumber}`}
         >
           <StPaginationIconMobile>
             <ChevronLeft />
@@ -272,7 +293,7 @@ const ComicPage = (props) => {
         </StMobilePageNumber>
         <StLink
           key="nextPageLink"
-          href={`/season/${next.seasonNumber}/episode/${next.episodeNumber}/page/${next.pageNumber}`}
+          href={`/season/${next?.seasonNumber}/episode/${next?.episodeNumber}/page/${next?.pageNumber}`}
         >
           <StPaginationIconMobile>
             <ChevronRight />

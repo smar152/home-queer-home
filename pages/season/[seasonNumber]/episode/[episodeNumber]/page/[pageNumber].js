@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import ComicPage from "../../../../../../Components/ComicPage";
 import Layout from "../../../../../../Components/Layout/Layout";
 import comics from "../../../../../../data/comics";
+import comicPage from "../../../../../../Components/ComicPage";
 
 const StComicPageLayout = styled("div")`
   margin: 0px -20px;
@@ -63,72 +64,75 @@ export const getServerSideProps = async ({ params, res }) => {
   const currentSeason = comics?.[currentSeasonNumber];
   const currentEpisode = currentSeason?.episodes?.[currentEpisodeNumber];
   const currentPage = currentEpisode?.pages?.[currentPageNumber];
-
-  const previous = {
-    seasonNumber: currentSeasonNumber,
-    episodeNumber: currentEpisodeNumber,
-    pageNumber: currentPageNumber,
-  };
-  const next = {
-    seasonNumber: currentSeasonNumber,
-    episodeNumber: currentEpisodeNumber,
-    pageNumber: currentPageNumber,
-  };
-
-  if (currentPageNumber < currentEpisode.pages.length - 1) {
-    next.pageNumber = currentPageNumber + 1;
-  } else if (currentEpisodeNumber < currentSeason.episodes.length - 1) {
-    next.episodeNumber = currentEpisodeNumber + 1;
-    next.pageNumber = 0;
-  } else if (currentSeasonNumber + 1 < comics.length) {
-    next.seasonNumber = currentSeasonNumber + 1;
-    next.episodeNumber = 0;
-    next.pageNumber = 0;
-  } else if (currentSeasonNumber + 1 === comics.length) {
-    next.seasonNumber = currentSeasonNumber;
-    next.episodeNumber = currentEpisodeNumber;
-    next.pageNumber = currentPageNumber;
-  }
-
-  if (currentPageNumber > 0) {
-    previous.pageNumber = currentPageNumber - 1;
-  } else if (currentEpisodeNumber > 0) {
-    const previousEpisodeNumber = currentEpisodeNumber - 1;
-    const previousEpisode = currentSeason.episodes[previousEpisodeNumber];
-    previous.episodeNumber = previousEpisodeNumber;
-    previous.pageNumber = previousEpisode.pages.length - 1;
-  } else if (currentSeasonNumber > 0) {
-    const previousSeasonNumber = currentSeasonNumber - 1;
-    const previousSeason = comics[previousSeasonNumber];
-    const previousEpisodeNumber = previousSeason.episodes.length - 1;
-    const previousEpisode = previousSeason.episodes[previousEpisodeNumber];
-    previous.seasonNumber = previousSeasonNumber;
-    previous.episodeNumber = previousEpisodeNumber;
-    previous.pageNumber = previousEpisode.pages.length - 1;
-  }
-  updateIndicesForBrowser(previous);
-  updateIndicesForBrowser(next);
+  let props = {};
   let error = "";
-  //This doesn't ever show up
-  if (!currentPage) {
-    error = `can't find season ${currentSeasonNumber} episode ${currentEpisodeNumber} page ${currentPageNumber}`;
+  if (!currentPage || !currentEpisode || !currentSeason) {
+    error = `Can't find season ${currentSeasonNumber} episode ${currentEpisodeNumber} page ${currentPageNumber}`;
   } else {
+    props = {
+      ...currentPage,
+      pageNumber: currentPageNumber,
+      episodeNumber: currentEpisodeNumber,
+      seasonNumber: currentSeasonNumber,
+    };
     if (typeof currentPage.blogPost !== "string") {
       delete currentPage.blogPost;
     }
+    const previous = {
+      seasonNumber: currentSeasonNumber,
+      episodeNumber: currentEpisodeNumber,
+      pageNumber: currentPageNumber,
+    };
+    const next = {
+      seasonNumber: currentSeasonNumber,
+      episodeNumber: currentEpisodeNumber,
+      pageNumber: currentPageNumber,
+    };
+
+    if (currentPageNumber < currentEpisode.pages.length - 1) {
+      next.pageNumber = currentPageNumber + 1;
+    } else if (currentEpisodeNumber < currentSeason.episodes.length - 1) {
+      next.episodeNumber = currentEpisodeNumber + 1;
+      next.pageNumber = 0;
+    } else if (currentSeasonNumber + 1 < comics.length) {
+      next.seasonNumber = currentSeasonNumber + 1;
+      next.episodeNumber = 0;
+      next.pageNumber = 0;
+    } else if (currentSeasonNumber + 1 === comics.length) {
+      next.seasonNumber = currentSeasonNumber;
+      next.episodeNumber = currentEpisodeNumber;
+      next.pageNumber = currentPageNumber;
+    }
+
+    if (currentPageNumber > 0) {
+      previous.pageNumber = currentPageNumber - 1;
+    } else if (currentEpisodeNumber > 0) {
+      const previousEpisodeNumber = currentEpisodeNumber - 1;
+      const previousEpisode = currentSeason.episodes[previousEpisodeNumber];
+      previous.episodeNumber = previousEpisodeNumber;
+      previous.pageNumber = previousEpisode.pages.length - 1;
+    } else if (currentSeasonNumber > 0) {
+      const previousSeasonNumber = currentSeasonNumber - 1;
+      const previousSeason = comics[previousSeasonNumber];
+      const previousEpisodeNumber = previousSeason.episodes.length - 1;
+      const previousEpisode = previousSeason.episodes[previousEpisodeNumber];
+      previous.seasonNumber = previousSeasonNumber;
+      previous.episodeNumber = previousEpisodeNumber;
+      previous.pageNumber = previousEpisode.pages.length - 1;
+    }
+    updateIndicesForBrowser(previous);
+    updateIndicesForBrowser(next);
+    props.previous = previous;
+    props.next = next;
   }
+
   return {
     props: {
       page: currentPage
         ? {
-            ...currentPage,
-            pageNumber: currentPageNumber,
-            episodeNumber: currentEpisodeNumber,
-            seasonNumber: currentSeasonNumber,
-            previous,
-            next,
+            ...props,
           }
-        : null,
+        : {},
       error,
     },
   };

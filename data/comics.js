@@ -423,14 +423,12 @@ const comics = [
           },
           {
             title: "Too Difficult",
-            alt:
-              "Accidental pointless reference! Where Are You Going was the name of my first zine.",
+            alt: "Accidental pointless reference! Where Are You Going was the name of my first zine.",
             date: "2017-12-06",
             images: [
               {
                 url: "/img/pages/page12.jpg",
-                alt:
-                  "Accidental pointless reference! Where Are You Going was the name of my first zine.",
+                alt: "Accidental pointless reference! Where Are You Going was the name of my first zine.",
                 width: 900,
               },
             ],
@@ -448,14 +446,12 @@ const comics = [
           },
           {
             title: "Get holiday cards and stuff!",
-            alt:
-              "The life changing magic of judging reality show contestants to feel better about yourself",
+            alt: "The life changing magic of judging reality show contestants to feel better about yourself",
             date: "2017-12-13",
             images: [
               {
                 url: "/img/pages/page13.jpg",
-                alt:
-                  "The life changing magic of judging reality show contestants to feel better about yourself",
+                alt: "The life changing magic of judging reality show contestants to feel better about yourself",
                 width: 900,
               },
             ],
@@ -497,14 +493,12 @@ const comics = [
         pages: [
           {
             title: "Secret Santa",
-            alt:
-              "I'm taking gardening lesson so that's the best fictional game I could come up with at the moment.",
+            alt: "I'm taking gardening lesson so that's the best fictional game I could come up with at the moment.",
             date: "2017-12-20",
             images: [
               {
                 url: "/img/pages/page14.jpg",
-                alt:
-                  "I'm taking gardening lesson so that's the best fictional game I could come up with at the moment.",
+                alt: "I'm taking gardening lesson so that's the best fictional game I could come up with at the moment.",
                 width: 900,
               },
             ],
@@ -705,14 +699,12 @@ const comics = [
           },
           {
             title: "Spring Comic Conventions",
-            alt:
-              "I don&#39;t know what my beef is with teenagers, second page in a row where they&#39;re the villains",
+            alt: "I don&#39;t know what my beef is with teenagers, second page in a row where they&#39;re the villains",
             date: "2018-02-18",
             images: [
               {
                 url: "/img/pages/page21.jpg",
-                alt:
-                  "I don&#39;t know what my beef is with teenagers, second page in a row where they&#39;re the villains",
+                alt: "I don&#39;t know what my beef is with teenagers, second page in a row where they&#39;re the villains",
                 width: 900,
               },
             ],
@@ -854,14 +846,12 @@ const comics = [
           },
           {
             title: "24",
-            alt:
-              "I only realized how much this seems like an advertisement while doing the lettering.",
+            alt: "I only realized how much this seems like an advertisement while doing the lettering.",
             date: "2018-03-21",
             images: [
               {
                 url: "/img/pages/page24.jpg",
-                alt:
-                  "I only realized how much this seems like an advertisement while doing the lettering.",
+                alt: "I only realized how much this seems like an advertisement while doing the lettering.",
                 width: 900,
               },
             ],
@@ -907,14 +897,12 @@ const comics = [
         pages: [
           {
             title: "Little dog flower",
-            alt:
-              "I can&#39;t believe that the same plant that we call doggy in Greek is called snapdragon in English.",
+            alt: "I can&#39;t believe that the same plant that we call doggy in Greek is called snapdragon in English.",
             date: "2018-04-05",
             images: [
               {
                 url: "/img/pages/page25.jpg",
-                alt:
-                  "I can&#39;t believe that the same plant that we call doggy in Greek is called snapdragon in English.",
+                alt: "I can&#39;t believe that the same plant that we call doggy in Greek is called snapdragon in English.",
                 width: 900,
               },
             ],
@@ -980,14 +968,12 @@ const comics = [
           },
           {
             title: "27",
-            alt:
-              "Danae&#39;s views on stalking do not necessarily reflect the views of the creator of this comic.",
+            alt: "Danae&#39;s views on stalking do not necessarily reflect the views of the creator of this comic.",
             date: "2018-05-02",
             images: [
               {
                 url: "/img/pages/page27.jpg",
-                alt:
-                  "Danae&#39;s views on stalking do not necessarily reflect the views of the creator of this comic.",
+                alt: "Danae&#39;s views on stalking do not necessarily reflect the views of the creator of this comic.",
                 width: 900,
               },
             ],
@@ -1180,14 +1166,12 @@ const comics = [
         pages: [
           {
             title: "Season 02 Page 01",
-            alt:
-              "Maybe when I get another art level up, I will start remembering that people carry backpacks/handbags too, when they're on the outside world.",
+            alt: "Maybe when I get another art level up, I will start remembering that people carry backpacks/handbags too, when they're on the outside world.",
             date: "2018-09-05",
             images: [
               {
                 url: "/img/pages/page32.jpg",
-                alt:
-                  "Maybe when I get another art level up, I will start remembering that people carry backpacks/handbags too, when they're on the outside world.",
+                alt: "Maybe when I get another art level up, I will start remembering that people carry backpacks/handbags too, when they're on the outside world.",
                 width: 900,
               },
             ],
@@ -1226,14 +1210,12 @@ const comics = [
           },
           {
             title: "Season 02 Page 03",
-            alt:
-              "is it accidental that everyone's hair is up and I started drawing season 2 in August?",
+            alt: "is it accidental that everyone's hair is up and I started drawing season 2 in August?",
             date: "2018-09-19",
             images: [
               {
                 url: "/img/pages/page34.jpg",
-                alt:
-                  "is it accidental that everyone's hair is up and I started drawing season 2 in August?",
+                alt: "is it accidental that everyone's hair is up and I started drawing season 2 in August?",
                 width: 900,
               },
             ],
@@ -1256,8 +1238,7 @@ const comics = [
             images: [
               {
                 url: "/img/pages/page35.jpg",
-                alt:
-                  "Sophia has already deleted that series from her watch list",
+                alt: "Sophia has already deleted that series from her watch list",
                 width: 1200,
               },
             ],
@@ -1271,14 +1252,12 @@ const comics = [
           },
           {
             title: "Season 02 Page 05",
-            alt:
-              "My style(TM) is forgetting to draw chairs or red velvet cakes in subsequent panels.",
+            alt: "My style(TM) is forgetting to draw chairs or red velvet cakes in subsequent panels.",
             date: "2018-10-17",
             images: [
               {
                 url: "/img/pages/page36.jpg",
-                alt:
-                  "My style(TM) is forgetting to draw chairs or red velvet cakes in subsequent panels.",
+                alt: "My style(TM) is forgetting to draw chairs or red velvet cakes in subsequent panels.",
                 width: 1200,
               },
             ],
@@ -1296,14 +1275,12 @@ const comics = [
           },
           {
             title: "Season 02 Page 06",
-            alt:
-              "Pro tip: Make yourself draw all the food right before lunch. And then get to the inking right before dinner.",
+            alt: "Pro tip: Make yourself draw all the food right before lunch. And then get to the inking right before dinner.",
             date: "2018-10-31",
             images: [
               {
                 url: "/img/pages/page37.jpg",
-                alt:
-                  "Pro tip: Make yourself draw all the food right before lunch. And then get to the inking right before dinner.",
+                alt: "Pro tip: Make yourself draw all the food right before lunch. And then get to the inking right before dinner.",
                 width: 1200,
               },
             ],
@@ -1359,14 +1336,12 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
           },
           {
             title: "Season 02 Page 09",
-            alt:
-              "I almoat forgot Rita's glasses for a panel, remembered them in the coloring stage.",
+            alt: "I almoat forgot Rita's glasses for a panel, remembered them in the coloring stage.",
             date: "2018-11-18",
             images: [
               {
                 url: "/img/pages/page40.jpg",
-                alt:
-                  "I almoat forgot Rita's glasses for a panel, remembered them in the coloring stage.",
+                alt: "I almoat forgot Rita's glasses for a panel, remembered them in the coloring stage.",
                 width: 1200,
               },
             ],
@@ -1421,14 +1396,12 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
           },
           {
             title: "Season 02 Page 12",
-            alt:
-              "if you ever do design a site based on a feeling, let me know.",
+            alt: "if you ever do design a site based on a feeling, let me know.",
             date: "2018-12-05",
             images: [
               {
                 url: "/img/pages/page43.jpg",
-                alt:
-                  "if you ever do design a site based on a feeling, let me know.",
+                alt: "if you ever do design a site based on a feeling, let me know.",
                 width: 1200,
               },
             ],
@@ -1444,14 +1417,12 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
           },
           {
             title: "Season 02 Page 13",
-            alt:
-              "Smar from the future here: I lost this page's post in the website move! Woops.",
+            alt: "Smar from the future here: I lost this page's post in the website move! Woops.",
             date: "2018-12-13",
             images: [
               {
                 url: "/img/pages/page44.jpg",
-                alt:
-                  "Smar from the future here: I lost this page's post in the website move! Woops.",
+                alt: "Smar from the future here: I lost this page's post in the website move! Woops.",
                 width: 1200,
               },
             ],
@@ -1467,14 +1438,12 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
           },
           {
             title: "Season 02 Page 14",
-            alt:
-              "The thing that annoys me most about this page is that there's no graffiti/tags all over that building, to make it more Athens-y.",
+            alt: "The thing that annoys me most about this page is that there's no graffiti/tags all over that building, to make it more Athens-y.",
             date: "2018-12-21",
             images: [
               {
                 url: "/img/pages/page45.jpg",
-                alt:
-                  "The thing that annoys me most about this page is that there's no graffiti/tags all over that building, to make it more Athens-y.",
+                alt: "The thing that annoys me most about this page is that there's no graffiti/tags all over that building, to make it more Athens-y.",
                 width: 1200,
               },
             ],
@@ -1570,14 +1539,12 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
           },
           {
             title: "Season 02 Page 19",
-            alt:
-              "I don't know what site is using this printed newspaper font but just go with it",
+            alt: "I don't know what site is using this printed newspaper font but just go with it",
             date: "2019-02-09",
             images: [
               {
                 url: "/img/pages/page50.jpg",
-                alt:
-                  "I don't know what site is using this printed newspaper font but just go with it",
+                alt: "I don't know what site is using this printed newspaper font but just go with it",
                 width: 1200,
               },
             ],
@@ -1632,14 +1599,12 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
           },
           {
             title: "Season 02 Page 22",
-            alt:
-              "Smar from the future here: I lost this page's post in the website move! Woops.",
+            alt: "Smar from the future here: I lost this page's post in the website move! Woops.",
             date: "2019-03-06",
             images: [
               {
                 url: "/img/pages/page53.jpg",
-                alt:
-                  "Smar from the future here: I lost this page's post in the website move! Woops.",
+                alt: "Smar from the future here: I lost this page's post in the website move! Woops.",
                 width: 1200,
               },
             ],
@@ -1654,14 +1619,12 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
           },
           {
             title: "Season 02 Page 23",
-            alt:
-              "No disappearing chairs on this one! I caught one that almost ran away on panel 4 but it's there now.",
+            alt: "No disappearing chairs on this one! I caught one that almost ran away on panel 4 but it's there now.",
             date: "2019-03-14",
             images: [
               {
                 url: "/img/pages/page54.jpg",
-                alt:
-                  "No disappearing chairs on this one! I caught one that almost ran away on panel 4 but it's there now.",
+                alt: "No disappearing chairs on this one! I caught one that almost ran away on panel 4 but it's there now.",
                 width: 1200,
               },
             ],
@@ -1696,14 +1659,12 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
           },
           {
             title: "Season 02 Page 25",
-            alt:
-              "every now and then I remember I have to include more smoking if this comic has a chance to look realistic",
+            alt: "every now and then I remember I have to include more smoking if this comic has a chance to look realistic",
             date: "2019-05-01",
             images: [
               {
                 url: "/img/pages/page56.jpg",
-                alt:
-                  "every now and then I remember I have to include more smoking if this comic has a chance to look realistic",
+                alt: "every now and then I remember I have to include more smoking if this comic has a chance to look realistic",
                 width: 1200,
               },
             ],
@@ -1738,14 +1699,12 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
           },
           {
             title: "Season 02 Page 27",
-            alt:
-              "um while making this comic i realized i haven't drawn enough butts in my life.",
+            alt: "um while making this comic i realized i haven't drawn enough butts in my life.",
             date: "2019-06-06",
             images: [
               {
                 url: "/img/pages/page58.jpg",
-                alt:
-                  "um while making this comic i realized i haven't drawn enough butts in my life.",
+                alt: "um while making this comic i realized i haven't drawn enough butts in my life.",
                 width: 1200,
               },
             ],
@@ -1801,7 +1760,7 @@ export function getLastComicPageNumbers() {
 }
 
 export function getTotalEpisodePagesNumber(seasonNum, episodeNum) {
-  return comics[seasonNum].episodes[episodeNum].pages.length;
+  return comics?.[seasonNum]?.episodes?.[episodeNum]?.pages?.length;
 }
 
 export default comics;
