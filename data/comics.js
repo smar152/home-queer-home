@@ -1800,4 +1800,8 @@ export function getLastComicPageNumbers() {
   return lastComicPageNumbers;
 }
 
+export function getTotalEpisodePagesNumber(seasonNum, episodeNum) {
+  return comics[seasonNum].episodes[episodeNum].pages.length;
+}
+
 export default comics;

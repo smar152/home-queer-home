@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Layout from "../Components/Layout/Layout";
 import InnerLayout from "../Components/Layout/PageInnerLayout";
 import comics from "../data/comics";
+import Head from "next/head";
 
 const StEpisodes = styled("div")`
   // background-color: #fabdad;
@@ -28,6 +29,9 @@ const ArchivePage = () => {
   }
   return (
     <Layout>
+      <Head>
+        <title>Home Queer Home: Archive</title>
+      </Head>
       <InnerLayout title="Archive" three={content} />
     </Layout>
   );

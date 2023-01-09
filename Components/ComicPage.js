@@ -1,10 +1,14 @@
 import styled from "styled-components";
+import Head from "next/head";
 import Image from "./Image";
 import ChevronDoubleLeft from "./Icons/ChevronDoubleLeft";
 import ChevronDoubleRight from "./Icons/ChevronDoubleRight";
 import ChevronRight from "./Icons/ChevronRight";
 import ChevronLeft from "./Icons/ChevronLeft";
-import { getLastComicPageNumbers } from "../data/comics";
+import {
+  getLastComicPageNumbers,
+  getTotalEpisodePagesNumber,
+} from "../data/comics";
 
 const StComicPage = styled("div")`
   display: inline-flex;
@@ -165,8 +169,18 @@ const ComicPage = (props) => {
     next,
   } = page || {};
   const dateObj = new Date(`${date} 12:00:00`);
+  const totalEpisodePages = getTotalEpisodePagesNumber(
+    seasonNumber,
+    episodeNumber
+  );
   return (
     <StComicPage data-id="comic-page">
+      <Head>
+        <title>
+          Home Queer Home: s{seasonNumber + 1}e{episodeNumber + 1}p
+          {pageNumber + 1}
+        </title>
+      </Head>
       <StPagePagination data-id="page-pagination">
         <StPageNavigationArrows>
           <StLink key="firstPageLink" href={`/season/1/episode/1/page/1`}>
@@ -253,7 +267,9 @@ const ComicPage = (props) => {
             <ChevronLeft />
           </StPaginationIconMobile>
         </StLink>
-        <StMobilePageNumber>episode page {pageNumber + 1}</StMobilePageNumber>
+        <StMobilePageNumber>
+          episode page {pageNumber + 1}/{totalEpisodePages}
+        </StMobilePageNumber>
         <StLink
           key="nextPageLink"
           href={`/season/${next.seasonNumber}/episode/${next.episodeNumber}/page/${next.pageNumber}`}

@@ -1,6 +1,7 @@
 import Layout from "../Components/Layout/Layout";
 import InnerLayout from "../Components/Layout/PageInnerLayout";
 import styled from "styled-components";
+import Head from "next/head";
 
 const MeetTheArtist = styled("div")`
   margin-bottom: 30px;
@@ -9,6 +10,9 @@ const MeetTheArtist = styled("div")`
 const AboutPage = () => {
   return (
     <Layout>
+      <Head>
+        <title>Home Queer Home: About</title>
+      </Head>
       <InnerLayout
         title="About"
         three={
