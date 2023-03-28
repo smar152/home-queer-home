@@ -102,10 +102,6 @@ const StPageImages = styled("div")`
   justify-content: center;
 `;
 
-const StImgLink = styled("a")`
-  display: block;
-`;
-
 const StLink = styled("a")`
   cursor: pointer;
 `;
@@ -146,7 +142,7 @@ const StShaddow = styled("div")`
     bottom: 60px;
     width: 100%;
     padding-bottom: 25px;
-`
+`;
 
 const StMobilePageNavigation = styled("div")`
   display: none;
@@ -205,20 +201,19 @@ const ComicPage = (props) => {
     <StComicPage data-id="comic-page">
       <Head>
         <title>
-          Home Queer Home: s{seasonNumber + 1}e{episodeNumber + 1}p
-          {pageNumber + 1}
+          {`Home Queer Home: s${seasonNumber + 1}e${episodeNumber + 1}p
+          ${pageNumber + 1}`}
         </title>
       </Head>
       <StPagePagination data-id="page-pagination">
         <StPageNavigationArrows>
-          <StLink key="firstPageLink" href={`/season/1/episode/1/page/1`}>
+          <StLink href={`/season/1/episode/1/page/1`}>
             <StPaginationIcon data-id="pagination-icon">
               <ChevronDoubleLeft />
             </StPaginationIcon>
           </StLink>
           <StHideOnMobile>
             <StLink
-              key="prevPageLink"
               href={`/season/${previous?.seasonNumber}/episode/${previous?.episodeNumber}/page/${previous?.pageNumber}`}
             >
               <StPaginationIcon>
@@ -228,14 +223,10 @@ const ComicPage = (props) => {
           </StHideOnMobile>
         </StPageNavigationArrows>
         <StPageNavigationArrows>
-          <StLink
-            key="seasonLink"
-            href={`/season/${seasonNumber + 1}/episode/${1}/page/${1}`}
-          >
+          <StLink href={`/season/${seasonNumber + 1}/episode/${1}/page/${1}`}>
             <StSeason>season {seasonNumberText}</StSeason>
           </StLink>
           <StLink
-            key="seasonLink"
             href={`/season/${seasonNumber + 1}/episode/${
               episodeNumber + 1
             }/page/${1}`}
@@ -249,7 +240,6 @@ const ComicPage = (props) => {
         <StPageNavigationArrows>
           <StHideOnMobile>
             <StLink
-              key="nextPageLink"
               href={`/season/${next?.seasonNumber}/episode/${next?.episodeNumber}/page/${next?.pageNumber}`}
             >
               <StPaginationIcon>
@@ -257,7 +247,7 @@ const ComicPage = (props) => {
               </StPaginationIcon>
             </StLink>
           </StHideOnMobile>
-          <StLink key="lastPageLink" href={`${url}`}>
+          <StLink href={`${url}`}>
             <StPaginationIcon>
               <ChevronDoubleRight />
             </StPaginationIcon>
@@ -265,16 +255,15 @@ const ComicPage = (props) => {
         </StPageNavigationArrows>
       </StPagePagination>
       <StLink
+        data-id="page-image-link"
         href={`/season/${next?.seasonNumber}/episode/${next?.episodeNumber}/page/${next?.pageNumber}`}
       >
-        <StImgLink data-id="page-image-link">
-          <StPageImages title={hoverTitle} data-id="page-images">
-            {images?.map?.((image) => {
-              const { url, alt } = image;
-              return <Image key={url} src={url} alt={alt} />;
-            })}
-          </StPageImages>
-        </StImgLink>
+        <StPageImages title={hoverTitle} data-id="page-images">
+          {images?.map?.((image) => {
+            const { url, alt } = image;
+            return <Image key={url} src={url} alt={alt} />;
+          })}
+        </StPageImages>
       </StLink>
       <StPostContainer data-id="post-container">
         {error && (
@@ -298,7 +287,6 @@ const ComicPage = (props) => {
       <StShaddow></StShaddow>
       <StMobilePageNavigation>
         <StLink
-          key="prevPageLink"
           href={`/season/${previous?.seasonNumber}/episode/${previous?.episodeNumber}/page/${previous?.pageNumber}`}
         >
           <StPaginationIconMobile>
@@ -309,7 +297,6 @@ const ComicPage = (props) => {
           episode page {pageNumber + 1}/{totalEpisodePages}
         </StMobilePageNumber>
         <StLink
-          key="nextPageLink"
           href={`/season/${next?.seasonNumber}/episode/${next?.episodeNumber}/page/${next?.pageNumber}`}
         >
           <StPaginationIconMobile>
