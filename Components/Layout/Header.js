@@ -1,8 +1,7 @@
 import Link from "next/link";
 import styled from "styled-components";
-import Head from "next/dist/shared/lib/head";
-import { device, deviceSize } from "../../data/device";
-import comics, { getLastComicPageNumbers } from "../../data/comics";
+import {device} from "../../data/device";
+import {getLastComicPageNumbers} from "../../data/comics";
 
 const SiteHeader = styled("div")`
   display: flex;
@@ -16,7 +15,6 @@ const SiteHeader = styled("div")`
   font-size: 1.1rem;
   @media ${device.tablet} {
     flex-direction: row;
-    width: ${deviceSize.tablet};
   }
   @media ${device.laptop} {
     width: 100%;
