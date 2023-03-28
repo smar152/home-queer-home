@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/dist/client/link";
 import Image from "next/dist/client/image";
 import styled from "styled-components";
+import { getLastComicPageNumbers } from "../data/comics";
 
 const ComingSoonContainer = styled("div")`
   display: flex;
@@ -65,4 +66,18 @@ export default function Home() {
       </ComingSoonContainer>
     </div>
   );
+}
+
+export function getStaticProps() {
+  const lastComicPage = getLastComicPageNumbers();
+  const url = `/season/${lastComicPage.lastComicSeasonNumber + 1}/episode/${
+    lastComicPage.lastComicEpisodeNumber + 1
+  }/page/${lastComicPage.lastComicPageNumber + 1}`;
+
+  return {
+    redirect: {
+      destination: url,
+      permanent: true,
+    },
+  };
 }
