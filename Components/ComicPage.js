@@ -9,6 +9,7 @@ import {
   getLastComicPageNumbers,
   getTotalEpisodePagesNumber,
 } from "../data/comics";
+import { getMetaTags } from "../util";
 
 const StComicPage = styled("div")`
   display: inline-flex;
@@ -200,10 +201,14 @@ const ComicPage = (props) => {
   return (
     <StComicPage data-id="comic-page">
       <Head>
-        <title>
-          {`Home Queer Home: s${seasonNumber + 1}e${episodeNumber + 1}p
-          ${pageNumber + 1}`}
-        </title>
+        <title>{`Home Queer Home: `}</title>
+        {getMetaTags({
+          title: `Home Queer Home s${seasonNumber + 1}e${episodeNumber + 1}p ${
+            pageNumber + 1
+          }`,
+          description: "A webcomic by Smar",
+          imageUrl: images?.[0]?.url,
+        })}
       </Head>
       <StPagePagination data-id="page-pagination">
         <StPageNavigationArrows>
