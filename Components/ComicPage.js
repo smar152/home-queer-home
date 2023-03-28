@@ -132,6 +132,22 @@ const StPageTitle = styled("h2")``;
 
 const StPostContent = styled("div")``;
 
+const StShaddow = styled("div")`
+  display: none;
+  @media (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(255,255,255,1) 100%);
+    height: 130px;
+    z-index: 242343;
+    position: fixed;
+    bottom: 60px;
+    width: 100%;
+    padding-bottom: 25px;
+`
+
 const StMobilePageNavigation = styled("div")`
   display: none;
   @media (max-width: 768px) {
@@ -279,6 +295,7 @@ const ComicPage = (props) => {
           </>
         )}
       </StPostContainer>
+      <StShaddow></StShaddow>
       <StMobilePageNavigation>
         <StLink
           key="prevPageLink"
