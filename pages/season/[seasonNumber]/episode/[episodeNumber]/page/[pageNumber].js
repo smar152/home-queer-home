@@ -1,10 +1,9 @@
-import react, { useEffect, useCallback, useState, setState } from "react";
+import { useEffect } from "react";
 import styled from "styled-components";
 import { useRouter } from "next/router";
 import ComicPage from "../../../../../../Components/ComicPage";
 import Layout from "../../../../../../Components/Layout/Layout";
 import comics from "../../../../../../data/comics";
-import comicPage from "../../../../../../Components/ComicPage";
 
 const StComicPageLayout = styled("div")`
   margin: 0px -20px;
@@ -67,7 +66,7 @@ export const getServerSideProps = async ({ params, res }) => {
   let props = {};
   let error = "";
   if (!currentPage || !currentEpisode || !currentSeason) {
-    error = `Can't find season ${currentSeasonNumber} episode ${currentEpisodeNumber} page ${currentPageNumber}`;
+    error = `This isn't a valid comic page... What were you looking for?`;
   } else {
     props = {
       ...currentPage,
