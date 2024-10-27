@@ -1,6 +1,7 @@
 const comics = [
   {
     name: "Season One",
+    description: "A collection of 1-10 page episodes",
     episodes: [
       {
         name: "Episode 01: Summertime",
@@ -1160,9 +1161,11 @@ const comics = [
   },
   {
     name: "Season Two",
+    description:
+      "An entire ~40 page episode spanning an academic season in the lives of all the characters. It's a work in progress!",
     episodes: [
       {
-        name: "Episode 01",
+        name: "Episode 01: She's So High Above Me",
         pages: [
           {
             title: "Season 02 Page 01",
@@ -1332,7 +1335,7 @@ For a more Halloweeny story, check out <a href="https://www.instagram.com/sileno
             blogPost: `
             <div><p>Nothing much to report this week. I painted <a href="http://smarmakescomics.tumblr.com/post/179836016827/when-you-have-enough-time-to-practice-painting" rel="noopener" target="_blank">a couch</a> yesterday. Excited to do more painting!</p>
             <p><a href="https://www.instagram.com/smarmakescomics/" rel="noopener" target="_blank">Instagram</a> | <a href="https://twitter.com/SmarMakesComics" rel="noopener" target="_blank">Twitter</a> | <a href="https://www.facebook.com/smarMakesComics/" rel="noopener" target="_blank">Facebook</a> | <a href="http://smarmakescomics.tumblr.com/" rel="noopener" target="_blank">Tumblr</a> | <a href="https://www.etsy.com/shop/SmarMakesComics" rel="noopener" target="_blank">Etsy Shop</a> | <a href="https://gumroad.com/smar" rel="noopener" target="_blank">Gumroad</a> | <a href="https://www.patreon.com/smar" rel="noopener" target="_blank">Patreon</a></p>
-              `,
+            </div> `,
           },
           {
             title: "Season 02 Page 09",

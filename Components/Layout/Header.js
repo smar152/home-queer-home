@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styled from "styled-components";
-import {device} from "../../data/device";
-import {getLastComicPageNumbers} from "../../data/comics";
+import { device } from "../../data/device";
+import { getLastComicPageNumbers } from "../../data/comics";
 
 const SiteHeader = styled("div")`
   display: flex;
@@ -52,7 +52,7 @@ const MainNavigation = styled("nav")`
   }
 `;
 
-const MenuItem = styled("a")`
+const MenuItem = styled(Link)`
   cursor: pointer;
   color: white;
   text-decoration: none;
@@ -87,15 +87,9 @@ export default function Header() {
           </Link>
         </LogoArea>
         <MainNavigation data-id="main-navigation">
-          <Link href={url}>
-            <MenuItem>comic</MenuItem>
-          </Link>
-          <Link href="/archive">
-            <MenuItem>archive</MenuItem>
-          </Link>
-          <Link href="/about">
-            <MenuItem>about</MenuItem>
-          </Link>
+          <MenuItem href={url}>comic</MenuItem>
+          <MenuItem href="/archive">archive</MenuItem>
+          <MenuItem href="/about">about</MenuItem>
           <MenuItem href="https://smar.gumroad.com/" target="_blank">
             store
           </MenuItem>
