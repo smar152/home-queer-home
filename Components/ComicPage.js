@@ -9,6 +9,7 @@ import {
   getLastComicPageNumbers,
   getTotalEpisodePagesNumber,
 } from "../data/comics";
+import DisqusComments from "./DisqusComments";
 
 const StComicPage = styled("div")`
   display: inline-flex;
@@ -146,7 +147,7 @@ const StShaddow = styled("div")`
     bottom: 60px;
     width: 100%;
     padding-bottom: 25px;
-`
+`;
 
 const StMobilePageNavigation = styled("div")`
   display: none;
@@ -317,6 +318,7 @@ const ComicPage = (props) => {
           </StPaginationIconMobile>
         </StLink>
       </StMobilePageNavigation>
+      <DisqusComments />
     </StComicPage>
   );
 };
